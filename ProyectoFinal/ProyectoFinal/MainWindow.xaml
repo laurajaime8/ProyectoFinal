@@ -1,12 +1,110 @@
-﻿<Window x:Class="ProyectoFinal.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="ProyectoFinal.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
     <Grid>
-        
+        <Ellipse Fill="#FFE8A108" HorizontalAlignment="Right" Height="11.338" Margin="0,116.996,139.333,0" Stroke="Black" StrokeThickness="0.1" VerticalAlignment="Top" Width="12"/>
+        <Path x:Name="ptCabeza" Data="M71.672997,0.05 C79.297531,0.050001349 86.288368,5.4591492 91.732674,14.457596 L92.029747,14.959515 92.013702,15.606663 C91.948448,21.716279 93.137344,29.440533 95.628769,37.552636 97.455811,43.501511 99.745499,48.884591 102.21047,53.312177 L102.83763,54.409566 102.93572,55.948521 103.9355,56.203114 104.26056,56.713635 C104.77995,57.506745 105.30338,58.255429 105.82842,58.956357 L106.57536,59.918088 106.64991,59.885262 C108.1306,59.302197 109.82745,58.971001 111.631,58.971001 114.8774,58.971001 117.77805,60.044076 119.69473,61.727597 L119.84879,61.876942 119.85771,61.881005 C134.05406,68.572739 142.95,78.171754 142.95,88.835503 142.95,108.74117 111.9526,124.93678 73.344154,125.43804 L71.732849,125.44849 71.672997,125.45 71.637619,125.44911 71.5,125.45 C32.039253,125.45 0.05,109.05713 0.05,88.835503 0.05,77.283105 10.490371,66.980302 26.799721,60.269708 L28.245918,59.69489 28.354763,59.896565 28.376328,59.930493 28.991734,59.439668 C30.882812,58.068864 33.495312,57.221001 36.381001,57.221001 37.463135,57.221001 38.506847,57.340234 39.48851,57.561559 L40.134109,57.732842 40.585827,57.141206 C44.456585,51.878503 48.135811,43.398888 50.47934,33.488934 52.171886,26.331746 52.907349,19.529536 52.769634,13.877108 L52.726376,12.701776 53.236553,11.947638 C58.416626,4.4628752 64.786324,0.050000998 71.672997,0.05 z" Fill="#FF90E059" HorizontalAlignment="Right" Height="125.5" Margin="0,122.329,73.506,0" Stretch="Fill" Stroke="Black" StrokeThickness="0.1" VerticalAlignment="Top" Width="143"/>
+        <Path x:Name="ptAntenaI" Fill="#FF90E059" HorizontalAlignment="Right" Stroke="Black" StrokeThickness="0.1" VerticalAlignment="Top" Data="M2.8789998,0.05 C4.4414133,0.05 5.7080001,1.0493004 5.7080001,2.2820001 5.7080001,2.8983498 5.3913535,3.4563498 4.8794054,3.8602622 L4.8542847,3.8782752 13.776077,35.206772 10.543601,36.127323 1.4534563,4.2076669 1.2972794,4.1328092 C0.54476025,3.7317028 0.049999899,3.0524373 0.05,2.2820001 0.049999899,1.0493004 1.3165864,0.05 2.8789998,0.05 z" Height="36.177" Margin="0,97.554,155.502,0" RenderTransformOrigin="0.208229699823297,0.0630781882285808" Stretch="Fill" Width="13.826">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.131"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="ptAntenaD" Fill="#FF90E059" HorizontalAlignment="Right" Stroke="Black" StrokeThickness="0.1" VerticalAlignment="Top" Data="M2.8789998,0.05 C4.4414133,0.05 5.7080001,1.0493004 5.7080001,2.2820001 5.7080001,2.8983498 5.3913535,3.4563498 4.8794054,3.8602622 L4.8542847,3.8782752 13.776077,35.206772 10.543601,36.127323 1.4534563,4.2076669 1.2972794,4.1328092 C0.54476025,3.7317028 0.049999899,3.0524373 0.05,2.2820001 0.049999899,1.0493004 1.3165864,0.05 2.8789998,0.05 z" Height="36.177" Margin="0,96.802,112.584,0" RenderTransformOrigin="0.208229699823297,0.0630781882285808" Stretch="Fill" Width="13.826">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="32.743"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Canvas x:Name="cvOjoI" HorizontalAlignment="Right" Height="19.625" Margin="0,142.375,145.375,0" VerticalAlignment="Top" Width="13.417" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.568"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse Fill="#FFF3F1EC" Height="19.625" Stroke="Black" Width="13.417" StrokeThickness="0.2"/>
+            <Ellipse Fill="#FF131313" Height="7.625" Stroke="Black" StrokeThickness="0.2" Width="5.126" Canvas.Left="3.937" Canvas.Top="10"/>
+
+        </Canvas>
+        <Canvas x:Name="cvOjoD" HorizontalAlignment="Right" Height="19.625" Margin="0,142.375,129.375,0" VerticalAlignment="Top" Width="13.417" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="9.462"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse Fill="#FFF3F1EC" Height="19.625" Stroke="Black" Width="13.417" StrokeThickness="0.2" Canvas.Left="-1.336"/>
+            <Ellipse Fill="#FF131313" Height="7.625" Stroke="Black" StrokeThickness="0.2" Width="5.126" Canvas.Left="2.601" Canvas.Top="10"/>
+
+        </Canvas>
+        <Path x:Name="ptCejaI" Data="M5.6665001,0.1 C8.7407932,0.10000004 11.233,1.0252036 11.233,2.1665001 11.233,2.4161587 11.113744,2.6554768 10.895226,2.8770321 L10.867633,2.9039772 10.872258,2.8776529 C10.876735,2.8458059 10.879,2.8137484 10.879,2.7815001 10.879,1.749556 8.5593872,0.91300002 5.698,0.91299996 2.8366127,0.91300002 0.51700002,1.749556 0.51700002,2.7815001 0.51700002,2.8459967 0.526061,2.90973 0.54374885,2.9725435 L0.54534572,2.9775813 0.53744322,2.9708751 C0.25576293,2.7236424 0.1,2.4518242 0.1,2.1665001 0.1,1.0252036 2.592207,0.10000004 5.6665001,0.1 z" Fill="#FF060606" HorizontalAlignment="Right" Height="3.078" Margin="0,136.708,146.417,0" Stretch="Fill" Stroke="Black" StrokeThickness="0.2" VerticalAlignment="Top" Width="11.333" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.433"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="ptCejaD" Data="M5.6665001,0.1 C8.7407932,0.10000004 11.233,1.0252036 11.233,2.1665001 11.233,2.4161587 11.113744,2.6554768 10.895226,2.8770321 L10.867633,2.9039772 10.872258,2.8776529 C10.876735,2.8458059 10.879,2.8137484 10.879,2.7815001 10.879,1.749556 8.5593872,0.91300002 5.698,0.91299996 2.8366127,0.91300002 0.51700002,1.749556 0.51700002,2.7815001 0.51700002,2.8459967 0.526061,2.90973 0.54374885,2.9725435 L0.54534572,2.9775813 0.53744322,2.9708751 C0.25576293,2.7236424 0.1,2.4518242 0.1,2.1665001 0.1,1.0252036 2.592207,0.10000004 5.6665001,0.1 z" Fill="#FF060606" HorizontalAlignment="Right" Height="3.078" Margin="0,136.958,129.667,0" Stretch="Fill" Stroke="Black" StrokeThickness="0.2" VerticalAlignment="Top" Width="11.333" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="9.067"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="elMofleteI" HorizontalAlignment="Right" Height="35.75" Margin="0,191.25,167.75,0" StrokeThickness="0.1" VerticalAlignment="Top" Width="46.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF03B12" Offset="0"/>
+                    <GradientStop Color="#FF90E059" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="elMofleteD" HorizontalAlignment="Right" Height="35.75" Margin="0,191.25,75.756,0" StrokeThickness="0.1" VerticalAlignment="Top" Width="41.75">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF03B12" Offset="0"/>
+                    <GradientStop Color="#FF90E059" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="elBarbilla" HorizontalAlignment="Right" Height="18.75" Margin="0,229.079,130.506,0" StrokeThickness="0.1" VerticalAlignment="Top" Width="23.75">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF90E012" Offset="0.004"/>
+                    <GradientStop Color="#FF90E059" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Path x:Name="ptBocaAbajo" Data="M0.22302048,0 L0.27649975,0.15329266 C2.0365217,4.7733526 11.986308,8.3125 23.997,8.3125 36.00769,8.3125 45.957478,4.7733526 47.717499,0.15329266 L47.770981,0 47.801201,0.086627007 C47.928425,0.48805904 47.993999,0.89720821 47.993999,1.3125 47.993999,6.6282406 37.250175,10.9375 23.997,10.9375 10.743823,10.9375 3.5527137E-15,6.6282406 0,1.3125 3.5527137E-15,0.89720821 0.065575093,0.48805904 0.19279882,0.086627007 z" Fill="#FFB7F70C" HorizontalAlignment="Right" Height="10.938" Margin="0,208.062,122.506,0" Stretch="Fill" StrokeThickness="0.1" VerticalAlignment="Top" Width="47.994" Stroke="#FF111F05" />
+        <Path x:Name="ptBocaArriba" Data="M0.22302048,0 L0.27649975,0.15329266 C2.0365217,4.7733526 11.986308,8.3125 23.997,8.3125 36.00769,8.3125 45.957478,4.7733526 47.717499,0.15329266 L47.770981,0 47.801201,0.086627007 C47.928425,0.48805904 47.993999,0.89720821 47.993999,1.3125 47.993999,6.6282406 37.250175,10.9375 23.997,10.9375 10.743823,10.9375 3.5527137E-15,6.6282406 0,1.3125 3.5527137E-15,0.89720821 0.065575093,0.48805904 0.19279882,0.086627007 z" Fill="#FFB7F70C" HorizontalAlignment="Right" Height="5.688" Margin="0,209.062,122.756,0" Stretch="Fill" StrokeThickness="0.1" VerticalAlignment="Top" Width="47.994" RenderTransformOrigin="0.5,0.5" Stroke="#FF111F05" />
+
     </Grid>
 </Window>
