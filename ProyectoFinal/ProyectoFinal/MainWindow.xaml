@@ -398,6 +398,7 @@
                 </TransformGroup>
             </Path.RenderTransform>
         </Path>
+        <Label x:Name="label" Content="HOLA" HorizontalAlignment="Left" Height="98.662" Margin="149,157.5,0,0" VerticalAlignment="Top" Width="169.5" FontSize="18.667" FontWeight="Bold"/>
 
     </Grid>
 </Window>
