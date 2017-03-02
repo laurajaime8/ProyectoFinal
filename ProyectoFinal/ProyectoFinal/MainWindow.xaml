@@ -10,5 +10,634 @@
     <Window.Background>
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
-    <Grid/>
+    <Grid>
+        <Ellipse x:Name="pie1" HorizontalAlignment="Right" Height="38.685" Margin="0,0,91.916,67.905" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="24.392" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="58.106"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="posaPie" Fill="#FFA9C157" HorizontalAlignment="Right" Height="29.334" Margin="0,0,92,77.666" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="55.501"/>
+        <Ellipse x:Name="bola5" HorizontalAlignment="Left" Height="15.369" Margin="337.429,0,0,170.203" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="12.857">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="bola4" HorizontalAlignment="Left" Height="15.369" Margin="376,0,0,203.06" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="12.857">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="bola3" HorizontalAlignment="Right" Height="15.369" Margin="0,0,371,210.917" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="12.857">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="bola2" HorizontalAlignment="Right" Height="16.75" Margin="0,0,317.429,236.25" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="16.429">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="bola1" HorizontalAlignment="Right" Height="16.75" Margin="0,0,256,246.25" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="16.429">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="aro11" Fill="#FFA9C157" Margin="333.271,0,354.55,113.524" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="86.841" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.069"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro10" Fill="#FFA9C157" Margin="351.037,0,321.104,103.368" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="116.766" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.069"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro9" Fill="#FFA9C157" Margin="371.43,0,275.301,90.763" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="138.496" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.069"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro8" Fill="#FFA9C157" Margin="395.482,0,199.526,72.581" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="174.021" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Path x:Name="aro7" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="191.453" Margin="0,0,98.271,67.754" Width="246.898" Data="M131.33272,0.5 C194.88152,0.50000292 246.39799,41.629602 246.39799,92.365533 246.39799,139.96762 201.04907,179.11347 142.96147,183.76775 L142.96072,183.76779 142.87422,183.81185 C140.55719,184.89913 136.52957,185.93758 131.8867,186.53754 129.10098,186.89751 126.48934,187.04851 124.30201,187.01178 L123.81889,186.99629 122.49232,187.37715 C114.03129,189.705 105.08456,190.953 95.829819,190.953 43.180614,190.953 0.5,150.56349 0.5,100.74049 0.5,58.702321 30.884932,23.379989 72.005417,13.368084 L73.133469,13.107592 74.058174,12.67113 C90.924286,4.928263 110.48077,0.50000292 131.33272,0.5 z" RenderTransformOrigin="0.531931079498477,0.48244492450294" Stretch="Fill">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="aro6" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,0,67.847,76.116" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="231.131" RenderTransformOrigin="0.5,0.5" Height="191.342" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro5" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,264.629,58.644,123.373" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="190.226" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro4" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,251.897,56.07,199.358" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="167.162" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro3" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,231.202,50.097,241.724" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="159.173" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro2" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,227.269,43.678,277.507" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="154.968" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.363"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="aro1" HorizontalAlignment="Right" Height="33.191" Margin="0,232.862,51.223,0" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Top" Width="146.176" Fill="#FFA9C157" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="5.038"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Right" Height="9.499" Margin="0,115.167,119.5,0" VerticalAlignment="Top" Width="20" OpacityMask="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF7C107" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Path x:Name="ptCabeza" Data="M61.31868,0.5 C63.882652,0.5000006 66.389725,0.71544015 68.818047,1.1269662 L69.902542,1.3263648 70.014618,1.1130334 70.1838,1.2384598 C70.776627,1.6457827 71.467613,1.9963899 72.231201,2.2620451 L72.719681,2.4145112 72.161545,3.476932 72.198082,3.5954914 C73.385078,7.367578 74.80249,11.327444 76.436157,15.374213 83.237549,32.221974 91.734924,45.491936 97.582245,49.16956 L97.769791,49.282475 97.711945,49.399411 97.939156,49.455876 98.195808,49.5238 98.257683,49.557606 C99.030808,49.95784 99.750801,50.172944 100.40642,50.187325 L100.61687,50.182633 101.33837,50.387208 C117.95895,55.261891 128.83299,63.359818 128.83299,72.525422 128.83299,87.42318 100.10467,99.500199 64.666496,99.500199 29.228319,99.500199 0.49999949,87.42318 0.5,72.525422 0.49999949,63.912659 10.101823,56.242676 25.050934,51.303998 L25.796619,51.063664 25.609392,50.730427 25.544107,50.606259 25.632296,50.544674 C31.370197,46.392224 39.364651,33.55354 45.811077,17.331364 47.916035,12.034333 49.656662,6.8780007 51.001934,2.0891683 L51.114918,1.6756923 51.418064,1.6031353 52.514298,1.3697417 52.377644,0.63291323 52.521812,0.6695894 C53.014992,0.77620494 53.539345,0.83363998 54.083,0.83364081 54.445438,0.83363998 54.799297,0.80811334 55.14106,0.75950623 L55.442299,0.70567083 55.475102,0.88254237 56.273075,0.78152263 C57.925335,0.59575105 59.609364,0.5000006 61.31868,0.5 z" Fill="#FFA9C157" HorizontalAlignment="Right" Height="136.667" Margin="0,115.167,40,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="168.666"/>
+        <Ellipse x:Name="ojoIzq" Fill="#FFFAFBF5" HorizontalAlignment="Right" Height="18.188" Margin="0,145.886,128.601,0" Stroke="Black" VerticalAlignment="Top" Width="11.827" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-8.004"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ojoDer" Fill="#FFFCFDF9" HorizontalAlignment="Right" Height="17.838" Margin="0,146.561,116.84,0" Stroke="Black" VerticalAlignment="Top" Width="11.016" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="6.566"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="pupilaIzq" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9.667" Margin="0,151.166,132.833,0" Stroke="Black" VerticalAlignment="Top" Width="5"/>
+        <Rectangle x:Name="cejaIzquierda" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1.5" Margin="0,136.333,132.166,0" Stroke="Black" VerticalAlignment="Top" Width="10.5" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.068"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="cejaDerecha" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1.5" Margin="0,136.5,114.666,0" Stroke="Black" VerticalAlignment="Top" Width="10.5" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.469"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse x:Name="mofleteIzq" HorizontalAlignment="Right" Height="41.667" Margin="0,193.166,165,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="-0.091,0.394">
+            <Ellipse.OpacityMask>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.OpacityMask>
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="0.997"/>
+                    <GradientStop Color="#FFD63276"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="mofleteDer" HorizontalAlignment="Right" Height="41.667" Margin="0,193.166,45,0" VerticalAlignment="Top" Width="40.667">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFD63276" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Path x:Name="antenaIzq" HorizontalAlignment="Right" Stroke="Black" VerticalAlignment="Top" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.171" Margin="0,86.363,136.081,0" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="9.705">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE61C1C" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-17.489"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="boca" Data="M70.953324,0.5 L70.850595,0.76161575 C65.406159,14.099461 51.12909,23.618191 34.373502,23.618191 20.29881,23.618191 7.9729586,16.901775 1.1620588,6.8471298 L0.5,5.8142967 0.92032957,5.971344 C9.7294693,9.162735 19.606946,10.951191 30.040002,10.951191 45.109971,10.951191 59.020768,7.2197189 70.22709,0.91862869 z" Fill="#FFA9C157" HorizontalAlignment="Right" Height="18.648" Margin="0,188.496,98.75,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="57.852" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.48"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="antenaDer" HorizontalAlignment="Right" Stroke="Black" VerticalAlignment="Top" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.892" Margin="0,86.73,106.751,0" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="8.621">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE61C1C" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="28.587"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="pupilaDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9.667" Margin="0,151.166,119.5,0" Stroke="Black" VerticalAlignment="Top" Width="5"/>
+        <Rectangle x:Name="barbillaCentro" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Margin="0,226.333,119.5,0" Stroke="Black" VerticalAlignment="Top" Width="12.5"/>
+        <Rectangle x:Name="barbillaDer" HorizontalAlignment="Right" Height="3.688" Margin="0,223.104,118.966,0" Stroke="Black" VerticalAlignment="Top" Width="1" Fill="#FF0C0C0C" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="9.865"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="barbillaIzq" HorizontalAlignment="Right" Height="3.611" Margin="0,223.433,131.225,0" Stroke="Black" VerticalAlignment="Top" Width="1" Fill="#FF0C0C0C" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.76"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="narizIzq" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Margin="0,171.333,139.833,0" Stroke="Black" VerticalAlignment="Top" Width="12.5" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-50.988"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="narizDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Margin="0,172.333,103.333,0" Stroke="Black" VerticalAlignment="Top" Width="12.5" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="41.024"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Path x:Name="posaBrazoDespues2" Data="M27.8335,0.5 C32.80434,0.5 36.834,8.2788286 36.834,17.8745 36.834,19.673689 36.692333,21.409004 36.429356,23.041145 L36.415981,23.117453 36.464912,23.27932 C36.706913,24.130991 36.834,25.012808 36.834,25.916 36.834,33.141542 28.700357,38.999001 18.667,38.999001 16.472202,38.999001 14.368311,38.718712 12.420576,38.205128 L12.234906,38.154295 12.146334,38.205128 C11.217174,38.718712 10.21352,38.999001 9.1665,38.999001 4.380124,38.999001 0.49999994,33.141542 0.5,25.916 0.49999994,18.690459 4.380124,12.833 9.1665,12.833 10.21352,12.833 11.217174,13.113289 12.146334,13.626873 L12.234906,13.677706 12.420576,13.626873 C14.368311,13.113289 16.472202,12.833 18.667,12.833 18.82377,12.833 18.980078,12.83443 19.135899,12.837273 L19.218275,12.839527 19.237644,12.707855 C20.377211,5.6352425 23.794693,0.5 27.8335,0.5 z" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,240.5,34.332,274.333" Stretch="Fill" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="40.001"/>
+        <Path x:Name="mano1" HorizontalAlignment="Right" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Top" Data="M8.2186627,0.50068823 C8.4893556,0.50549763 8.7599592,0.53555652 9.0291295,0.59219116 9.6213036,0.71678764 10.167996,0.96190166 10.661791,1.3088362 L10.690293,1.3295958 10.896235,1.3382383 C14.174152,1.5219541 16.732097,3.0497276 16.732097,4.9072165 16.732097,6.2074585 15.478704,7.3461404 13.602342,7.9753422 L13.587631,7.9800105 13.58863,8.0054178 C13.621054,9.0667572 13.525201,10.185652 13.28578,11.323555 12.191287,16.525399 8.510994,20.15466 5.0656166,19.429736 1.6202394,18.70481 -0.28552818,13.900215 0.80896568,8.6983714 1.8179522,3.9029212 5.0244889,0.44393697 8.2186627,0.50068823 z" Height="26.424" Margin="0,223.73,25.537,0" RenderTransformOrigin="0.593752266838472,0.245092104608911" Stretch="Fill" Width="33.111">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.406"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="posaBrazo1" Fill="#FF94B621" HorizontalAlignment="Right" Margin="0,0,45,219" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="42.001" Height="55.333" VerticalAlignment="Bottom"/>
+        <Ellipse x:Name="posaBrazoDespues1" Fill="#FFA9C157" HorizontalAlignment="Right" Height="44" Margin="0,0,48.25,219" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="31.083"/>
+        <Path x:Name="mano2" HorizontalAlignment="Right" Height="35.333" Margin="0,0,54.668,210.917" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="27.333" Data="M13.6665,0.5 C20.938158,0.5 26.833,8.1857042 26.833,17.6665 26.833,27.147297 20.938158,34.833 13.6665,34.833 11.166868,34.833 8.8299256,33.924828 6.839191,32.347748 L6.7356763,32.2635 6.8126288,32.045994 C8.3042298,27.715956 8.3837119,23.870771 6.9590049,23.353432 5.9019642,22.969599 4.3046156,24.522108 2.8831306,27.096249 L2.770309,27.305225 2.7486315,27.264454 C1.3289623,24.524662 0.50000006,21.221798 0.5,17.6665 0.50000006,8.1857042 6.3948427,0.5 13.6665,0.5 z" Stretch="Fill">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Ellipse x:Name="posaBrazo2" Fill="#FF94B621" HorizontalAlignment="Right" Height="37.015" Margin="0,243.19,152.954,0" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Top" Width="54.657" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.42"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="posaBrazoDespues3" Fill="#FFA9C157" HorizontalAlignment="Right" Margin="0,260.476,137.355,276.482" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="42.482" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.42"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Path x:Name="mano3" HorizontalAlignment="Right" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Data="M11.638,0.5 C16.155396,0.50000009 20.044662,2.5949915 21.792105,5.6058031 L21.87574,5.7547346 21.928333,5.7555591 C24.657669,5.8411966 26.848963,8.6081801 26.848963,12.009016 26.848963,15.463833 24.587553,18.264517 21.797964,18.264517 20.403168,18.264517 19.140419,17.564346 18.226368,16.432324 L18.087095,16.25141 18.085648,16.252232 C16.266022,17.260258 14.04087,17.853001 11.638,17.853001 5.4866524,17.853001 0.5,13.968399 0.5,9.1765004 0.5,4.3846017 5.4866524,0.50000009 11.638,0.5 z" Margin="0,277.254,121.888,264.812" RenderTransformOrigin="0.425537161756204,0.489034709958292" Stretch="Fill" Width="34.337">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.42"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="posaBrazo3" Fill="#FF94B621" Margin="0,280.791,152.719,247.424" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" HorizontalAlignment="Right" Width="69.756" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="40.786"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="posaBrazoDespues4" Fill="#FFA9C157" HorizontalAlignment="Right" Height="34.763" Margin="0,0,133.016,228.681" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="53.142" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="30.753"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Path x:Name="mano4" HorizontalAlignment="Right" Margin="0,0,120.713,219.24" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="35.167" Data="M22.017103,0.50139189 C22.428774,0.48731136 22.78845,0.5798254 23.078287,0.79020357 24.430857,1.771965 23.814287,4.9952314 21.755457,8.3806741 L21.639547,8.5669058 21.852934,8.6029075 C29.221895,9.9137633 34.667,14.538506 34.667,20.04255 34.667,26.565862 27.018457,31.854049 17.5835,31.854049 8.1485434,31.854049 0.5,26.565862 0.5,20.04255 0.5,14.538506 5.9451056,9.9137633 13.314067,8.6029075 L13.470474,8.576519 13.607949,8.3070807 C14.043881,7.4753756 14.573483,6.6196103 15.18852,5.7722746 17.472948,2.6250267 20.233194,0.56240654 22.017103,0.50139189 z" Height="32.354" RenderTransformOrigin="0.500000002603369,0.619475784530713" Stretch="Fill">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="32.764"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse x:Name="pie2" HorizontalAlignment="Right" Height="29.334" Margin="0,0,196,62.666" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="76.429">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="pie3" HorizontalAlignment="Right" Height="23.001" Margin="0,0,307.43,62.666" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="47.095">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="pie4" Height="15.667" Margin="384.905,0,371,91.333" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="amarillo8" HorizontalAlignment="Right" Height="36.169" Margin="0,0,193.922,220.061" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="14.129" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-42.932"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul2" Fill="#FF44BD91" HorizontalAlignment="Right" Height="20.49" Margin="0,0,198.68,228.525" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="7.166" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-49.882"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo9" HorizontalAlignment="Right" Margin="0,282.362,183.647,254.045" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="20.742" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-42.932"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul1" Fill="#FF44BD91" HorizontalAlignment="Right" Margin="0,0,193.004,264.806" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="7.166" RenderTransformOrigin="0.5,0.5" Height="15.283" VerticalAlignment="Bottom">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-49.882"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo7" HorizontalAlignment="Right" Height="77.672" Margin="0,0,197.241,167.225" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="36.388" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-35.896"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul3" Fill="#FF44BD91" HorizontalAlignment="Right" Height="49.009" Margin="0,0,199.823,178.932" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="21.547" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-39.409"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo6" HorizontalAlignment="Right" Height="77.672" Margin="0,0,247.125,140.613" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="39.717" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-21.553"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul4" Fill="#FF44BD91" HorizontalAlignment="Right" Height="54.429" Margin="0,0,252.247,149.722" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="23.699" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo5" HorizontalAlignment="Right" Height="62.308" Margin="0,0,305.365,136.795" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="31.237" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.244"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul5" Fill="#FF44BD91" HorizontalAlignment="Right" Height="41.259" Margin="0,0,310.352,142.307" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="17.489" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo4" HorizontalAlignment="Right" Height="61.312" Margin="0,0,350.969,129.793" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="34.029" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.81"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul6" Fill="#FF44BD91" HorizontalAlignment="Right" Height="41.259" Margin="0,0,360.352,136.307" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="17.489" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo3" HorizontalAlignment="Left" Height="36.642" Margin="375.634,0,0,135.128" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="15.765" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.81"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul7" Fill="#FF44BD91" HorizontalAlignment="Left" Height="30.277" Margin="379.346,0,0,137.298" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="6.115" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo2" HorizontalAlignment="Left" Height="32.646" Margin="355.833,0,0,135.626" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="15.367" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.81"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul8" Fill="#FF44BD91" HorizontalAlignment="Left" Height="26.115" Margin="360.014,0,0,137.712" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="5.446" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="amarillo1" HorizontalAlignment="Left" Height="27.124" Margin="336.71,0,0,138.887" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="9.612" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.81"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="azul9" Fill="#FF44BD91" HorizontalAlignment="Left" Height="16.796" Margin="338.773,0,0,143.038" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="4.595" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-9.301"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <StackPanel HorizontalAlignment="Left" Margin="0,151.166,0,42" Width="187.667"/>
+    </Grid>
 </Window>
