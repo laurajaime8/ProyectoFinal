@@ -645,9 +645,9 @@
         <Label x:Name="lbApetito" Content="Apetito" HorizontalAlignment="Left" Height="50.333" Margin="271.335,10,0,0" VerticalAlignment="Top" Width="117.667" FontWeight="Bold" FontSize="18.667"/>
         <Label x:Name="lbDiversion" Content="Diversión" HorizontalAlignment="Right" Height="50.333" Margin="0,10,154.762,0" VerticalAlignment="Top" Width="117.667" FontWeight="Bold" FontSize="18.667"/>
         <StackPanel HorizontalAlignment="Left" Margin="10,151.166,0,10" Width="160">
-            <Button x:Name="btDormir" Content="Dormir" Height="74" FontSize="32" FontWeight="Bold" Background="#FF214F27" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btDormir_Click"/>
-            <Button x:Name="btComer" Content="Comer" Height="74" FontSize="32" FontWeight="Bold" Background="#FF214F27" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btComer_Click"/>
-            <Button x:Name="btJugar" Content="Jugar" Height="74" FontSize="32" FontWeight="Bold" Background="#FF214F27" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btJugar_Click"/>
+            <Button x:Name="btDormir" Content="Dormir" Height="74" FontSize="32" FontWeight="Bold" Background="#FF214F29" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btDormir_Click"/>
+            <Button x:Name="btComer" Content="Comer" Height="74" FontSize="32" FontWeight="Bold" Background="#FFD32222" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btComer_Click"/>
+            <Button x:Name="btJugar" Content="Jugar" Height="74" FontSize="32" FontWeight="Bold" Background="#FF1F6372" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btJugar_Click"/>
         </StackPanel>
     </Grid>
 </Window>
