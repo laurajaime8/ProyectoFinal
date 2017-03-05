@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProyectoFinal"
         xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="ProyectoFinal.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="MainWindow" Height="600" Width="800" MinWidth="800" MaxWidth="800" MinHeight="600" MaxHeight="600">
     <Window.Background>
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
