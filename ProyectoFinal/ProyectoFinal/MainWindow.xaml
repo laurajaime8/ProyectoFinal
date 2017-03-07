@@ -326,8 +326,26 @@
             </Path>
             <Rectangle x:Name="barbillaCentro" Fill="#FF0F0F0F" Height="1" Stroke="Black" Width="12.5" Canvas.Left="76.666" Canvas.Top="111.166"/>
         </Canvas>
-        <Canvas x:Name="cvAntenas" HorizontalAlignment="Right" Height="41.259" Margin="0,98.363,182.751,0" VerticalAlignment="Top" Width="39.035">
-            <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.171" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="9.705">
+        <Canvas x:Name="cvAntenas" HorizontalAlignment="Right" Height="41.259" Margin="0,98.363,182.751,0" VerticalAlignment="Top" Width="39.035" MouseUp="moverAntenas">
+            <Canvas.Resources>
+                <Storyboard x:Name="moverAntenas" x:Key="moverAntenasKey">
+                    <DoubleAnimation Storyboard.TargetName="cvAntenas"
+                                     Storyboard.TargetProperty="(Canvas.Left)"
+                                    From="10" To="20" Duration="0:0:0:2" AutoReverse="True">
+                    </DoubleAnimation>
+                </Storyboard>
+            </Canvas.Resources>
+            <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.171" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="9.704" Canvas.Left="0.148" MouseUp="moverAntenaIzq">
+                <Path.Resources>
+                    <Storyboard x:Name="moverAntenaIzq" x:Key="moverAntenaIzqKey">
+                        <DoubleAnimation Storyboard.TargetName="antenaIzq"
+                                     Storyboard.TargetProperty="(Canvas.Left)"
+                                    From="10" To="20" Duration="0:0:0:2" AutoReverse="True">
+                        </DoubleAnimation>
+                    </Storyboard>
+                </Path.Resources>
+
+
                 <Path.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFE61C1C" Offset="0"/>
@@ -343,7 +361,7 @@
                     </TransformGroup>
                 </Path.RenderTransform>
             </Path>
-            <Path x:Name="antenaDer" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.892" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="8.621" Canvas.Left="30.414" Canvas.Top="0.367">
+            <Path x:Name="antenaDer" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" Height="40.892" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Width="8.62" Canvas.Left="30.19" Canvas.Top="0.054" MouseUp="moverAntenas">
                 <Path.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFE61C1C" Offset="0"/>

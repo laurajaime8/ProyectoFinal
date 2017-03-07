@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -51,6 +52,18 @@ namespace ProyectoFinal
             pbEnergia.Value -= 10;
             pbApetito.Value -= 10;
             pbDiversion.Value -= 10;
+        }
+
+        private void moverAntenas(object sender, MouseButtonEventArgs e)
+        {
+            Storyboard sbAntenas = (Storyboard)cvAntenas.Resources["moverAntenasKey"];
+            sbAntenas.Begin();
+        }
+
+        private void moverAntenaIzq(object sender, MouseButtonEventArgs e)
+        {
+            Storyboard sbAntenaIzq = (Storyboard)cvAntenas.Resources["moverAntenaIzqKey"];
+            sbAntenaIzq.Begin();
         }
     }
 }
