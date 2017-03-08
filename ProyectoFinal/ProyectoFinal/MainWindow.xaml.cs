@@ -56,14 +56,14 @@ namespace ProyectoFinal
 
         private void moverAntenas(object sender, MouseButtonEventArgs e)
         {
-            Storyboard sbAntenas = (Storyboard)cvAntenas.Resources["moverAntenasKey"];
-            sbAntenas.Begin();
+           /* Storyboard sbAntenas = (Storyboard)cvAntenas.Resources["moverAntenasKey"];
+            sbAntenas.Begin();*/
         }
 
         private void moverAntenaIzq(object sender, MouseButtonEventArgs e)
         {
-            Storyboard sbAntenaIzq = (Storyboard)cvAntenas.Resources["moverAntenaIzqKey"];
-            sbAntenaIzq.Begin();
+            /*Storyboard sbAntenaIzq = (Storyboard)cvAntenas.Resources["moverAntenaIzqKey"];
+            sbAntenaIzq.Begin();*/
         }
     }
 }
