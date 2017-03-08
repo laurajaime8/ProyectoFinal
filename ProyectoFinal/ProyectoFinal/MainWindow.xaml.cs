@@ -75,8 +75,9 @@ namespace ProyectoFinal
             sbAlegrar.Begin();
             sbPupilaIzq.Begin();
             sbPupilaDer.Begin();
+
         }
 
-       
+
     }
 }
