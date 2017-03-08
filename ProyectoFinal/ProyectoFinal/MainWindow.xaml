@@ -514,6 +514,17 @@
                 </Ellipse>
                 <Path x:Name="ptCabeza" Data="M61.31868,0.5 C63.882652,0.5000006 66.389725,0.71544015 68.818047,1.1269662 L69.902542,1.3263648 70.014618,1.1130334 70.1838,1.2384598 C70.776627,1.6457827 71.467613,1.9963899 72.231201,2.2620451 L72.719681,2.4145112 72.161545,3.476932 72.198082,3.5954914 C73.385078,7.367578 74.80249,11.327444 76.436157,15.374213 83.237549,32.221974 91.734924,45.491936 97.582245,49.16956 L97.769791,49.282475 97.711945,49.399411 97.939156,49.455876 98.195808,49.5238 98.257683,49.557606 C99.030808,49.95784 99.750801,50.172944 100.40642,50.187325 L100.61687,50.182633 101.33837,50.387208 C117.95895,55.261891 128.83299,63.359818 128.83299,72.525422 128.83299,87.42318 100.10467,99.500199 64.666496,99.500199 29.228319,99.500199 0.49999949,87.42318 0.5,72.525422 0.49999949,63.912659 10.101823,56.242676 25.050934,51.303998 L25.796619,51.063664 25.609392,50.730427 25.544107,50.606259 25.632296,50.544674 C31.370197,46.392224 39.364651,33.55354 45.811077,17.331364 47.916035,12.034333 49.656662,6.8780007 51.001934,2.0891683 L51.114918,1.6756923 51.418064,1.6031353 52.514298,1.3697417 52.377644,0.63291323 52.521812,0.6695894 C53.014992,0.77620494 53.539345,0.83363998 54.083,0.83364081 54.445438,0.83363998 54.799297,0.80811334 55.14106,0.75950623 L55.442299,0.70567083 55.475102,0.88254237 56.273075,0.78152263 C57.925335,0.59575105 59.609364,0.5000006 61.31868,0.5 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" Height="136.666" Canvas.Top="29.167" Width="168.666"/>
                 <Ellipse x:Name="ojoIzq" Fill="#FFFAFBF5" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18" Canvas.Left="67" Canvas.Top="60" Width="12">
+                    <Ellipse.Resources>
+                    
+                    <Storyboard x:Name="cerrarOjoIzq" x:Key="cerrarOjoIzqKey">
+                        <DoubleAnimation Storyboard.TargetName="ojoIzq"
+                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             From="18" To="0" Duration="0:0:5" AutoReverse="True"/>
+
+                    </Storyboard>
+
+                    </Ellipse.Resources>
+
                     <Ellipse.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -524,6 +535,17 @@
                     </Ellipse.RenderTransform>
                 </Ellipse>
                 <Ellipse x:Name="ojoDer" Fill="#FFFCFDF9" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18" Canvas.Left="80" Canvas.Top="60" Width="11">
+                    <Ellipse.Resources>
+
+                        <Storyboard x:Name="cerrarOjoDer" x:Key="cerrarOjoDerKey">
+                            <DoubleAnimation Storyboard.TargetName="ojoDer"
+                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             From="18" To="0" Duration="0:0:5" AutoReverse="True"/>
+
+                        </Storyboard>
+
+                    </Ellipse.Resources>
+
                     <Ellipse.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -539,6 +561,12 @@
                             <DoubleAnimation Storyboard.TargetName="pupilaIzq"
                                              Storyboard.TargetProperty="(Ellipse.Width)"
                                              From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
+
+                        </Storyboard>
+                        <Storyboard x:Name="pupilaIzqCerrar" x:Key="pupilaIzqCerrarKey">
+                            <DoubleAnimation Storyboard.TargetName="pupilaIzq"
+                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             From="10" To="1" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
                     </Ellipse.Resources>
@@ -636,6 +664,13 @@
                             <DoubleAnimation Storyboard.TargetName="pupilaDer"
                                              Storyboard.TargetProperty="(Ellipse.Width)"
                                              From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
+
+                        </Storyboard>
+                        
+                        <Storyboard x:Name="pupilaDerCerrar" x:Key="pupilaDerCerrarKey">
+                            <DoubleAnimation Storyboard.TargetName="pupilaDer"
+                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             From="10" To="1" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
                     </Ellipse.Resources>

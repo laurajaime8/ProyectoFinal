@@ -35,6 +35,15 @@ namespace ProyectoFinal
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
             pbEnergia.Value += 20;
+            Storyboard sbCerrarOjoIzq = (Storyboard)ojoIzq.Resources["cerrarOjoIzqKey"];
+            Storyboard sbCerrarOjoDer = (Storyboard)ojoDer.Resources["cerrarOjoDerKey"];
+            Storyboard sbCerrarPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqCerrarKey"];
+            Storyboard sbCerrarPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerCerrarKey"];
+            sbCerrarOjoIzq.Begin();
+            sbCerrarOjoDer.Begin();
+            sbCerrarPupilaDer.Begin();
+            sbCerrarPupilaIzq.Begin();
+
         }
 
         private void btComer_Click(object sender, RoutedEventArgs e)
