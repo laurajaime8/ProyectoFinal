@@ -65,5 +65,18 @@ namespace ProyectoFinal
             /*Storyboard sbAntenaIzq = (Storyboard)cvAntenas.Resources["moverAntenaIzqKey"];
             sbAntenaIzq.Begin();*/
         }
+
+      
+        private void alegrar(object sender, MouseButtonEventArgs e)
+        {
+            Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
+            Storyboard sbPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqGrandeKey"];
+            Storyboard sbPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerGrandeKey"];
+            sbAlegrar.Begin();
+            sbPupilaIzq.Begin();
+            sbPupilaDer.Begin();
+        }
+
+       
     }
 }

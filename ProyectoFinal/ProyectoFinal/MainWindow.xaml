@@ -159,7 +159,7 @@
                             </TransformGroup>
                         </Ellipse.RenderTransform>
                     </Ellipse>
-                    <Ellipse x:Name="aro5" Fill="#FFA9C157" HorizontalAlignment="Right" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="190" RenderTransformOrigin="0.5,0.5" Height="181" Canvas.Left="210" Canvas.Top="37">
+                    <Ellipse x:Name="aro5" Fill="#FFA9C157" HorizontalAlignment="Right" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="190" RenderTransformOrigin="0.5,0.5" Height="181" Canvas.Left="210" Canvas.Top="37" MouseUp="alegrar">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -495,6 +495,15 @@
                 </Canvas>
             </Canvas>
             <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="251" Width="169">
+                <Canvas.Resources>
+                    <Storyboard x:Name="subirCabeza" x:Key="subirCabezaKey">
+                        <DoubleAnimation Storyboard.TargetName="cvCabeza"
+                                         Storyboard.TargetProperty="(Canvas.Left)"
+                                         From="250" To="265" Duration="0:0:2" AutoReverse="True" />
+
+                    </Storyboard>
+                </Canvas.Resources>
+                
                 <Ellipse x:Name="bolaCabeza" OpacityMask="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="10" Canvas.Left="68" Canvas.Top="29" Width="20">
                     <Ellipse.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
@@ -524,7 +533,16 @@
                         </TransformGroup>
                     </Ellipse.RenderTransform>
                 </Ellipse>
-                <Ellipse x:Name="pupilaIzq" Fill="#FF0F0F0F" Stroke="Black" Height="10" Canvas.Left="70" Canvas.Top="65" Width="5"/>
+                <Ellipse x:Name="pupilaIzq" Fill="#FF0F0F0F" Stroke="Black" Height="10" Canvas.Left="70" Canvas.Top="65" Width="5">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="pupilaIzqGrande" x:Key="pupilaIzqGrandeKey">
+                            <DoubleAnimation Storyboard.TargetName="pupilaIzq"
+                                             Storyboard.TargetProperty="(Ellipse.Width)"
+                                             From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
+
+                        </Storyboard>
+                    </Ellipse.Resources>
+                </Ellipse>
                 <Rectangle x:Name="cejaIzquierda" Fill="#FF0F0F0F" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="2" Canvas.Left="65" Canvas.Top="50" Width="11">
                     <Rectangle.RenderTransform>
                         <TransformGroup>
@@ -580,11 +598,7 @@
                 </Path>
                 <Rectangle x:Name="barbillaCentro" Fill="#FF0F0F0F" Stroke="Black" Height="1" Canvas.Left="76" Canvas.Top="140" Width="13"/>
                 <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" MouseUp="moverAntenaIzq" Height="40.171" Canvas.Left="61.981" Width="9.704">
-                    <Path.Resources>
-                        <Storyboard x:Name="moverAntenaIzq" x:Key="moverAntenaIzqKey"/>
-                    </Path.Resources>
-
-
+           
                     <Path.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFE61C1C" Offset="0"/>
@@ -616,7 +630,16 @@
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <Ellipse x:Name="pupilaDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9" Stroke="Black" VerticalAlignment="Top" Width="6" Canvas.Left="83" Canvas.Top="65"/>
+                <Ellipse x:Name="pupilaDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9" Stroke="Black" VerticalAlignment="Top" Width="6" Canvas.Left="83" Canvas.Top="65">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="pupilaDerGrande" x:Key="pupilaDerGrandeKey">
+                            <DoubleAnimation Storyboard.TargetName="pupilaDer"
+                                             Storyboard.TargetProperty="(Ellipse.Width)"
+                                             From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
+
+                        </Storyboard>
+                    </Ellipse.Resources>
+                </Ellipse>
                 <Rectangle x:Name="barbillaDer" HorizontalAlignment="Right" Height="3" Stroke="Black" VerticalAlignment="Top" Width="1" Fill="#FF0C0C0C" RenderTransformOrigin="0.5,0.5" Canvas.Left="88" Canvas.Top="137">
                     <Rectangle.RenderTransform>
                         <TransformGroup>
