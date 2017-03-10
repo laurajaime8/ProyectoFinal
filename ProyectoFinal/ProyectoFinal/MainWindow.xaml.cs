@@ -87,6 +87,45 @@ namespace ProyectoFinal
 
         }
 
-
+        //Salta al tocarle el pie1
+        private void saltar1(object sender, MouseButtonEventArgs e)
+        {
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            volarCanvas.From = cvHeimlich.Margin; 
+            volarCanvas.To = new Thickness(0, 0, 0, 150);
+            volarCanvas.AutoReverse = false;
+            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+        }
+        //Salta al tocarle el pie2
+        private void saltar2(object sender, MouseButtonEventArgs e)
+        {
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            volarCanvas.From = cvHeimlich.Margin;
+            volarCanvas.To = new Thickness(0, 0, 0, 150);
+            volarCanvas.AutoReverse = false;
+            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+        }
+        //Salta al tocarle el pie3
+        private void saltar3(object sender, MouseButtonEventArgs e)
+        {
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            volarCanvas.From = cvHeimlich.Margin;
+            volarCanvas.To = new Thickness(0, 0, 0, 150);
+            volarCanvas.AutoReverse = false;
+            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+        }
+        //Salta al tocarle el pie4
+        private void saltar4(object sender, MouseButtonEventArgs e)
+        {
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            volarCanvas.From = cvHeimlich.Margin;
+            volarCanvas.To = new Thickness(0, 0, 0, 150);
+            volarCanvas.AutoReverse = false;
+            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+        }
     }
 }
