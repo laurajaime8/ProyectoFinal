@@ -101,6 +101,7 @@ namespace ProyectoFinal
         private void saltar2(object sender, MouseButtonEventArgs e)
         {
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
+
             volarCanvas.From = cvHeimlich.Margin;
             volarCanvas.To = new Thickness(0, 0, 0, 150);
             volarCanvas.AutoReverse = false;
