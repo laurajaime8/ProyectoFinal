@@ -27,7 +27,7 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(3.0);
+            t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
         }
