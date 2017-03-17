@@ -128,6 +128,14 @@
                 <EasingColorKeyFrame KeyTime="0:0:7" Value="#FFF54D0E"/>
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbAntenas" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antenaDer">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="44.049"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antenaIzq">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-40.454"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -135,6 +143,7 @@
             <BeginStoryboard Storyboard="{StaticResource sbMoverMano}"/>
             <BeginStoryboard Storyboard="{StaticResource sbMoverPies}"/>
             <BeginStoryboard Storyboard="{StaticResource sbCambiarBolas}"/>
+            <BeginStoryboard Storyboard="{StaticResource sbAntenas}"/>
         </EventTrigger>
     </Window.Triggers>
     <Window.Background>
