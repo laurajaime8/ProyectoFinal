@@ -32,17 +32,20 @@ namespace ProyectoFinal
             t1.Start();
         }
 
+
+
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
             pbEnergia.Value += 20;
-           /* Storyboard sbCerrarOjoIzq = (Storyboard)ojoIzq.Resources["cerrarOjoIzqKey"];
+             
+            Storyboard sbCerrarOjoIzq = (Storyboard)ojoIzq.Resources["cerrarOjoIzqKey"];
             Storyboard sbCerrarOjoDer = (Storyboard)ojoDer.Resources["cerrarOjoDerKey"];
             Storyboard sbCerrarPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqCerrarKey"];
             Storyboard sbCerrarPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerCerrarKey"];
             sbCerrarOjoIzq.Begin();
             sbCerrarOjoDer.Begin();
             sbCerrarPupilaDer.Begin();
-            sbCerrarPupilaIzq.Begin();*/
+            sbCerrarPupilaIzq.Begin();
 
         }
 
@@ -55,12 +58,40 @@ namespace ProyectoFinal
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             pbDiversion.Value += 20;
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            volarCanvas.From = cvHeimlich.Margin;
+            volarCanvas.To = new Thickness(0, 0, 20, 150);
+            volarCanvas.AutoReverse = true;
+            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
         }
         private void reloj(object sender, EventArgs e)
         {
             pbEnergia.Value -= 10;
             pbApetito.Value -= 10;
             pbDiversion.Value -= 10;
+
+            if(pbEnergia.Value == 10)
+            {
+               //Dejar de mover los parpados. No se como manejar la storyboard nueva.
+            }
+
+            if(pbApetito.Value == 10)
+            {
+                Storyboard sbHambre2 = (Storyboard)elLengua.Resources["sbHambreKey"];
+                sbHambre2.Begin();
+                
+            }
+            if(pbApetito.Value == 90)
+            {
+                Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
+                sbGordo.Begin();
+            }
+
+            if(pbDiversion.Value == 10)
+            {
+
+            }
         }
 
         private void moverAntenas(object sender, MouseButtonEventArgs e)

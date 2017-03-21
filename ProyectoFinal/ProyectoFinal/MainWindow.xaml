@@ -136,6 +136,29 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-40.454"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbCansado">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.966">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.473">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="18.321">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -144,6 +167,7 @@
             <BeginStoryboard Storyboard="{StaticResource sbMoverPies}"/>
             <BeginStoryboard Storyboard="{StaticResource sbCambiarBolas}"/>
             <BeginStoryboard Storyboard="{StaticResource sbAntenas}"/>
+
         </EventTrigger>
     </Window.Triggers>
     <Window.Background>
@@ -324,6 +348,19 @@
                         </Ellipse.RenderTransform>
                     </Ellipse>
                     <Ellipse x:Name="aro5" Fill="#FFA9C157" HorizontalAlignment="Right" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Width="190" RenderTransformOrigin="0.5,0.5" Height="181" Canvas.Left="210" Canvas.Top="37" MouseUp="alegrar">
+                        <Ellipse.Resources>
+                            <Storyboard x:Name="gordoComer" x:Key="gordoComerKey">
+                                <DoubleAnimation BeginTime="00:00:00" Storyboard.TargetName="aro5"
+                                                                    Storyboard.TargetProperty="(Ellipse.Width)"
+                                                                    From="190" To="210" Duration="0:0:5.5"    AutoReverse="True"/>
+
+                            </Storyboard>
+                        </Ellipse.Resources>
+
+
+
+
+
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -786,16 +823,6 @@
                         </RadialGradientBrush>
                     </Ellipse.Fill>
                 </Ellipse>
-                <Path x:Name="boca" Data="M70.953324,0.5 L70.850595,0.76161575 C65.406159,14.099461 51.12909,23.618191 34.373502,23.618191 20.29881,23.618191 7.9729586,16.901775 1.1620588,6.8471298 L0.5,5.8142967 0.92032957,5.971344 C9.7294693,9.162735 19.606946,10.951191 30.040002,10.951191 45.109971,10.951191 59.020768,7.2197189 70.22709,0.91862869 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18.648" Canvas.Left="50.907" Canvas.Top="102.176" Width="57.852">
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleY="0.99999999999999989" ScaleX="0.99999999999999989"/>
-                            <SkewTransform/>
-                            <RotateTransform Angle="1.4800000000000002"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
                 <Rectangle x:Name="barbillaCentro" Fill="#FF0F0F0F" Stroke="Black" Height="1" Canvas.Left="76" Canvas.Top="140" Width="13"/>
                 <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" MouseUp="moverAntenaIzq" Height="40.171" Canvas.Left="61.981" Width="9.704">
 
@@ -877,6 +904,29 @@
                         </TransformGroup>
                     </Rectangle.RenderTransform>
                 </Rectangle>
+                <Ellipse x:Name="elLengua" Fill="#FFC15782" Height="30" Canvas.Left="55.808" Stroke="Black" Canvas.Top="117.364" Width="14" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="sbHambre" x:Key="sbHambreKey">
+                            <DoubleAnimation BeginTime="00:00:00" Storyboard.TargetName="elLengua"
+                                               Storyboard.TargetProperty="(Ellipse.Width)" 
+                                                From="14" To="30" Duration="0:0:1"    
+                                                AutoReverse="True" />
+                            
+                        </Storyboard>
+                    </Ellipse.Resources>
+
+
+
+
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="38.66"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
                 <Rectangle x:Name="narizDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Stroke="Black" VerticalAlignment="Top" Width="13" RenderTransformOrigin="0.5,0.5" Canvas.Left="92" Canvas.Top="86">
                     <Rectangle.RenderTransform>
                         <TransformGroup>
@@ -894,6 +944,16 @@
                             <ScaleTransform/>
                             <SkewTransform/>
                             <RotateTransform Angle="6.566"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="boca" Data="M70.953324,0.5 L70.850595,0.76161575 C65.406159,14.099461 51.12909,23.618191 34.373502,23.618191 20.29881,23.618191 7.9729586,16.901775 1.1620588,6.8471298 L0.5,5.8142967 0.92032957,5.971344 C9.7294693,9.162735 19.606946,10.951191 30.040002,10.951191 45.109971,10.951191 59.020768,7.2197189 70.22709,0.91862869 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18.648" Canvas.Left="51.574" Canvas.Top="109.843" Width="57.852">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.99999999999999989" ScaleX="0.99999999999999989"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="1.4800000000000002"/>
                             <TranslateTransform/>
                         </TransformGroup>
                     </Path.RenderTransform>
