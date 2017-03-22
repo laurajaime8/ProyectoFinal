@@ -73,13 +73,23 @@ namespace ProyectoFinal
 
             if(pbEnergia.Value == 10)
             {
-               //Dejar de mover los parpados. No se como manejar la storyboard nueva.
+                Storyboard sueno;
+                sueno = (Storyboard)this.Resources["sbCansado"];
+                sueno.Begin(this);
+                //Deja de mover los ojos. No funciona
+                Storyboard ojosCerrados;
+                ojosCerrados = (Storyboard)this.Resources["sbMoverParpado"];
+                ojosCerrados.Stop(this);
+
             }
 
-            if(pbApetito.Value == 10)
+            if (pbApetito.Value == 10)
             {
-                Storyboard sbHambre2 = (Storyboard)elLengua.Resources["sbHambreKey"];
-                sbHambre2.Begin();
+                /* Storyboard sbHambre2 = (Storyboard)elLengua.Resources["sbHambreKey"];
+                 sbHambre2.Begin();*/
+                Storyboard hambre;
+                hambre = (Storyboard)this.Resources["sbHambre"];
+                hambre.Begin(this);
                 
             }
             if(pbApetito.Value == 90)
@@ -92,6 +102,14 @@ namespace ProyectoFinal
             {
 
             }
+
+            if (pbDiversion.Value == 90)
+            {
+                Storyboard alegre;
+                alegre = (Storyboard)this.Resources["sbAlegre"];
+                alegre.Begin(this);
+            }
+
         }
 
         private void moverAntenas(object sender, MouseButtonEventArgs e)
