@@ -184,17 +184,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-40.454"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbHambre" RepeatBehavior="2x" AutoReverse="True">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="elLengua">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="42"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="elLengua">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-3.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="elLengua">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-6.569"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
         <Storyboard x:Key="sbCansado" AutoReverse="True" RepeatBehavior="1x">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaIzquierda">
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-48.871"/>
@@ -407,7 +396,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-31.985"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbTenerHambre" AutoReverse="True" RepeatBehavior="1x">
+        <Storyboard x:Key="sbHambre" AutoReverse="True" RepeatBehavior="1x">
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaIzq">
                 <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFD2611"/>
             </ColorAnimationUsingKeyFrames>

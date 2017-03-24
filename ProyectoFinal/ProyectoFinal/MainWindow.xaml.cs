@@ -84,7 +84,7 @@ namespace ProyectoFinal
             pbDiversion.Value -= 10;
 
             Storyboard tenerHambre;
-            tenerHambre = (Storyboard)this.Resources["sbTenerHambre"];
+            tenerHambre = (Storyboard)this.Resources["sbHambre"];
 
             Storyboard estarCansado;
             estarCansado = (Storyboard)this.Resources["sbCansado"];
