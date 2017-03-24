@@ -195,7 +195,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-6.569"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbCansado" AutoReverse="True" RepeatBehavior="2x">
+        <Storyboard x:Key="sbCansado" AutoReverse="True" RepeatBehavior="1x">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaIzquierda">
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-48.871"/>
             </DoubleAnimationUsingKeyFrames>

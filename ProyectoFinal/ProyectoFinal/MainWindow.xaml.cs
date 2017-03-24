@@ -83,46 +83,54 @@ namespace ProyectoFinal
             pbApetito.Value -= 10;
             pbDiversion.Value -= 10;
 
+            Storyboard tenerHambre;
+            tenerHambre = (Storyboard)this.Resources["sbTenerHambre"];
+
+            Storyboard estarCansado;
+            estarCansado = (Storyboard)this.Resources["sbCansado"];
+
             //Si las barras de energia,apetito y diversión, el bicho se pone azul
             if (pbApetito.Value <= 10)
             {
-                
                 elLengua.Visibility = Visibility.Visible;
-                Storyboard tenerHambre;
-                tenerHambre = (Storyboard)this.Resources["sbTenerHambre"];
                 tenerHambre.Begin(this);
-
+            }
+            else if (pbApetito.Value > 10) {
+                tenerHambre.Remove(this);
+                elLengua.Visibility = Visibility.Collapsed;
             }
 
-            if(pbEnergia.Value <= 10)
+            if (pbEnergia.Value <= 10)
             {
-              Storyboard sueno;
-              sueno = (Storyboard)this.Resources["sbCansado"];
-              sueno.Begin(this);
-
-          }
-            /*if (pbApetito.Value == 90)
+                estarCansado.Begin(this);
+            }
+            else if (pbEnergia.Value > 10)
             {
-               
-                Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
-                sbGordo.Begin();
+                estarCansado.Remove(this);
             }
 
-            if(pbDiversion.Value == 0)
-            {
-                Storyboard aburrido;
-                aburrido = (Storyboard)this.Resources["sbAburrido"];
-                aburrido.Begin(this);
+                /*if (pbApetito.Value == 90)
+                {
+
+                    Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
+                    sbGordo.Begin();
+                }
+
+                if(pbDiversion.Value == 0)
+                {
+                    Storyboard aburrido;
+                    aburrido = (Storyboard)this.Resources["sbAburrido"];
+                    aburrido.Begin(this);
+                }
+
+                if (pbDiversion.Value == 90)
+                {
+                    Storyboard alegre;
+                    alegre = (Storyboard)this.Resources["sbAlegre"];
+                    alegre.Begin(this);
+                }*/
+
             }
-
-            if (pbDiversion.Value == 90)
-            {
-                Storyboard alegre;
-                alegre = (Storyboard)this.Resources["sbAlegre"];
-                alegre.Begin(this);
-            }*/
-
-        }
 
 
         private void alegrar(object sender, MouseButtonEventArgs e)
