@@ -8,54 +8,102 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" MinWidth="800" MinHeight="600">
     <Window.Resources>
-        <Storyboard x:Key="sbMoverParpado" AutoReverse="True" RepeatBehavior="Forever">
+        <Storyboard x:Key="sbMoverParpado" RepeatBehavior="Forever" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqDebajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.853"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.971"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.851"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1.005"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqDebajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.501"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.019"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.467"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1.021"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoIzqDebajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.504"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.106"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.799"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.268"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoIzqDebajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-4.683"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-4.962"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.164"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.671"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.012"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.926"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1.051"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.324"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.945"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.559"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.969"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoIzqArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.848"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.171"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.372"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.285"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoIzqArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="5.539"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.437"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="3.633"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.222"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoDerArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.515"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.921"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.432"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.985"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoDerArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.331"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.018"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.752"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-0.053"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoDerArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-4.93"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.722"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-5.962"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-0.045"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoDerArriba">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.857"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.022"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.781"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.984"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoDerAbajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.378"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.599"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1.019"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoDerAbajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.442"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.075"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.528"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-0.246"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoDerAbajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="4.614"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-1.082"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="2.937"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-0.184"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoDerAbajo">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.658"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.852"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.778"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.866"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbMoverMano" AutoReverse="True" RepeatBehavior="Forever">
@@ -312,7 +360,7 @@
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <Canvas x:Name="cvHeimlich" Margin="320.668,106.5,34.332,42.5" Width="437" Height="420" RenderTransformOrigin="0.5,0.5">
+        <Canvas x:Name="cvHeimlich" Margin="260.572,122.5,31.427,14.528" Width="500" RenderTransformOrigin="0.5,0.5">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -323,7 +371,7 @@
             </Canvas.RenderTransform>
             <Canvas x:Name="cvTronco" Height="283" Canvas.Top="137" Width="434">
                 <Canvas x:Name="cvPies" Height="44" Canvas.Left="52" Canvas.Top="239" Width="315">
-                    <Ellipse x:Name="pie1" HorizontalAlignment="Right" Height="39" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="287" Canvas.Top="1" MouseUp="saltar1">
+                    <Ellipse x:Name="pie1" HorizontalAlignment="Right" Height="39" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="287" Canvas.Top="1">
 
                         <Ellipse.RenderTransform>
                             <TransformGroup>
@@ -341,7 +389,7 @@
                         </Ellipse.Fill>
                     </Ellipse>
                     <Ellipse x:Name="posaPie" Fill="#FFA9C157" HorizontalAlignment="Right" Height="29" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="56" Canvas.Left="259"/>
-                    <Ellipse x:Name="pie2" HorizontalAlignment="Right" Height="29" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="76" Canvas.Left="135" Canvas.Top="15" MouseUp="saltar2" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse x:Name="pie2" HorizontalAlignment="Right" Height="29" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="76" Canvas.Left="135" Canvas.Top="15" RenderTransformOrigin="0.5,0.5">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -357,7 +405,7 @@
                             </LinearGradientBrush>
                         </Ellipse.Fill>
                     </Ellipse>
-                    <Ellipse x:Name="pie3" Height="23" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Canvas.Left="52" Canvas.Top="21" Width="48" MouseUp="saltar3" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse x:Name="pie3" Height="23" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Canvas.Left="52" Canvas.Top="21" Width="48" RenderTransformOrigin="0.5,0.5">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -373,7 +421,7 @@
                             </LinearGradientBrush>
                         </Ellipse.Fill>
                     </Ellipse>
-                    <Ellipse x:Name="pie4" Height="15" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="36" MouseUp="saltar4" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse x:Name="pie4" Height="15" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="36" RenderTransformOrigin="0.5,0.5">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
