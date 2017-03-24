@@ -52,18 +52,33 @@ namespace ProyectoFinal
         private void btComer_Click(object sender, RoutedEventArgs e)
         {
             pbApetito.Value += 20;
+            Storyboard comer;
+            comer = (Storyboard)this.Resources["sbComer"];
+            comer.SpeedRatio = 4.0;
+            comer.Begin(this);
+
 
         }
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
+            cvMariposa.Visibility = Visibility.Visible;
             pbDiversion.Value += 20;
-            ThicknessAnimation volarCanvas = new ThicknessAnimation();
+            Storyboard mariposa;
+            mariposa = (Storyboard)this.Resources["sbMariposa"];
+            mariposa.SpeedRatio = 3.0;
+            mariposa.Begin(this);
+            Storyboard jugar;
+            jugar = (Storyboard)this.Resources["sbJugar"];
+            jugar.SpeedRatio = 4.0;
+            jugar.Begin(this);
+
+            /*ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
             volarCanvas.To = new Thickness(0, 0, 20, 150);
             volarCanvas.AutoReverse = true;
             volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);*/
         }
         private void reloj(object sender, EventArgs e)
         {
@@ -85,22 +100,27 @@ namespace ProyectoFinal
 
             if (pbApetito.Value == 10)
             {
-                /* Storyboard sbHambre2 = (Storyboard)elLengua.Resources["sbHambreKey"];
-                 sbHambre2.Begin();*/
+                
+                elLengua.Visibility = Visibility.Visible;
                 Storyboard hambre;
                 hambre = (Storyboard)this.Resources["sbHambre"];
                 hambre.Begin(this);
-                
+                //Ocultar la lengua despues de mostrar hambre???
+               //elLengua.Visibility = Visibility.Hidden;
+
             }
             if(pbApetito.Value == 90)
             {
+               
                 Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
                 sbGordo.Begin();
             }
 
             if(pbDiversion.Value == 10)
             {
-
+                Storyboard aburrido;
+                aburrido = (Storyboard)this.Resources["sbAburrido"];
+                aburrido.Begin(this);
             }
 
             if (pbDiversion.Value == 90)
