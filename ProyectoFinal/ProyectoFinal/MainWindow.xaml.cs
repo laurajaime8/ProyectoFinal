@@ -68,10 +68,7 @@ namespace ProyectoFinal
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
             mariposa.Begin(this);
-            Storyboard jugar;
-            jugar = (Storyboard)this.Resources["sbJugar"];
-            jugar.SpeedRatio = 4.0;
-            jugar.Begin(this);
+           
 
             /*ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
@@ -86,37 +83,32 @@ namespace ProyectoFinal
             pbApetito.Value -= 10;
             pbDiversion.Value -= 10;
 
-            if(pbEnergia.Value == 10)
-            {
-                Storyboard sueno;
-                sueno = (Storyboard)this.Resources["sbCansado"];
-                sueno.Begin(this);
-                //Deja de mover los ojos. No funciona
-                Storyboard ojosCerrados;
-                ojosCerrados = (Storyboard)this.Resources["sbMoverParpado"];
-                ojosCerrados.Stop(this);
-
-            }
-
-            if (pbApetito.Value == 10)
+            //Si las barras de energia,apetito y diversión, el bicho se pone azul
+            if (pbApetito.Value <= 10)
             {
                 
                 elLengua.Visibility = Visibility.Visible;
-                Storyboard hambre;
-                hambre = (Storyboard)this.Resources["sbHambre"];
-                hambre.Begin(this);
-                //Ocultar la lengua despues de mostrar hambre???
-               //elLengua.Visibility = Visibility.Hidden;
+                Storyboard tenerHambre;
+                tenerHambre = (Storyboard)this.Resources["sbTenerHambre"];
+                tenerHambre.Begin(this);
 
             }
-            if(pbApetito.Value == 90)
+
+            if(pbEnergia.Value <= 10)
+            {
+              Storyboard sueno;
+              sueno = (Storyboard)this.Resources["sbCansado"];
+              sueno.Begin(this);
+
+          }
+            /*if (pbApetito.Value == 90)
             {
                
                 Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
                 sbGordo.Begin();
             }
 
-            if(pbDiversion.Value == 10)
+            if(pbDiversion.Value == 0)
             {
                 Storyboard aburrido;
                 aburrido = (Storyboard)this.Resources["sbAburrido"];
@@ -128,23 +120,11 @@ namespace ProyectoFinal
                 Storyboard alegre;
                 alegre = (Storyboard)this.Resources["sbAlegre"];
                 alegre.Begin(this);
-            }
+            }*/
 
         }
 
-        private void moverAntenas(object sender, MouseButtonEventArgs e)
-        {
-           /* Storyboard sbAntenas = (Storyboard)cvAntenas.Resources["moverAntenasKey"];
-            sbAntenas.Begin();*/
-        }
 
-        private void moverAntenaIzq(object sender, MouseButtonEventArgs e)
-        {
-            /*Storyboard sbAntenaIzq = (Storyboard)cvAntenas.Resources["moverAntenaIzqKey"];
-            sbAntenaIzq.Begin();*/
-        }
-
-      
         private void alegrar(object sender, MouseButtonEventArgs e)
         {
             Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
@@ -156,46 +136,9 @@ namespace ProyectoFinal
 
         }
 
-        //Salta al tocarle el pie1
-        private void saltar1(object sender, MouseButtonEventArgs e)
+        private void tocar(object sender, MouseEventArgs e)
         {
-            ThicknessAnimation volarCanvas = new ThicknessAnimation();
-            volarCanvas.From = cvHeimlich.Margin; 
-            volarCanvas.To = new Thickness(0, 0, 0, 150);
-            volarCanvas.AutoReverse = false;
-            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
-        }
-        //Salta al tocarle el pie2
-        private void saltar2(object sender, MouseButtonEventArgs e)
-        {
-            ThicknessAnimation volarCanvas = new ThicknessAnimation();
-
-            volarCanvas.From = cvHeimlich.Margin;
-            volarCanvas.To = new Thickness(0, 0, 0, 150);
-            volarCanvas.AutoReverse = false;
-            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
-        }
-        //Salta al tocarle el pie3
-        private void saltar3(object sender, MouseButtonEventArgs e)
-        {
-            ThicknessAnimation volarCanvas = new ThicknessAnimation();
-            volarCanvas.From = cvHeimlich.Margin;
-            volarCanvas.To = new Thickness(0, 0, 0, 150);
-            volarCanvas.AutoReverse = false;
-            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
-        }
-        //Salta al tocarle el pie4
-        private void saltar4(object sender, MouseButtonEventArgs e)
-        {
-            ThicknessAnimation volarCanvas = new ThicknessAnimation();
-            volarCanvas.From = cvHeimlich.Margin;
-            volarCanvas.To = new Thickness(0, 0, 0, 150);
-            volarCanvas.AutoReverse = false;
-            volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(1));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+          
         }
     }
 }

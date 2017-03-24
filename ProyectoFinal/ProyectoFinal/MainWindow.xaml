@@ -203,20 +203,108 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="50.75"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.761"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.847"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2.293"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.037"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-16.294"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="6.659"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.001"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-7.689"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.755"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-1.313"/>
             </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="boca">
+                <EasingPointKeyFrame KeyTime="0:0:2" Value="0.499,0.43"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha8">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.021"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha9">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.021"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha10">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.025"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.992"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha_6">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy4">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy8">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy9">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy11">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy13">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy14">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy12">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="mancha1_Copy12">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="mancha1_Copy12">
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFA9C157"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ojera4">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA9C157"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera4">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA9C157"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF6C1D99"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera3">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA9C157"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF6C1D99"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera2">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA9C157"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF6C1D99"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera1">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA9C157"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF6C1D99"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaDer">
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFF9190E"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaIzq">
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFF9190E"/>
+            </ColorAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbAlegre">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvHeimlich">
@@ -319,31 +407,148 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-31.985"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbJugar" RepeatBehavior="3x" AutoReverse="True">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHeimlich">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-90"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHeimlich">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.536"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.73"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.025"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.38"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.014"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.147"/>
-            </DoubleAnimationUsingKeyFrames>
+        <Storyboard x:Key="sbTenerHambre" AutoReverse="True" RepeatBehavior="1x">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaIzq">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFD2611"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaDer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFD2611"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="mofleteIzq">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFD2611"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="mofleteDer">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFD2611"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ptCabeza">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro2">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro11">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro10">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro8">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro6">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro5">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro3">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro9">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro7">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro4">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="aro1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoDerAbajo">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF5C57C1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoIzqArriba">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF5C57C1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoDerArriba">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF5C57C1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoIzqDebajo">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF5C57C1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="boca">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFF32626"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazoDespues2">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazoDespues1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazoDespues3">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazoDespues4">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazo1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2143B6"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazo2">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2143B6"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaBrazo3">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2143B6"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="posaPie">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF57C1AE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo3">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo2">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo8">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo9">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo7">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo6">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo5">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="amarillo4">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBE23C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul7">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul8">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul9">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul2">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul1">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul3">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul4">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul5">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="azul6">
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFBDB744"/>
+            </ColorAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
@@ -360,7 +565,7 @@
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <Canvas x:Name="cvHeimlich" Margin="260.572,122.5,31.427,14.528" Width="500" RenderTransformOrigin="0.5,0.5">
+        <Canvas x:Name="cvHeimlich" Margin="260.572,122.5,31.427,14.528" Width="500" RenderTransformOrigin="0.5,0.5" MouseEnter="tocar">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -604,6 +809,232 @@
                             </TransformGroup>
                         </Ellipse.RenderTransform>
                     </Ellipse>
+                    <Ellipse x:Name="mancha1" RenderTransformOrigin="-0.091,0.394" Height="42" Canvas.Left="206" Canvas.Top="197" Width="39">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.017"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha_6" RenderTransformOrigin="-0.091,0.394" Height="42" Canvas.Left="334" Canvas.Top="147" Width="39">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.013"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy1" RenderTransformOrigin="-0.091,0.394" Height="24" Canvas.Left="268" Canvas.Top="165" Width="17">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.017"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy2" RenderTransformOrigin="-0.091,0.394" Height="24" Canvas.Left="260" Canvas.Top="215" Width="17">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.004"/>
+                                <GradientStop Color="#FF080808"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.021"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy3" RenderTransformOrigin="-0.091,0.394" Height="24" Canvas.Left="140" Canvas.Top="117.667" Width="17">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.038"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy4" RenderTransformOrigin="-0.091,0.394" Height="24" Canvas.Left="100.667" Canvas.Top="215" Width="17">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.997"/>
+                                <GradientStop Color="#FF080808"/>
+                                <GradientStop Color="#FFA6BE55" Offset="0.034"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha9" RenderTransformOrigin="-0.091,0.394" Height="16.667" Canvas.Left="353.333" Canvas.Top="43" Width="10.333">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.038"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha8" RenderTransformOrigin="-0.091,0.394" Height="8.667" Canvas.Left="378" Canvas.Top="25" Width="9.666">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.017"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy8" RenderTransformOrigin="-0.091,0.394" Height="24" Canvas.Left="301.333" Canvas.Top="181" Width="21.666">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.017"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy9" RenderTransformOrigin="-0.091,0.394" Height="21.334" Canvas.Left="343.333" Canvas.Top="105" Width="20.333">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.021"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha10" RenderTransformOrigin="-0.091,0.394" Height="21.334" Canvas.Left="334" Canvas.Top="72.333" Width="20.333">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.025"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy11" RenderTransformOrigin="-0.091,0.394" Height="21.334" Canvas.Left="97.334" Canvas.Top="120.333" Width="20.333">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.034"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy12" RenderTransformOrigin="-0.091,0.394" Height="21.334" Canvas.Left="334" Canvas.Top="217.666" Width="20.333">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="#FFA9C157" Offset="0"/>
+                                <GradientStop Color="#FFA9C157"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy13" RenderTransformOrigin="-0.091,0.394" Height="30.001" Canvas.Left="140" Canvas.Top="208.999" Width="28.999">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.03"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse x:Name="mancha1_Copy14" RenderTransformOrigin="-0.091,0.394" Height="14.667" Canvas.Left="56" Canvas.Top="208.999" Width="9">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.021"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
                 </Canvas>
                 <Canvas x:Name="cvBrazos_Manos" Height="134" Canvas.Left="237" Width="197">
                     <Path x:Name="posaBrazoDespues2" Data="M27.8335,0.5 C32.80434,0.5 36.834,8.2788286 36.834,17.8745 36.834,19.673689 36.692333,21.409004 36.429356,23.041145 L36.415981,23.117453 36.464912,23.27932 C36.706913,24.130991 36.834,25.012808 36.834,25.916 36.834,33.141542 28.700357,38.999001 18.667,38.999001 16.472202,38.999001 14.368311,38.718712 12.420576,38.205128 L12.234906,38.154295 12.146334,38.205128 C11.217174,38.718712 10.21352,38.999001 9.1665,38.999001 4.380124,38.999001 0.49999994,33.141542 0.5,25.916 0.49999994,18.690459 4.380124,12.833 9.1665,12.833 10.21352,12.833 11.217174,13.113289 12.146334,13.626873 L12.234906,13.677706 12.420576,13.626873 C14.368311,13.113289 16.472202,12.833 18.667,12.833 18.82377,12.833 18.980078,12.83443 19.135899,12.837273 L19.218275,12.839527 19.237644,12.707855 C20.377211,5.6352425 23.794693,0.5 27.8335,0.5 z" Fill="#FFA9C157" Stretch="Fill" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="54.167" Canvas.Left="148" Canvas.Top="17" Width="40.001"/>
@@ -623,60 +1054,98 @@
                             </TransformGroup>
                         </Path.RenderTransform>
                     </Path>
-                    <Ellipse x:Name="posaBrazo1" Fill="#FF94B621" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="55" Canvas.Left="135" Canvas.Top="72" Width="42"/>
-                    <Ellipse x:Name="posaBrazoDespues1" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="44" Canvas.Left="143" Canvas.Top="83" Width="31"/>
-                    <Path x:Name="mano2" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Data="M13.6665,0.5 C20.938158,0.5 26.833,8.1857042 26.833,17.6665 26.833,27.147297 20.938158,34.833 13.6665,34.833 11.166868,34.833 8.8299256,33.924828 6.839191,32.347748 L6.7356763,32.2635 6.8126288,32.045994 C8.3042298,27.715956 8.3837119,23.870771 6.9590049,23.353432 5.9019642,22.969599 4.3046156,24.522108 2.8831306,27.096249 L2.770309,27.305225 2.7486315,27.264454 C1.3289623,24.524662 0.50000006,21.221798 0.5,17.6665 0.50000006,8.1857042 6.3948427,0.5 13.6665,0.5 z" Stretch="Fill" Height="35.333" Canvas.Left="140" Canvas.Top="99" Width="27.333" RenderTransformOrigin="0.5,0.5">
-                        <Path.RenderTransform>
+                    <Canvas x:Name="cvBrazo2" Height="62.333" Canvas.Left="135" Canvas.Top="72" Width="42" RenderTransformOrigin="0.5,0.5">
+                        <Canvas.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
                                 <SkewTransform/>
                                 <RotateTransform/>
                                 <TranslateTransform/>
                             </TransformGroup>
-                        </Path.RenderTransform>
-                        <Path.Fill>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FFFB2F0F" Offset="0"/>
-                                <GradientStop Color="#FFA9C157" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Path.Fill>
-                    </Path>
-                    <Ellipse x:Name="posaBrazo2" Fill="#FF94B621" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="37" Canvas.Left="15" Canvas.Top="20" Width="54">
-                        <Ellipse.RenderTransform>
+                        </Canvas.RenderTransform>
+                        <Ellipse x:Name="posaBrazo1" Fill="#FF94B621" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="55" Width="42" RenderTransformOrigin="0.5,0.5">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Ellipse x:Name="posaBrazoDespues1" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="44" Canvas.Left="8" Canvas.Top="11" Width="31" RenderTransformOrigin="0.5,0.5">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Path x:Name="mano2" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Data="M13.6665,0.5 C20.938158,0.5 26.833,8.1857042 26.833,17.6665 26.833,27.147297 20.938158,34.833 13.6665,34.833 11.166868,34.833 8.8299256,33.924828 6.839191,32.347748 L6.7356763,32.2635 6.8126288,32.045994 C8.3042298,27.715956 8.3837119,23.870771 6.9590049,23.353432 5.9019642,22.969599 4.3046156,24.522108 2.8831306,27.096249 L2.770309,27.305225 2.7486315,27.264454 C1.3289623,24.524662 0.50000006,21.221798 0.5,17.6665 0.50000006,8.1857042 6.3948427,0.5 13.6665,0.5 z" Stretch="Fill" Height="35.333" Canvas.Left="5" Canvas.Top="27" Width="27.333" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                    </Canvas>
+                    <Canvas x:Name="cvBrazo1" Height="60.967" Canvas.Left="15" Canvas.Top="20" Width="84.337" RenderTransformOrigin="0.5,0.5">
+                        <Canvas.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
                                 <SkewTransform/>
-                                <RotateTransform Angle="33.42"/>
+                                <RotateTransform/>
                                 <TranslateTransform/>
                             </TransformGroup>
-                        </Ellipse.RenderTransform>
-                    </Ellipse>
-                    <Ellipse x:Name="posaBrazoDespues3" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="32" Canvas.Left="42" Canvas.Top="37" Width="43">
-                        <Ellipse.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="33.42"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Ellipse.RenderTransform>
-                    </Ellipse>
-                    <Path x:Name="mano3" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Data="M11.638,0.5 C16.155396,0.50000009 20.044662,2.5949915 21.792105,5.6058031 L21.87574,5.7547346 21.928333,5.7555591 C24.657669,5.8411966 26.848963,8.6081801 26.848963,12.009016 26.848963,15.463833 24.587553,18.264517 21.797964,18.264517 20.403168,18.264517 19.140419,17.564346 18.226368,16.432324 L18.087095,16.25141 18.085648,16.252232 C16.266022,17.260258 14.04087,17.853001 11.638,17.853001 5.4866524,17.853001 0.5,13.968399 0.5,9.1765004 0.5,4.3846017 5.4866524,0.50000009 11.638,0.5 z" RenderTransformOrigin="0.425537161756204,0.489034709958292" Stretch="Fill" Height="26.934" Canvas.Left="65" Canvas.Top="54.033" Width="34.337">
-                        <Path.Fill>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FFFB2F0F" Offset="0"/>
-                                <GradientStop Color="#FFA9C157" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Path.Fill>
-                        <Path.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="33.42"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Path.RenderTransform>
-                    </Path>
+                        </Canvas.RenderTransform>
+                        <Ellipse x:Name="posaBrazo2" Fill="#FF94B621" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="37" Width="54">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="33.42"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Ellipse x:Name="posaBrazoDespues3" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="32" Canvas.Left="27" Canvas.Top="17" Width="43">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="33.42"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Path x:Name="mano3" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Data="M11.638,0.5 C16.155396,0.50000009 20.044662,2.5949915 21.792105,5.6058031 L21.87574,5.7547346 21.928333,5.7555591 C24.657669,5.8411966 26.848963,8.6081801 26.848963,12.009016 26.848963,15.463833 24.587553,18.264517 21.797964,18.264517 20.403168,18.264517 19.140419,17.564346 18.226368,16.432324 L18.087095,16.25141 18.085648,16.252232 C16.266022,17.260258 14.04087,17.853001 11.638,17.853001 5.4866524,17.853001 0.5,13.968399 0.5,9.1765004 0.5,4.3846017 5.4866524,0.50000009 11.638,0.5 z" RenderTransformOrigin="0.425537161756204,0.489034709958292" Stretch="Fill" Height="26.934" Canvas.Left="50" Canvas.Top="34.033" Width="34.337">
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFB2F0F" Offset="0"/>
+                                    <GradientStop Color="#FFA9C157" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="33.42"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Canvas>
                     <Ellipse x:Name="posaBrazo3" Fill="#FF94B621" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="41" Canvas.Top="58" Width="69">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
@@ -895,6 +1364,21 @@
                             </TransformGroup>
                         </Ellipse.RenderTransform>
                     </Ellipse>
+                    <Ellipse x:Name="mancha_4" RenderTransformOrigin="-0.091,0.394" Height="8.667" Canvas.Left="23.333" Canvas.Top="97.667" Width="9.666">
+                        <Ellipse.OpacityMask>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Ellipse.OpacityMask>
+                        <Ellipse.Fill>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FFA9C157" Offset="0.025"/>
+                                <GradientStop Color="#FF080808"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
                 </Canvas>
             </Canvas>
             <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="251" Width="169" RenderTransformOrigin="0.5,0.5">
@@ -923,7 +1407,7 @@
                         </LinearGradientBrush>
                     </Ellipse.Fill>
                 </Ellipse>
-                <Path x:Name="ptCabeza" Data="M61.31868,0.5 C63.882652,0.5000006 66.389725,0.71544015 68.818047,1.1269662 L69.902542,1.3263648 70.014618,1.1130334 70.1838,1.2384598 C70.776627,1.6457827 71.467613,1.9963899 72.231201,2.2620451 L72.719681,2.4145112 72.161545,3.476932 72.198082,3.5954914 C73.385078,7.367578 74.80249,11.327444 76.436157,15.374213 83.237549,32.221974 91.734924,45.491936 97.582245,49.16956 L97.769791,49.282475 97.711945,49.399411 97.939156,49.455876 98.195808,49.5238 98.257683,49.557606 C99.030808,49.95784 99.750801,50.172944 100.40642,50.187325 L100.61687,50.182633 101.33837,50.387208 C117.95895,55.261891 128.83299,63.359818 128.83299,72.525422 128.83299,87.42318 100.10467,99.500199 64.666496,99.500199 29.228319,99.500199 0.49999949,87.42318 0.5,72.525422 0.49999949,63.912659 10.101823,56.242676 25.050934,51.303998 L25.796619,51.063664 25.609392,50.730427 25.544107,50.606259 25.632296,50.544674 C31.370197,46.392224 39.364651,33.55354 45.811077,17.331364 47.916035,12.034333 49.656662,6.8780007 51.001934,2.0891683 L51.114918,1.6756923 51.418064,1.6031353 52.514298,1.3697417 52.377644,0.63291323 52.521812,0.6695894 C53.014992,0.77620494 53.539345,0.83363998 54.083,0.83364081 54.445438,0.83363998 54.799297,0.80811334 55.14106,0.75950623 L55.442299,0.70567083 55.475102,0.88254237 56.273075,0.78152263 C57.925335,0.59575105 59.609364,0.5000006 61.31868,0.5 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" Height="136.666" Canvas.Top="29.167" Width="168.666"/>
+                <Path x:Name="ptCabeza" Data="M61.31868,0.5 C63.882652,0.5000006 66.389725,0.71544015 68.818047,1.1269662 L69.902542,1.3263648 70.014618,1.1130334 70.1838,1.2384598 C70.776627,1.6457827 71.467613,1.9963899 72.231201,2.2620451 L72.719681,2.4145112 72.161545,3.476932 72.198082,3.5954914 C73.385078,7.367578 74.80249,11.327444 76.436157,15.374213 83.237549,32.221974 91.734924,45.491936 97.582245,49.16956 L97.769791,49.282475 97.711945,49.399411 97.939156,49.455876 98.195808,49.5238 98.257683,49.557606 C99.030808,49.95784 99.750801,50.172944 100.40642,50.187325 L100.61687,50.182633 101.33837,50.387208 C117.95895,55.261891 128.83299,63.359818 128.83299,72.525422 128.83299,87.42318 100.10467,99.500199 64.666496,99.500199 29.228319,99.500199 0.49999949,87.42318 0.5,72.525422 0.49999949,63.912659 10.101823,56.242676 25.050934,51.303998 L25.796619,51.063664 25.609392,50.730427 25.544107,50.606259 25.632296,50.544674 C31.370197,46.392224 39.364651,33.55354 45.811077,17.331364 47.916035,12.034333 49.656662,6.8780007 51.001934,2.0891683 L51.114918,1.6756923 51.418064,1.6031353 52.514298,1.3697417 52.377644,0.63291323 52.521812,0.6695894 C53.014992,0.77620494 53.539345,0.83363998 54.083,0.83364081 54.445438,0.83363998 54.799297,0.80811334 55.14106,0.75950623 L55.442299,0.70567083 55.475102,0.88254237 56.273075,0.78152263 C57.925335,0.59575105 59.609364,0.5000006 61.31868,0.5 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" Height="136.666" Canvas.Top="29" Width="168.666"/>
                 <Ellipse x:Name="ojoIzq" Fill="#FFFAFBF5" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18" Canvas.Left="67" Canvas.Top="60" Width="12">
                     <Ellipse.Resources>
 
@@ -966,7 +1450,7 @@
                         </TransformGroup>
                     </Ellipse.RenderTransform>
                 </Ellipse>
-                <Ellipse x:Name="pupilaIzq" Fill="#FF0F0F0F" Stroke="Black" Height="10" Canvas.Left="70" Canvas.Top="65" Width="5">
+                <Ellipse x:Name="pupilaIzq" Fill="#FF0F0F0F" Stroke="Black" Height="10" Canvas.Left="69.475" Canvas.Top="64.937" Width="5" RenderTransformOrigin="0.5,0.5">
                     <Ellipse.Resources>
                         <Storyboard x:Name="pupilaIzqGrande" x:Key="pupilaIzqGrandeKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaIzq"
@@ -981,6 +1465,14 @@
 
                         </Storyboard>
                     </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
                 </Ellipse>
                 <Rectangle x:Name="cejaIzquierda" Fill="#FF0F0F0F" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="2" Canvas.Left="65" Canvas.Top="50" Width="11">
                     <Rectangle.RenderTransform>
@@ -1026,7 +1518,7 @@
                     </Ellipse.Fill>
                 </Ellipse>
                 <Rectangle x:Name="barbillaCentro" Fill="#FF0F0F0F" Stroke="Black" Height="1" Canvas.Left="76" Canvas.Top="140" Width="13"/>
-                <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" MouseUp="moverAntenaIzq" Height="40.171" Canvas.Left="61.981" Width="9.704">
+                <Path x:Name="antenaIzq" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Height="40.171" Canvas.Left="61.981" Width="9.704">
 
                     <Path.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -1043,7 +1535,7 @@
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <Path x:Name="antenaDer" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" MouseUp="moverAntenas" Height="40.892" Canvas.Left="92.023" Canvas.Top="0.054" Width="8.62">
+                <Path x:Name="antenaDer" Stroke="Black" Data="M2.2250248,0.50007129 C2.3405908,0.49877524 2.4561613,0.51513457 2.5693315,0.55079317 3.2936197,0.77900743 3.6453114,1.7112958 3.3548568,2.6331176 3.3367034,2.6907312 3.3164712,2.7469406 3.2943144,2.8016406 L3.2500001,2.8996629 3.2500001,24.693897 0.5,24.693897 0.5,2.4438969 0.63146013,2.4438969 0.63454539,2.3215986 C0.64563149,2.152731 0.67751628,1.9795215 0.73197657,1.8066799 0.97704762,1.028893 1.6009689,0.50706887 2.2250248,0.50007129 z" RenderTransformOrigin="0.473873292592475,0.538578725994595" Stretch="Fill" Height="40.892" Canvas.Left="92.023" Canvas.Top="0.054" Width="8.62">
                     <Path.Fill>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFE61C1C" Offset="0"/>
@@ -1059,7 +1551,7 @@
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <Ellipse x:Name="pupilaDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9" Stroke="Black" VerticalAlignment="Top" Width="6" Canvas.Left="83" Canvas.Top="65">
+                <Ellipse x:Name="pupilaDer" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="9" Stroke="Black" VerticalAlignment="Top" Width="6" Canvas.Left="82.753" Canvas.Top="64.39" RenderTransformOrigin="0.5,0.5">
                     <Ellipse.Resources>
                         <Storyboard x:Name="pupilaDerGrande" x:Key="pupilaDerGrandeKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaDer"
@@ -1075,6 +1567,14 @@
 
                         </Storyboard>
                     </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
                 </Ellipse>
                 <Rectangle x:Name="barbillaDer" HorizontalAlignment="Right" Height="3" Stroke="Black" VerticalAlignment="Top" Width="1" Fill="#FF0C0C0C" RenderTransformOrigin="0.5,0.5" Canvas.Left="88" Canvas.Top="137">
                     <Rectangle.RenderTransform>
@@ -1150,7 +1650,7 @@
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <Path x:Name="boca" Data="M70.953324,0.5 L70.850595,0.76161575 C65.406159,14.099461 51.12909,23.618191 34.373502,23.618191 20.29881,23.618191 7.9729586,16.901775 1.1620588,6.8471298 L0.5,5.8142967 0.92032957,5.971344 C9.7294693,9.162735 19.606946,10.951191 30.040002,10.951191 45.109971,10.951191 59.020768,7.2197189 70.22709,0.91862869 z" Fill="#FFA9C157" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18.648" Canvas.Left="51.574" Canvas.Top="106.508" Width="57.852">
+                <Path x:Name="boca" Data="M70.953324,0.5 L70.850595,0.76161575 C65.406159,14.099461 51.12909,23.618191 34.373502,23.618191 20.29881,23.618191 7.9729586,16.901775 1.1620588,6.8471298 L0.5,5.8142967 0.92032957,5.971344 C9.7294693,9.162735 19.606946,10.951191 30.040002,10.951191 45.109971,10.951191 59.020768,7.2197189 70.22709,0.91862869 z" Fill="#FF3B5D1A" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Height="18.648" Canvas.Left="51.574" Canvas.Top="106.508" Width="57.852">
                     <Path.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="0.99999999999999989" ScaleX="0.99999999999999989"/>
@@ -1160,40 +1660,80 @@
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
+                <Path x:Name="parpadoIzqArriba" Fill="#FFA9C157" Stroke="Black" Canvas.Left="67.578" Data="M0.50438195,0.5 L11.438667,2.0374918 11.436627,2.0622978 C11.033238,6.1423512 8.7527942,9.2678318 5.9999999,9.2678318 2.9624338,9.2678318 0.49999994,5.4622526 0.5,0.7678318 z" Height="8.992" RenderTransformOrigin="0.502568655353677,0.0786082129487536" Stretch="Fill" Canvas.Top="69.054" Width="10.807">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-8.004"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="parpadoDerArriba" Fill="#FFA9C157" Stroke="Black" Canvas.Left="79.948" Canvas.Top="60.298" Data="M5.5,0.5 C8.0888348,0.49999988 10.218136,3.8447477 10.474185,8.1309241 L10.480854,8.2585877 0.50582054,9.406741 0.50163308,9.2193888 C0.50054654,9.1464833 0.50000003,9.0733498 0.5,8.9999999 0.50000003,4.3055795 2.7385762,0.49999988 5.5,0.5 z" Height="11.894" RenderTransformOrigin="0.500871789902065,0.908472307879858" Stretch="Fill" Width="10.981">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="6.566"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="parpadoIzqDebajo" Fill="#FFA9C157" Stroke="Black" Canvas.Left="67.383" Canvas.Top="60.054" Width="11.401" Height="11.545" Data="M6,0.5 C9.0375662,0.49999982 11.5,4.3054795 11.5,8.9997768 11.5,9.513215 11.470542,10.016022 11.414096,10.504379 L11.412407,10.518 0.55178267,8.9909229 0.55040848,9.0749187 0.50076717,9.0679387 0.5,8.9997768 C0.5,4.3054795 2.9624338,0.49999982 6,0.5 z" RenderTransformOrigin="0.500000001241763,0.816825655481204" Stretch="Fill">
+
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-8.004"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Rectangle x:Name="ojera1" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Stroke="#FFA9C157" VerticalAlignment="Top" Width="6.466" RenderTransformOrigin="0.5,0.5" Canvas.Left="68.915" Canvas.Top="78.888">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="14.383"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="ojera2" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Stroke="#FFA9C157" VerticalAlignment="Top" Width="4.219" RenderTransformOrigin="0.5,0.5" Canvas.Left="69.411" Canvas.Top="80.44">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="16.699"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="ojera3" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Stroke="#FFA9C157" VerticalAlignment="Top" Width="6.466" RenderTransformOrigin="0.5,0.5" Canvas.Left="83.665" Canvas.Top="78.888">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-26.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="ojera4" Fill="#FF0F0F0F" HorizontalAlignment="Right" Height="1" Stroke="#FFA9C157" VerticalAlignment="Top" Width="4.219" RenderTransformOrigin="0.5,0.5" Canvas.Left="85.661" Canvas.Top="80.69">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-28.862"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
             </Canvas>
-            <Path x:Name="parpadoIzqArriba" Fill="#FFA9C157" Stroke="Black" Canvas.Left="318.578" Data="M0.50438195,0.5 L11.438667,2.0374918 11.436627,2.0622978 C11.033238,6.1423512 8.7527942,9.2678318 5.9999999,9.2678318 2.9624338,9.2678318 0.49999994,5.4622526 0.5,0.7678318 z" Height="8.992" RenderTransformOrigin="0.502568655353677,0.0786082129487536" Stretch="Fill" Canvas.Top="68.875" Width="10.807">
-
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-8.004"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
-            <Path x:Name="parpadoDerArriba" Fill="#FFA9C157" Stroke="Black" Canvas.Left="330.877" Canvas.Top="59.905" Data="M5.5,0.5 C8.0888348,0.49999988 10.218136,3.8447477 10.474185,8.1309241 L10.480854,8.2585877 0.50582054,9.406741 0.50163308,9.2193888 C0.50054654,9.1464833 0.50000003,9.0733498 0.5,8.9999999 0.50000003,4.3055795 2.7385762,0.49999988 5.5,0.5 z" Height="11.894" RenderTransformOrigin="0.500871789902065,0.908472307879858" Stretch="Fill" Width="10.981">
-
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="6.566"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
-            <Path x:Name="parpadoIzqDebajo" Fill="#FFA9C157" Stroke="Black" Canvas.Left="318.312" Canvas.Top="59.983" Width="11.401" Height="11.545" Data="M6,0.5 C9.0375662,0.49999982 11.5,4.3054795 11.5,8.9997768 11.5,9.513215 11.470542,10.016022 11.414096,10.504379 L11.412407,10.518 0.55178267,8.9909229 0.55040848,9.0749187 0.50076717,9.0679387 0.5,8.9997768 C0.5,4.3054795 2.9624338,0.49999982 6,0.5 z" RenderTransformOrigin="0.500000001241763,0.816825655481204" Stretch="Fill">
-
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-8.004"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
         </Canvas>
         <ProgressBar x:Name="pbEnergia" HorizontalAlignment="Left" Height="50.333" Margin="10,10,0,0" VerticalAlignment="Top" Width="236" Value="100"/>
         <ProgressBar x:Name="pbApetito" Height="50.333" Margin="271.335,10,284.665,0" VerticalAlignment="Top" Value="100" Background="#FFFDF9F9" Foreground="#FFF13619"/>
