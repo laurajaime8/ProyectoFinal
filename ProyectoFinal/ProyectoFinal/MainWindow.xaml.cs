@@ -38,6 +38,9 @@ namespace ProyectoFinal
             pbApetito.Value -= 10;
             pbDiversion.Value -= 10;
 
+            Storyboard moverOjos;
+            moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
+
             Storyboard tenerHambre;
             tenerHambre = (Storyboard)this.Resources["sbHambre"];
 
@@ -49,6 +52,11 @@ namespace ProyectoFinal
 
             Storyboard lleno100;
             lleno100 = (Storyboard)this.Resources["sbApetito100"];
+
+            Storyboard energia100;
+            energia100 = (Storyboard)this.Resources["sbEnergia100"];
+
+            moverOjos.Begin(this);
 
             //Para las progressBar NEGATIVAS
             if (pbApetito.Value <= 10)
@@ -85,6 +93,12 @@ namespace ProyectoFinal
             if (pbApetito.Value >= 90)
             {
                 lleno100.Begin(this);
+            }
+
+            if (pbEnergia.Value >= 90)
+            {
+                energia100.Begin(this);
+               
             }
 
             /*if (pbApetito.Value == 90)
