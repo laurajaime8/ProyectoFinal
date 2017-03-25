@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ProyectoFinal"
         xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="ProyectoFinal.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800" MinWidth="800" MinHeight="600">
+        Title="Heimlich" 
+        Height="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}" 
+        Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}"
+        ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="sbMoverParpado" RepeatBehavior="Forever" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqDebajo">
@@ -1861,7 +1864,7 @@
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <Canvas x:Name="cvHeimlich" Margin="260.572,122.5,31.427,14.528" Width="500" RenderTransformOrigin="0.5,0.5" MouseEnter="tocar">
+        <Canvas x:Name="cvHeimlich" Margin="467.585,179.5,403.415,93" RenderTransformOrigin="0.5,0.5" MouseEnter="tocar">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -1870,7 +1873,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Canvas.RenderTransform>
-            <Canvas x:Name="cvTronco" Height="283" Canvas.Top="137" Width="434">
+            <Canvas x:Name="cvTronco" Height="283" Canvas.Top="149.5" Width="434" Canvas.Left="61">
                 <Canvas x:Name="cvPies" Height="44" Canvas.Left="52" Canvas.Top="239" Width="315">
                     <Ellipse x:Name="pie1" HorizontalAlignment="Right" Height="39" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="287" Canvas.Top="1">
 
@@ -2767,7 +2770,35 @@
                     </Ellipse>
                 </Canvas>
             </Canvas>
-            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="251" Width="169" RenderTransformOrigin="0.5,0.5">
+            <Canvas x:Name="cvHeces" Height="31" Width="72" Canvas.Left="10" Canvas.Top="374.5">
+                <Ellipse x:Name="hece1" Height="21" Width="72" Canvas.Top="10" Visibility="Hidden">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA0891E" Offset="0"/>
+                            <GradientStop Color="#FF814C16" Offset="1"/>
+                            <GradientStop Color="#FF824F16" Offset="0.549"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="hece2" Height="15" Width="38" Canvas.Left="17" Canvas.Top="5" Visibility="Collapsed">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA06529" Offset="0.354"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF814C16" Offset="0.996"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="hece3" Height="10" Width="19.094" Canvas.Left="26.573" Visibility="Collapsed">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF814C16" Offset="0"/>
+                            <GradientStop Color="#FF9B5713" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Canvas>
+            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="312" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="12.5">
                 <Canvas.Resources>
                     <Storyboard x:Name="subirCabeza" x:Key="subirCabezaKey">
                         <DoubleAnimation Storyboard.TargetName="cvCabeza"
@@ -3165,16 +3196,16 @@
                 </Rectangle>
             </Canvas>
         </Canvas>
-        <ProgressBar x:Name="pbEnergia" HorizontalAlignment="Left" Height="50.333" Margin="10,10,0,0" VerticalAlignment="Top" Width="236" Value="70"/>
-        <ProgressBar x:Name="pbApetito" Height="50.333" Margin="271.335,10,284.665,0" VerticalAlignment="Top" Value="70" Background="#FFFDF9F9" Foreground="#FFF13619"/>
-        <ProgressBar x:Name="pbDiversion" HorizontalAlignment="Right" Height="50.333" Margin="0,10,34.332,0" VerticalAlignment="Top" Width="236" Value="70" Foreground="#FF0689B0"/>
-        <Label x:Name="lbEnergia" Content="Energía" HorizontalAlignment="Left" Height="50.333" Margin="10,10,0,0" VerticalAlignment="Top" Width="117.667" FontWeight="Bold" FontSize="18.667"/>
-        <Label x:Name="lbApetito" Content="Apetito" HorizontalAlignment="Left" Height="50.333" Margin="271.335,10,0,0" VerticalAlignment="Top" Width="117.667" FontWeight="Bold" FontSize="18.667"/>
-        <Label x:Name="lbDiversion" Content="Diversión" HorizontalAlignment="Right" Height="50.333" Margin="0,10,154.762,0" VerticalAlignment="Top" Width="117.667" FontWeight="Bold" FontSize="18.667"/>
-        <StackPanel HorizontalAlignment="Left" Margin="10,151.166,0,10" Width="160">
-            <Button x:Name="btDormir" Content="Dormir" Height="74" FontSize="32" FontWeight="Bold" Background="#FF214F29" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btDormir_Click"/>
-            <Button x:Name="btComer" Content="Comer" Height="74" FontSize="32" FontWeight="Bold" Background="#FFD32222" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btComer_Click"/>
-            <Button x:Name="btJugar" Content="Jugar" Height="74" FontSize="32" FontWeight="Bold" Background="#FF1F6372" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btJugar_Click"/>
+        <ProgressBar x:Name="pbEnergia" HorizontalAlignment="Left" Height="70" Margin="10,40.667,0,0" VerticalAlignment="Top" Width="380" Value="70"/>
+        <ProgressBar x:Name="pbApetito" Height="70" Margin="467.585,40.667,491.415,0" VerticalAlignment="Top" Value="70" Background="#FFFDF9F9" Foreground="#FFF13619"/>
+        <ProgressBar x:Name="pbDiversion" HorizontalAlignment="Right" Height="70" Margin="0,40.667,34.332,0" VerticalAlignment="Top" Width="380" Value="70" Foreground="#FF0689B0"/>
+        <Label x:Name="lbEnergia" Content="Energía" HorizontalAlignment="Left" Height="64.523" Margin="10,40.667,0,0" VerticalAlignment="Top" Width="122.167" FontWeight="Bold" FontSize="32" Foreground="#FF20462A"/>
+        <Label x:Name="lbApetito" Content="Apetito" HorizontalAlignment="Left" Height="70" Margin="467.585,40.667,0,0" VerticalAlignment="Top" Width="134.167" FontWeight="Bold" FontSize="32" Foreground="#FF74221A"/>
+        <Label x:Name="lbDiversion" Content="Diversión" HorizontalAlignment="Right" Height="70" Margin="0,40.667,251.665,0" VerticalAlignment="Top" Width="162.667" FontWeight="Bold" FontSize="32" Foreground="#FF1B1459"/>
+        <StackPanel HorizontalAlignment="Left" Margin="10,151.166,0,10" Width="235">
+            <Button x:Name="btDormir" Content="Dormir" Height="90" FontSize="32" FontWeight="Bold" Background="#FF214F29" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btDormir_Click"/>
+            <Button x:Name="btComer" Content="Comer" Height="90" FontSize="32" FontWeight="Bold" Background="#FFD32222" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btComer_Click"/>
+            <Button x:Name="btJugar" Content="Jugar" Height="90" FontSize="32" FontWeight="Bold" Background="#FF1F6372" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btJugar_Click"/>
         </StackPanel>
         <Canvas x:Name="cvMariposa" HorizontalAlignment="Left" Height="182.623" Margin="190.225,95.667,0,0" VerticalAlignment="Top" Width="167.218" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Canvas.RenderTransform>
@@ -3255,34 +3286,6 @@
                     </Path.RenderTransform>
                 </Path>
             </Canvas>
-        </Canvas>
-        <Canvas x:Name="cvHeces" HorizontalAlignment="Left" Height="31" Margin="229,0,0,28" VerticalAlignment="Bottom" Width="72">
-            <Ellipse x:Name="hece1" Height="21" Width="72" Canvas.Top="10" Visibility="Hidden">
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFA0891E" Offset="0"/>
-                        <GradientStop Color="#FF814C16" Offset="1"/>
-                        <GradientStop Color="#FF824F16" Offset="0.549"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="hece2" Height="15" Width="38" Canvas.Left="17" Canvas.Top="5" Visibility="Collapsed">
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFA06529" Offset="0.354"/>
-                        <GradientStop Color="White" Offset="1"/>
-                        <GradientStop Color="#FF814C16" Offset="0.996"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse x:Name="hece3" Height="10" Width="19.094" Canvas.Left="26.573" Visibility="Collapsed">
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF814C16" Offset="0"/>
-                        <GradientStop Color="#FF9B5713" Offset="1"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
         </Canvas>
     </Grid>
 </Window>
