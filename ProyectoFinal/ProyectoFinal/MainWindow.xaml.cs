@@ -47,6 +47,10 @@ namespace ProyectoFinal
             Storyboard estarAburrido;
             estarAburrido = (Storyboard)this.Resources["sbAburrido"];
 
+            Storyboard lleno100;
+            lleno100 = (Storyboard)this.Resources["sbApetito100"];
+
+            //Para las progressBar NEGATIVAS
             if (pbApetito.Value <= 10)
             {
                 elLengua.Visibility = Visibility.Visible;
@@ -74,6 +78,13 @@ namespace ProyectoFinal
             else if (pbDiversion.Value > 10)
             {
                 estarAburrido.Remove(this);
+            }
+
+            //Para las progressBar POSITIVAS
+
+            if (pbApetito.Value >= 90)
+            {
+                lleno100.Begin(this);
             }
 
             /*if (pbApetito.Value == 90)
@@ -124,9 +135,11 @@ namespace ProyectoFinal
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            cvMariposa.Visibility = Visibility.Visible;
+            
+            //cvMariposa.Visibility = Visibility.Visible;
+            
             pbDiversion.Value += 20;
+            /*
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
