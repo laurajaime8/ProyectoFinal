@@ -747,6 +747,10 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="elAlaDerAba">
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-31.985"/>
             </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvMariposa">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbHambre" AutoReverse="True" RepeatBehavior="1x">
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaIzq">
@@ -1849,6 +1853,60 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-4.75"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbMatarOruga" AutoReverse="True">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvMataMoscas">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvMataMoscas">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-336"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="724"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvMataMoscas">
+                <EasingDoubleKeyFrame KeyTime="0" Value="12"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="20"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Matamoscas">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.479"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1.105"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Matamoscas">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-3.161"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0.635"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Matamoscas">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="191.234"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-38.424"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvNoVer">
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHeimlich">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="242"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="-52"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-48"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHeimlich">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="32"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-140"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="-102"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="54"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="86"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cvHeimlich">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0.366"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cvHeimlich">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="0.439"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -1864,7 +1922,7 @@
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <Canvas x:Name="cvHeimlich" Margin="467.585,179.5,403.415,93" RenderTransformOrigin="0.5,0.5" MouseEnter="tocar">
+        <Canvas x:Name="cvHeimlich" Margin="467.585,179.5,403.415,93" RenderTransformOrigin="0.5,0.5" MouseUp="matarOruga">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -1874,7 +1932,15 @@
                 </TransformGroup>
             </Canvas.RenderTransform>
             <Canvas x:Name="cvTronco" Height="283" Canvas.Top="149.5" Width="434" Canvas.Left="61">
-                <Canvas x:Name="cvPies" Height="44" Canvas.Left="52" Canvas.Top="239" Width="315">
+                <Canvas x:Name="cvPies" Height="44" Canvas.Left="52" Canvas.Top="239" Width="315" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
                     <Ellipse x:Name="pie1" HorizontalAlignment="Right" Height="39" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="287" Canvas.Top="1">
 
                         <Ellipse.RenderTransform>
@@ -1942,7 +2008,15 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Canvas>
-                <Canvas x:Name="cvBolasTronco" Height="92" Canvas.Left="4" Canvas.Top="83" Width="199">
+                <Canvas x:Name="cvBolasTronco" Height="92" Canvas.Left="4" Canvas.Top="83" Width="199" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
                     <Ellipse x:Name="bola5" HorizontalAlignment="Left" Height="15" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" VerticalAlignment="Bottom" Width="13" Canvas.Top="77" RenderTransformOrigin="0.5,0.5">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
@@ -2024,7 +2098,15 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Canvas>
-                <Canvas x:Name="cvArosTronco" Height="273" Canvas.Top="4" Width="415">
+                <Canvas x:Name="cvArosTronco" Height="273" Canvas.Top="4" Width="415" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
                     <Ellipse x:Name="aro11" Fill="#FFA9C157" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Height="87" Canvas.Top="141" Width="104">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
@@ -2428,7 +2510,15 @@
                         </Ellipse.RenderTransform>
                     </Ellipse>
                 </Canvas>
-                <Canvas x:Name="cvBrazos_Manos" Height="134" Canvas.Left="237" Width="197">
+                <Canvas x:Name="cvBrazos_Manos" Height="134" Canvas.Left="237" Width="197" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
                     <Path x:Name="posaBrazoDespues2" Data="M27.8335,0.5 C32.80434,0.5 36.834,8.2788286 36.834,17.8745 36.834,19.673689 36.692333,21.409004 36.429356,23.041145 L36.415981,23.117453 36.464912,23.27932 C36.706913,24.130991 36.834,25.012808 36.834,25.916 36.834,33.141542 28.700357,38.999001 18.667,38.999001 16.472202,38.999001 14.368311,38.718712 12.420576,38.205128 L12.234906,38.154295 12.146334,38.205128 C11.217174,38.718712 10.21352,38.999001 9.1665,38.999001 4.380124,38.999001 0.49999994,33.141542 0.5,25.916 0.49999994,18.690459 4.380124,12.833 9.1665,12.833 10.21352,12.833 11.217174,13.113289 12.146334,13.626873 L12.234906,13.677706 12.420576,13.626873 C14.368311,13.113289 16.472202,12.833 18.667,12.833 18.82377,12.833 18.980078,12.83443 19.135899,12.837273 L19.218275,12.839527 19.237644,12.707855 C20.377211,5.6352425 23.794693,0.5 27.8335,0.5 z" Fill="#FFA9C157" Stretch="Fill" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Height="54.167" Canvas.Left="148" Canvas.Top="17" Width="40.001" RenderTransformOrigin="0.5,0.5">
                         <Path.RenderTransform>
                             <TransformGroup>
@@ -2584,7 +2674,15 @@
                         </Path.RenderTransform>
                     </Path>
                 </Canvas>
-                <Canvas x:Name="cvAmarrillo_Azul" Height="156" Canvas.Left="3" Canvas.Top="60" Width="272">
+                <Canvas x:Name="cvAmarrillo_Azul" Height="156" Canvas.Left="3" Canvas.Top="60" Width="272" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
                     <Ellipse x:Name="amarillo3" Stroke="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" RenderTransformOrigin="0.5,0.5" Fill="#FFC5B623" Height="36" Canvas.Left="39" Canvas.Top="115" Width="16">
                         <Ellipse.RenderTransform>
                             <TransformGroup>
@@ -3286,6 +3384,30 @@
                     </Path.RenderTransform>
                 </Path>
             </Canvas>
+        </Canvas>
+        <Canvas x:Name="cvMataMoscas" Margin="-194.375,197.416,0,-16.232" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="384.557" Visibility="Hidden">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="41.437"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path x:Name="Matamoscas" Fill="#FFFB3408" Stroke="Black" Data="M42.950494,329.62262 L21.499995,329.99817 21.499995,339.99982 43.153195,339.99982 z M69.946393,329.14999 L49.449513,329.50885 49.654431,339.99982 70.158315,339.99982 z M93.168828,328.74344 L76.445424,329.03622 76.659566,339.99982 93.354894,339.99982 z M123.16424,328.21829 L99.585835,328.6311 99.773763,339.99982 123.35898,339.99982 z M149.43441,327.75836 L129.58127,328.10596 129.77786,339.99982 149.67352,339.99982 z M174.93054,327.31198 L155.93342,327.64459 156.17476,339.99982 175.17837,339.99982 z M198.92692,326.89188 L181.42956,327.19821 181.67961,339.99982 199.18295,339.99982 z M227.67457,326.38858 L205.42593,326.77808 205.68419,339.99982 227.94044,339.99982 z M254.91845,325.91159 L234.1736,326.27478 234.44168,339.99982 255.19363,339.99982 z M285.91372,325.36896 L261.41745,325.79782 261.69485,339.99982 286.19952,339.99982 z M310.90997,324.93134 L292.41281,325.25516 292.7008,339.99982 311.20431,339.99982 z M338.90576,324.44119 L317.40902,324.81754 317.70556,339.99982 339.20965,339.99982 z M364.557,323.9921 L345.40478,324.32742 345.7109,339.99982 364.557,339.99982 z M42.442704,303.62555 L21.499995,303.99222 21.499995,323.54117 42.824418,323.16785 z M69.438603,303.15292 L48.941712,303.51178 49.323426,323.05405 69.820317,322.69522 z M92.739079,302.745 L75.937634,303.03915 76.319341,322.58142 93.062123,322.2883 z M122.73449,302.21985 L99.156094,302.63266 99.479138,322.17596 123.05754,321.76318 z M148.92662,301.76129 L129.15152,302.10751 129.47456,321.65082 149.30833,321.30359 z M174.42276,301.31491 L155.42564,301.64752 155.80735,321.18979 174.80447,320.85721 z M198.41913,300.89481 L180.92177,301.20114 181.30348,320.74344 198.80084,320.4371 z M227.16678,300.39151 L204.91813,300.78104 205.29985,320.32333 227.54849,319.93381 z M254.41066,299.91455 L233.6658,300.27774 234.04751,319.82001 254.79237,319.45685 z M285.40594,299.37189 L260.90963,299.80075 261.29135,319.34305 285.78766,318.91418 z M310.40219,298.93427 L291.905,299.25812 292.28671,318.80042 310.7839,318.47656 z M338.39795,298.44415 L316.90121,298.8205 317.28293,318.36279 338.77966,317.98645 z M364.557,297.98618 L344.89697,298.33035 345.27868,317.87265 364.557,317.53516 z M41.876447,274.63513 L21.499995,274.99185 21.499995,297.53522 42.316625,297.17075 z M68.872342,274.16251 L48.375447,274.52133 48.815637,297.05698 69.31252,296.69812 z M92.259847,273.75302 L75.371365,274.04871 75.811543,296.58435 92.632375,296.28986 z M122.25526,273.22791 L98.676862,273.64069 99.04939,296.17752 122.62779,295.76471 z M148.36035,272.77087 L128.67228,273.11554 129.04481,295.65237 148.80053,295.30649 z M173.85649,272.32449 L154.85939,272.65707 155.29957,295.19272 174.29667,294.86014 z M197.85286,271.90439 L180.35551,272.21072 180.7957,294.74634 198.29304,294.44 z M226.60052,271.40109 L204.35188,271.79059 204.79207,294.32623 227.04071,293.93671 z M253.8444,270.9241 L233.09955,271.28729 233.53973,293.82294 254.28459,293.45975 z M284.83966,270.38147 L260.34338,270.81033 260.78357,293.34598 285.27984,292.91711 z M309.83593,269.94385 L291.33874,270.2677 291.77893,292.80331 310.27612,292.47949 z M337.83169,269.4537 L316.33496,269.83008 316.77514,292.36569 338.27188,291.98935 z M364.557,268.98584 L344.33069,269.33994 344.77087,291.87558 364.557,291.52917 z M41.271005,243.63902 L21.499995,243.98515 21.499995,268.53491 41.750367,268.18036 z M68.266904,243.16638 L47.770009,243.52524 48.249371,268.06659 68.746266,267.70773 z M91.747464,242.75531 L74.765927,243.05261 75.24529,267.59396 92.153142,267.29794 z M121.74288,242.23016 L98.164472,242.64296 98.570157,267.18561 122.14856,266.7728 z M147.75491,241.77477 L128.15989,242.11783 128.56558,266.66046 148.23427,266.3161 z M173.25105,241.32838 L154.25395,241.66098 154.7333,266.20233 173.7304,265.86972 z M197.24742,240.90828 L179.75007,241.21461 180.22943,265.75595 197.72679,265.44962 z M225.99508,240.40498 L203.74644,240.79449 204.2258,265.33582 226.47444,264.94632 z M253.23896,239.92801 L232.49411,240.2912 232.97346,264.83252 253.71832,264.46933 z M284.23422,239.38536 L259.73794,239.81422 260.21731,264.35556 284.71359,263.9267 z M309.2305,238.94774 L290.7333,239.27158 291.21267,263.8129 309.70987,263.48907 z M337.22625,238.45761 L315.72952,238.83397 316.20889,263.37527 337.70562,262.99893 z M364.557,237.97913 L343.72525,238.34383 344.20462,262.88513 364.557,262.52884 z M40.684941,213.63463 L21.499995,213.9705 21.499995,237.52818 41.144929,237.18425 z M67.680844,213.162 L47.183942,213.52084 47.643929,237.07047 68.14082,236.71161 z M91.25147,212.74933 L74.17986,213.04822 74.639859,236.59784 91.640759,236.30019 z M121.24688,212.22418 L97.668485,212.63698 98.057767,236.18785 121.63617,235.77504 z M147.16885,211.77036 L127.66391,212.11183 128.05319,235.6627 147.62884,235.31998 z M172.66499,211.32399 L153.66787,211.65659 154.12787,235.20621 173.12498,234.87361 z M196.66136,210.90387 L179.164,211.21021 179.62399,234.75983 197.12135,234.45349 z M225.40902,210.40057 L203.16038,210.79008 203.62037,234.33971 225.86902,233.9502 z M252.65291,209.9236 L231.90803,210.28679 232.36802,233.83641 253.1129,233.47322 z M283.64816,209.38095 L259.15188,209.80983 259.61187,233.35944 284.10815,232.93057 z M308.64444,208.94333 L290.14724,209.26717 290.60724,232.81679 309.10443,232.49295 z M336.64019,208.4532 L315.14346,208.82956 315.60345,232.37917 337.10019,232.00282 z M364.557,207.96445 L343.13919,208.33942 343.59918,231.88904 364.557,231.52213 z M40.138089,185.63794 L21.499995,185.96425 21.499995,207.5135 40.558865,207.17984 z M67.133985,185.16531 L46.637093,185.52415 47.057866,207.06606 67.554753,206.7072 z M90.788663,184.75117 L73.633008,185.05153 74.053784,206.59343 91.144765,206.2942 z M120.78408,184.22604 L97.205678,184.63884 97.56178,206.18187 121.14018,205.76907 z M146.62199,183.77368 L127.2011,184.11369 127.5572,205.65672 147.04277,205.31558 z M172.11813,183.3273 L153.12101,183.6599 153.54179,205.2018 172.53891,204.8692 z M196.1145,182.90718 L178.61715,183.21352 179.03793,204.75543 196.53528,204.4491 z M224.86216,182.40388 L202.61352,182.79341 203.0343,204.33531 225.28294,203.9458 z M252.10605,181.92691 L231.36119,182.2901 231.78196,203.83202 252.52682,203.46883 z M283.10132,181.38426 L258.60504,181.81314 259.02581,203.35504 283.52209,202.92618 z M308.09759,180.94664 L289.6004,181.27049 290.02118,202.81239 308.51837,202.48856 z M336.09335,180.45651 L314.59662,180.83287 315.01739,202.37479 336.51413,201.99843 z M364.557,179.95819 L342.59234,180.34273 343.01312,201.88464 364.557,201.50748 z M39.610772,158.64107 L21.499995,158.95815 21.499995,179.50725 40.012013,179.18315 z M66.606664,158.16844 L46.109773,158.52728 46.511014,179.06937 67.007901,178.71053 z M90.342389,157.75288 L73.105679,158.05466 73.506925,178.59674 90.681966,178.29605 z M120.3378,157.22775 L96.759404,157.64055 97.098981,178.1837 120.67738,177.7709 z M146.09466,156.77681 L126.75483,157.1154 127.0944,177.65855 146.49591,177.31889 z M171.5908,156.33043 L152.59369,156.66302 152.99493,177.20511 171.99205,176.87253 z M195.58717,155.91032 L178.08984,156.21666 178.49109,176.75874 195.98842,176.45241 z M224.33484,155.40703 L202.08619,155.79654 202.48744,176.33862 224.73608,175.94911 z M251.57872,154.93005 L230.83387,155.29324 231.23512,175.83533 251.97996,175.47214 z M282.574,154.38741 L258.07773,154.81627 258.47897,175.35835 282.97525,174.92949 z M307.57028,153.94978 L289.07309,154.27362 289.47433,174.81572 307.97152,174.49187 z M335.56604,153.45964 L314.0693,153.836 314.47055,174.3781 335.96728,174.00174 z M364.557,152.95209 L342.06503,153.34587 342.46628,173.88795 364.557,173.50121 z M39.083524,131.64824 L21.499995,131.95609 21.499995,152.50114 39.484685,152.18628 z M66.079434,131.17561 L45.582532,131.53445 45.983697,152.07249 66.480588,151.71365 z M89.896184,130.75864 L72.578435,131.06183 72.979596,151.59987 90.235684,151.29776 z M119.8916,130.23349 L96.313191,130.64629 96.652699,151.18541 120.23111,150.77261 z M145.56743,129.78398 L126.30862,130.12114 126.64812,150.66028 145.96859,150.32202 z M171.06355,129.3376 L152.06643,129.6702 152.4676,150.20824 171.46472,149.87564 z M195.05993,128.9175 L177.56259,129.22382 177.96376,149.76187 195.4611,149.45554 z M223.8076,128.41418 L201.55896,128.80371 201.96013,149.34175 224.20877,148.95224 z M251.05148,127.93722 L230.30662,128.30042 230.70779,148.83846 251.45265,148.47527 z M282.04675,127.39457 L257.55047,127.82344 257.95163,148.36148 282.4479,147.93262 z M307.04303,126.95695 L288.54583,127.28079 288.94699,147.81883 307.44418,147.495 z M335.03878,126.46682 L313.54205,126.84317 313.9432,147.38121 335.43994,147.00485 z M364.557,125.95003 L341.53778,126.35303 341.93893,146.89108 364.557,146.49509 z M38.438943,98.64846 L21.499995,98.945023 21.499995,125.49908 38.957437,125.19345 z M65.43485,98.175835 L44.937962,98.534683 45.456456,125.07967 65.953336,124.72083 z M89.350675,97.757126 L71.933858,98.06205 72.452359,124.60704 89.789479,124.30351 z M119.34609,97.231979 L95.767697,97.644775 96.206494,124.19117 119.78489,123.77837 z M144.92285,96.784195 L125.76311,97.119629 126.20192,123.66603 145.44134,123.32919 z M170.41897,96.337822 L151.42186,96.670418 151.94035,123.21541 170.93747,122.88282 z M194.41536,95.917709 L176.91801,96.224045 177.43651,122.76904 194.93385,122.46271 z M223.16302,95.414413 L200.91438,95.803925 201.43287,122.34892 223.68152,121.9594 z M250.4069,94.937439 L229.66205,95.300629 230.18054,121.84563 250.9254,121.48244 z M281.40219,94.394791 L256.90591,94.823662 257.42441,121.36865 281.92068,120.93979 z M306.39847,93.957169 L287.90124,94.281006 288.41974,120.826 306.91696,120.50217 z M334.39422,93.467033 L312.89746,93.843399 313.41595,120.38838 334.91272,120.01203 z M364.557,92.938957 L340.89322,93.353256 341.41171,119.89825 364.557,119.49303 z M37.872716,69.660057 L21.499995,69.946709 21.499995,92.488029 38.312856,92.19368 z M64.868627,69.187439 L44.371736,69.546288 44.811875,92.079895 65.308766,91.721046 z M88.87148,68.767212 L71.367642,69.073654 71.807797,91.607269 89.24397,91.30201 z M118.86689,68.242065 L95.288487,68.654861 95.660985,91.189659 119.23938,90.776863 z M144.35663,67.795807 L125.28391,68.129723 125.65641,90.66452 144.79677,90.329414 z M169.85275,67.349434 L150.85563,67.682022 151.29577,90.215637 170.29289,89.883034 z M193.84913,66.929321 L176.35179,67.235649 176.79193,89.769264 194.28927,89.462929 z M222.5968,66.426018 L200.34816,66.815536 200.7883,89.349144 223.03694,88.959633 z M249.84068,65.949051 L229.09582,66.312241 229.53596,88.845856 250.28082,88.482658 z M280.83597,65.406403 L256.33969,65.835266 256.77981,88.368881 281.27612,87.94001 z M305.83224,64.968781 L287.33502,65.292618 287.77517,87.826233 306.2724,87.502388 z M333.828,64.478645 L312.33123,64.855003 312.77139,87.388611 334.26816,87.012253 z M364.557,63.940655 L340.32699,64.364868 340.76715,86.898476 364.557,86.481987 z M37.325948,41.667427 L21.499995,41.944496 21.499995,63.489723 37.74664,63.205284 z M64.321858,41.19479 L43.824967,41.553638 44.24566,63.091496 64.742551,62.732647 z M88.408734,40.773098 L70.820867,41.081013 71.241559,62.61887 88.764775,62.312084 z M118.40416,40.247952 L94.825757,40.660751 95.18179,62.199738 118.76019,61.786942 z M143.80986,39.803165 L124.82118,40.135609 125.17721,61.674595 144.23054,61.341022 z M169.30598,39.356785 L150.30887,39.689377 150.72957,61.227234 169.72668,60.89465 z M193.30237,38.936672 L175.80502,39.243008 176.22572,60.780872 193.72305,60.474529 z M222.05003,38.43338 L199.80139,38.822891 200.22209,60.360752 222.47073,59.971237 z M249.29391,37.956409 L228.54905,38.319592 228.96974,59.857449 249.71461,59.494267 z M280.28918,37.413754 L255.7929,37.842621 256.21359,59.380478 280.70987,58.951622 z M305.28546,36.976135 L286.78824,37.299976 287.20892,58.837833 305.70614,58.513992 z M333.28122,36.486004 L311.78445,36.862358 312.20514,58.400215 333.7019,58.023861 z M364.557,35.938446 L339.78021,36.372227 340.20089,57.910084 364.557,57.483665 z M339.48971,21.499987 L339.65414,29.917448 364.557,29.481457 364.557,21.499987 z M311.48437,21.499987 L311.65835,30.407579 333.15515,30.031227 332.98849,21.499987 z M286.47961,21.499987 L286.66214,30.845198 305.15936,30.521358 304.98315,21.499987 z M255.47369,21.499987 L255.66682,31.387852 280.16311,30.958977 279.97836,21.499987 z M228.22052,21.499987 L228.42297,31.864822 249.16783,31.501631 248.97247,21.499987 z M199.46303,21.499987 L199.67531,32.368114 221.92395,31.978601 221.71927,21.499987 z M175.45845,21.499987 L175.67894,32.788227 193.17628,32.481892 192.96177,21.499987 z M149.95358,21.499987 L150.18278,33.234608 169.17991,32.902016 168.9572,21.499987 z M124.51313,21.499987 L124.71447,33.680489 143.68377,33.348385 143.45234,21.499987 z M94.50903,21.499987 L94.719052,34.205631 118.29745,33.792835 118.09426,21.499987 z M70.438397,21.499987 L70.694791,34.626232 88.302037,34.317978 88.090161,21.499987 z M43.433263,21.499987 L43.698888,35.098869 64.195783,34.740021 63.937173,21.499987 z M21.499995,21.499987 L21.499995,35.487511 37.199872,35.212646 36.932027,21.499987 z M0.5,0.5 L384.057,0.5 384.057,359.49982 175.2175,359.49982 169.81184,546.36499 148.80063,545.7572 154.18872,359.49982 0.5,359.49982 z" RenderTransformOrigin="0.49999994995564,0.329148715696123" Stretch="Fill" Height="546.865" Width="384.557">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.947"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="cvNoVer" Margin="467.585,179.5,313,71" Visibility="Hidden">
+            <Rectangle Fill="#FF0C0B0B" Stroke="Black" Height="464.5" Width="595.415"/>
+            <Label x:Name="label" Content="+ 18" FontSize="96" FontWeight="Bold" Foreground="#FFF9EFEF" Height="140" Canvas.Left="185.415" Canvas.Top="168.5" Width="290"/>
         </Canvas>
     </Grid>
 </Window>

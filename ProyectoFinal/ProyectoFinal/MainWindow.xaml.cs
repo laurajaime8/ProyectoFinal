@@ -56,6 +56,9 @@ namespace ProyectoFinal
             Storyboard energia100;
             energia100 = (Storyboard)this.Resources["sbEnergia100"];
 
+            Storyboard diversion100;
+            diversion100 = (Storyboard)this.Resources["sbAlegre"];
+
             moverOjos.Begin(this);
 
             //Para las progressBar NEGATIVAS
@@ -101,21 +104,11 @@ namespace ProyectoFinal
                
             }
 
-            /*if (pbApetito.Value == 90)
+            if (pbDiversion.Value >= 90)
             {
-
-                Storyboard sbGordo = (Storyboard)aro5.Resources["gordoComerKey"];
-                sbGordo.Begin();
+                diversion100.Begin(this);
             }
-
-            
-
-            if (pbDiversion.Value == 90)
-            {
-                Storyboard alegre;
-                alegre = (Storyboard)this.Resources["sbAlegre"];
-                alegre.Begin(this);
-            }*/
+             
 
         }
 
@@ -172,18 +165,24 @@ namespace ProyectoFinal
 
         private void alegrar(object sender, MouseButtonEventArgs e)
         {
-            Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
+           /* Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
             Storyboard sbPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqGrandeKey"];
             Storyboard sbPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerGrandeKey"];
             sbAlegrar.Begin();
             sbPupilaIzq.Begin();
             sbPupilaDer.Begin();
-
+            */
         }
 
-        private void tocar(object sender, MouseEventArgs e)
+  
+
+        private void matarOruga(object sender, MouseButtonEventArgs e)
         {
-          
+            cvMataMoscas.Visibility = Visibility.Visible;
+            Storyboard matar;
+            matar = (Storyboard)this.Resources["sbMatarOruga"];
+            matar.Begin(); 
+
         }
     }
 }
