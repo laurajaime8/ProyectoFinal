@@ -42,13 +42,13 @@ namespace ProyectoFinal
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
 
             Storyboard tenerHambre;
-            tenerHambre = (Storyboard)this.Resources["sbHambre"];
+            tenerHambre = (Storyboard)this.Resources["sbApetito0"];
 
             Storyboard estarCansado;
-            estarCansado = (Storyboard)this.Resources["sbCansado"];
+            estarCansado = (Storyboard)this.Resources["sbEnergia0"];
 
             Storyboard estarAburrido;
-            estarAburrido = (Storyboard)this.Resources["sbAburrido"];
+            estarAburrido = (Storyboard)this.Resources["sbDiversion0"];
 
             Storyboard lleno100;
             lleno100 = (Storyboard)this.Resources["sbApetito100"];
@@ -57,7 +57,7 @@ namespace ProyectoFinal
             energia100 = (Storyboard)this.Resources["sbEnergia100"];
 
             Storyboard diversion100;
-            diversion100 = (Storyboard)this.Resources["sbAlegre"];
+            diversion100 = (Storyboard)this.Resources["sbDiversion100"];
 
             moverOjos.Begin(this);
 
@@ -104,7 +104,7 @@ namespace ProyectoFinal
                
             }
 
-            if (pbDiversion.Value >= 90)
+            if (pbDiversion.Value >= 100)
             {
                 diversion100.Begin(this);
             }
@@ -116,16 +116,11 @@ namespace ProyectoFinal
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
             pbEnergia.Value += 20;
-           /*
-            Storyboard sbCerrarOjoIzq = (Storyboard)ojoIzq.Resources["cerrarOjoIzqKey"];
-            Storyboard sbCerrarOjoDer = (Storyboard)ojoDer.Resources["cerrarOjoDerKey"];
-            Storyboard sbCerrarPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqCerrarKey"];
-            Storyboard sbCerrarPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerCerrarKey"];
-            sbCerrarOjoIzq.Begin();
-            sbCerrarOjoDer.Begin();
-            sbCerrarPupilaDer.Begin();
-            sbCerrarPupilaIzq.Begin();
-       */     
+
+            Storyboard dormir;
+            dormir = (Storyboard)this.Resources["sbDormir"];
+            dormir.Begin();
+            
         }
 
         private void btComer_Click(object sender, RoutedEventArgs e)

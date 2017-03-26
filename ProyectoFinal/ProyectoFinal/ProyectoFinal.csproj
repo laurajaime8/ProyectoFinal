@@ -108,6 +108,12 @@
   <ItemGroup>
     <Resource Include="censored-297442_640.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="silhouette-170728_960_720.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
