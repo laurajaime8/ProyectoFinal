@@ -748,7 +748,11 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-31.985"/>
             </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvMariposa">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
                 <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
@@ -3406,8 +3410,12 @@
             </Path>
         </Canvas>
         <Canvas x:Name="cvNoVer" Margin="467.585,179.5,313,71" Visibility="Hidden">
-            <Rectangle Fill="#FF0C0B0B" Stroke="Black" Height="464.5" Width="595.415"/>
-            <Label x:Name="label" Content="+ 18" FontSize="96" FontWeight="Bold" Foreground="#FFF9EFEF" Height="140" Canvas.Left="185.415" Canvas.Top="168.5" Width="290"/>
+            <Rectangle Stroke="Black" Height="464.5" Width="595.415" Fill="#FF0C0B0B"/>
+            <Rectangle Height="444.5" Canvas.Left="10" Stroke="Black" Canvas.Top="10" Width="575.415">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="censored-297442_640.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
         </Canvas>
     </Grid>
 </Window>

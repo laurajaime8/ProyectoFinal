@@ -27,7 +27,7 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(5.0);
+            t1.Interval = TimeSpan.FromSeconds(10.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
         }
@@ -116,7 +116,7 @@ namespace ProyectoFinal
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
             pbEnergia.Value += 20;
-           /*  
+           /*
             Storyboard sbCerrarOjoIzq = (Storyboard)ojoIzq.Resources["cerrarOjoIzqKey"];
             Storyboard sbCerrarOjoDer = (Storyboard)ojoDer.Resources["cerrarOjoDerKey"];
             Storyboard sbCerrarPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqCerrarKey"];
@@ -125,14 +125,14 @@ namespace ProyectoFinal
             sbCerrarOjoDer.Begin();
             sbCerrarPupilaDer.Begin();
             sbCerrarPupilaIzq.Begin();
-            */
+       */     
         }
 
         private void btComer_Click(object sender, RoutedEventArgs e)
         {
             pbApetito.Value += 20;
-
-            /*Storyboard comer;
+            /*
+            Storyboard comer;
             comer = (Storyboard)this.Resources["sbComer"];
             comer.SpeedRatio = 4.0;
             comer.Begin(this);
@@ -143,29 +143,32 @@ namespace ProyectoFinal
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             
-            //cvMariposa.Visibility = Visibility.Visible;
-            
+            cvMariposa.Visibility = Visibility.Visible;
+
             pbDiversion.Value += 20;
-            /*
+
+            
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
             mariposa.Begin(this);
-           */
-
-            /*ThicknessAnimation volarCanvas = new ThicknessAnimation();
+           
+        /*
+            ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
             volarCanvas.To = new Thickness(0, 0, 20, 150);
             volarCanvas.AutoReverse = true;
             volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
-            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);*/
-        }
+            cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+        */
+            }
         
 
 
         private void alegrar(object sender, MouseButtonEventArgs e)
         {
-           /* Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
+            /*
+            Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
             Storyboard sbPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqGrandeKey"];
             Storyboard sbPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerGrandeKey"];
             sbAlegrar.Begin();
