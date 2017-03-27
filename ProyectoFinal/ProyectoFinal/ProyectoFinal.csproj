@@ -114,6 +114,12 @@
   <ItemGroup>
     <Resource Include="silhouette-170728_960_720.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="15737359-Cono-de-helado-de-textura-de-fondo-Foto-de-archivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="14320493-De-fondo-macro-de-la-textura-de-la-superficie-de-una-bola-de-helado-de-fresa-crema-en-formato-cuadra-Foto-de-archivo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

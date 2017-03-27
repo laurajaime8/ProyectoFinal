@@ -59,6 +59,7 @@ namespace ProyectoFinal
             Storyboard diversion100;
             diversion100 = (Storyboard)this.Resources["sbDiversion100"];
 
+
             moverOjos.Begin(this);
 
             //Para las progressBar NEGATIVAS
@@ -125,14 +126,24 @@ namespace ProyectoFinal
 
         private void btComer_Click(object sender, RoutedEventArgs e)
         {
-            pbApetito.Value += 20;
-            /*
-            Storyboard comer;
-            comer = (Storyboard)this.Resources["sbComer"];
-            comer.SpeedRatio = 4.0;
-            comer.Begin(this);
-            */
 
+            
+            pbApetito.Value += 20;
+            
+            cvManzana.Visibility = Visibility.Visible;
+            cvHelado.Visibility = Visibility.Visible;
+            Storyboard comida;
+            comida = (Storyboard)this.Resources["sbComida"];
+            comida.SpeedRatio = 3.0;
+            comida.Begin(this);
+
+            //Cuando se acabe de comer que desaparezcan los alimentos
+           /* 
+            
+                cvManzana.Visibility = Visibility.Collapsed;
+                cvHelado.Visibility = Visibility.Collapsed;
+            
+            */
         }
 
         private void btJugar_Click(object sender, RoutedEventArgs e)

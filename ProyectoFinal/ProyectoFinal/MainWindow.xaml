@@ -687,17 +687,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-54"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbComer" RepeatBehavior="3x" AutoReverse="True">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.184"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.196"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="7.601"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
         <Storyboard x:Key="sbMariposa" RepeatBehavior="3x" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvMariposa">
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="176"/>
@@ -2384,6 +2373,44 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="-12"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbComida" RepeatBehavior="2x" AutoReverse="True">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvManzana">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="4"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvManzana">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvManzana">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="346.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cvHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0.71"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cvHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1.079"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="11.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.293"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.17"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="6.586"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvMedioHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-12.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvMedioHelado">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="7"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -3913,6 +3940,92 @@
                         <GradientStop Color="#FF62721D" Offset="0.414"/>
                         <GradientStop Color="#FF2D320B" Offset="0.62"/>
                     </RadialGradientBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="cvManzana" HorizontalAlignment="Right" Margin="0,283.76,432.998,351.74" Width="75.667" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="317.511"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path x:Name="path" Data="M33.572657,0.5 C47.305045,0.49999952 59.305739,7.6163928 65.790045,18.21655 L66.134932,18.802468 65.957228,18.980457 65.88169,19.064502 65.68537,18.938722 C65.372412,18.760833 65.050192,18.667998 64.721159,18.667998 61.712859,18.667998 59.274157,26.428249 59.274157,36.000999 59.274157,45.573753 61.712859,53.333999 64.721159,53.333999 64.815169,53.333999 64.908621,53.326419 65.001463,53.311446 L65.258376,53.249278 65.501181,53.37334 C65.70677,53.465926 65.916716,53.541911 66.130789,53.600619 L66.269896,53.634788 66.0856,53.958385 C63.377806,58.550281 59.644602,62.511645 55.184554,65.555907 L54.517111,65.999999 12.628201,65.999999 11.960761,65.555907 C7.2033744,62.308696 3.2729735,58.01802 0.53191948,53.031688 L0.5,52.971477 0.58887768,52.892593 C0.69544077,52.790248 0.8007822,52.681262 0.90482903,52.565822 L0.92413044,52.542934 0.93545485,52.55474 C1.463861,53.061179 2.0256696,53.333999 2.6081581,53.333999 5.7147603,53.333999 8.2331576,45.573753 8.2331576,36.000999 8.2331576,26.428249 5.7147603,18.667998 2.6081581,18.667998 2.1166835,18.667998 1.6399312,18.862224 1.1855435,19.227124 L1.1659198,19.243791 0.91853666,18.950429 0.92175531,18.944644 C7.2949824,7.9435417 19.528166,0.49999958 33.572657,0.5 z" Fill="#FFC90808" Height="40.5" Canvas.Left="4.663" Stretch="Fill" Stroke="Black" Canvas.Top="14.043" Width="48.77" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="68.6"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Ellipse Fill="#FF0FC51F" Height="22.834" Stroke="Black" Width="5.333" Canvas.Left="48.002" Canvas.Top="5.359" RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="58.793"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Canvas>
+        <Canvas x:Name="cvHelado" HorizontalAlignment="Right" Margin="0,275.667,541.165,292.24" Width="68.668" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="35.366"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse x:Name="ellipse" Height="46" Stroke="Black" Width="52.666" RenderTransformOrigin="0.5,0.5" Canvas.Left="18.835" Canvas.Top="10">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="14320493-De-fondo-macro-de-la-textura-de-la-superficie-de-una-bola-de-helado-de-fresa-crema-en-formato-cuadra-Foto-de-archivo.jpg"/>
+                </Ellipse.Fill>
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Path x:Name="ptCucurucho" Data="M0.5,0.5 L47.332999,0.5 47.332999,28.451042 44.438945,27.77832 27.069909,102.5 25.357295,102.5 12.475412,28.177097 0.5,30.252714 z" Stretch="Fill" Stroke="Black" Width="47.833" Height="103" Canvas.Left="20.835" Canvas.Top="44.093">
+                <Path.Fill>
+                    <ImageBrush ImageSource="15737359-Cono-de-helado-de-textura-de-fondo-Foto-de-archivo.jpg"/>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="cvMedioHelado" HorizontalAlignment="Right" Margin="0,266.269,544.325,301.638" Width="44.256" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="35.366"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path x:Name="ellipse1" Stroke="Black" Width="38.842" Canvas.Left="18.835" Data="M2.4237237,0.5 L2.4516759,0.53458786 C6.5666385,5.4435911 16.739466,8.9172792 28.636999,8.9172792 37.863659,8.9172792 46.053051,6.8281469 51.184174,3.6005888 L51.37257,3.4790754 51.504494,3.9499426 C51.937283,5.582881 52.166,7.2838163 52.166,9.0312796 52.166,21.457686 40.60017,31.53128 26.333,31.53128 12.065828,31.53128 0.5,21.457686 0.5,9.0312796 0.5,6.1188402 1.13533,3.3356447 2.291863,0.7810955 z" Height="32.031" RenderTransformOrigin="0.49999999652327,0.281951882249537" Stretch="Fill" Canvas.Top="23.969">
+                <Path.Fill>
+                    <ImageBrush ImageSource="14320493-De-fondo-macro-de-la-textura-de-la-superficie-de-una-bola-de-helado-de-fresa-crema-en-formato-cuadra-Foto-de-archivo.jpg"/>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptCucurucho1" Data="M0.5,0.5 L47.332999,0.5 47.332999,28.451042 44.438945,27.77832 27.069909,102.5 25.357295,102.5 12.475412,28.177097 0.5,30.252714 z" Stretch="Fill" Stroke="Black" Width="36.842" Height="103.473" Canvas.Left="20.835" Canvas.Top="43.62">
+                <Path.Fill>
+                    <ImageBrush ImageSource="15737359-Cono-de-helado-de-textura-de-fondo-Foto-de-archivo.jpg"/>
                 </Path.Fill>
             </Path>
         </Canvas>
