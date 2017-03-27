@@ -159,14 +159,14 @@ namespace ProyectoFinal
             mariposa.SpeedRatio = 3.0;
             mariposa.Begin(this);
            
-        /*
+        
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
             volarCanvas.To = new Thickness(0, 0, 20, 150);
             volarCanvas.AutoReverse = true;
             volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
             cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
-        */
+        
             }
         
 
