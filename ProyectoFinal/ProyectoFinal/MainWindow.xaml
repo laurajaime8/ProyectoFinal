@@ -2426,7 +2426,7 @@
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <Canvas x:Name="cvHeimlich" Margin="467.585,179.5,403.415,93" RenderTransformOrigin="0.5,0.5" MouseUp="matarOruga">
+        <Canvas x:Name="cvHeimlich" Margin="558,179.5,313,93" RenderTransformOrigin="0.5,0.5" MouseUp="matarOruga">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -3808,17 +3808,9 @@
                 </Rectangle>
             </Canvas>
         </Canvas>
-        <ProgressBar x:Name="pbEnergia" HorizontalAlignment="Left" Height="70" Margin="10,40.667,0,0" VerticalAlignment="Top" Width="380" Value="70"/>
-        <ProgressBar x:Name="pbApetito" Height="70" Margin="467.585,40.667,491.415,0" VerticalAlignment="Top" Value="70" Background="#FFFDF9F9" Foreground="#FFF13619"/>
-        <ProgressBar x:Name="pbDiversion" HorizontalAlignment="Right" Height="70" Margin="0,40.667,34.332,0" VerticalAlignment="Top" Width="380" Value="70" Foreground="#FF0689B0"/>
-        <Label x:Name="lbEnergia" Content="Energía" HorizontalAlignment="Left" Height="64.523" Margin="10,40.667,0,0" VerticalAlignment="Top" Width="122.167" FontWeight="Bold" FontSize="32" Foreground="#FF20462A"/>
-        <Label x:Name="lbApetito" Content="Apetito" HorizontalAlignment="Left" Height="70" Margin="467.585,40.667,0,0" VerticalAlignment="Top" Width="134.167" FontWeight="Bold" FontSize="32" Foreground="#FF74221A"/>
-        <Label x:Name="lbDiversion" Content="Diversión" HorizontalAlignment="Right" Height="70" Margin="0,40.667,251.665,0" VerticalAlignment="Top" Width="162.667" FontWeight="Bold" FontSize="32" Foreground="#FF1B1459"/>
-        <StackPanel HorizontalAlignment="Left" Margin="10,151.166,0,10" Width="235">
-            <Button x:Name="btDormir" Content="Dormir" Height="90" FontSize="32" FontWeight="Bold" Background="#FF214F29" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btDormir_Click"/>
-            <Button x:Name="btComer" Content="Comer" Height="90" FontSize="32" FontWeight="Bold" Background="#FFD32222" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btComer_Click"/>
-            <Button x:Name="btJugar" Content="Jugar" Height="90" FontSize="32" FontWeight="Bold" Background="#FF1F6372" Foreground="#FFE8E3E3" Margin="0,40,0,20" Click="btJugar_Click"/>
-        </StackPanel>
+        <ProgressBar x:Name="pbEnergia" HorizontalAlignment="Left" Height="35.5" Margin="182.225,40.667,0,0" VerticalAlignment="Top" Width="254" Value="70" Foreground="#FF0606B0"/>
+        <ProgressBar x:Name="pbApetito" Height="35.5" Margin="561.585,40.667,447.415,0" VerticalAlignment="Top" Value="70" Background="#FFFDF9F9" Foreground="#FF2DF119" Width="254"/>
+        <ProgressBar x:Name="pbDiversion" HorizontalAlignment="Right" Height="30" Margin="0,40.667,19,0" VerticalAlignment="Top" Width="253" Value="70" Foreground="#FFB01506"/>
         <Canvas x:Name="cvMariposa" HorizontalAlignment="Left" Height="182.623" Margin="190.225,95.667,0,0" VerticalAlignment="Top" Width="167.218" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Canvas.RenderTransform>
                 <TransformGroup>
@@ -4029,5 +4021,23 @@
                 </Path.Fill>
             </Path>
         </Canvas>
+        <Image x:Name="comer_png" Margin="502.225,10,0,0" Source="comer.png" Stretch="Fill" HorizontalAlignment="Left" Height="100.667" VerticalAlignment="Top" Width="125.36"/>
+        <Image x:Name="jugar_png" Margin="0,10,272.5,0" Source="jugar.png" Stretch="Fill" HorizontalAlignment="Right" Height="100.667" VerticalAlignment="Top" Width="104"/>
+        <Image x:Name="zzz_png" HorizontalAlignment="Left" Height="110.499" Margin="61.225,10,0,0" Source="zzz.png" Stretch="Fill" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btDormir" Content="" HorizontalAlignment="Left" Margin="26.333,179.5,0,329.24" Width="150" Height="150" Click="btDormir_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="slep.ico"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btComer" Content="" HorizontalAlignment="Left" Height="150" Margin="26.333,0,0,204.87" VerticalAlignment="Bottom" Width="150" d:LayoutOverrides="VerticalAlignment" Click="btComer_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="eat.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btJugar" Content="" HorizontalAlignment="Left" Height="150" Margin="26.333,0,0,54.87" VerticalAlignment="Bottom" Width="150" d:LayoutOverrides="VerticalAlignment" Click="btJugar_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="playing.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

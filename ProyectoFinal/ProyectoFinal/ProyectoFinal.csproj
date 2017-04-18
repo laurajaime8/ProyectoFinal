@@ -120,6 +120,30 @@
   <ItemGroup>
     <Resource Include="14320493-De-fondo-macro-de-la-textura-de-la-superficie-de-una-bola-de-helado-de-fresa-crema-en-formato-cuadra-Foto-de-archivo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="43347816-Una-ilustraci-n-de-dibujos-animados-de-un-gusano-de-dormir--Foto-de-archivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="restaurante-de-la-cuchilleria-simbolo-circular-de-una-cuchara-y-un-tenedor-en-un-circulo_318-61086.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="comer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="jugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="zzz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slep.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="playing.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
