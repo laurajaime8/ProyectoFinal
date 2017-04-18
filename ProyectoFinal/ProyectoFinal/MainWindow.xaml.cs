@@ -67,11 +67,13 @@ namespace ProyectoFinal
             {
                 elLengua.Visibility = Visibility.Visible;
                 tenerHambre.Begin(this);
+                spAlimentos.Visibility = Visibility.Visible;
             }
             else if (pbApetito.Value > 10)
             {
                 tenerHambre.Remove(this);
                 elLengua.Visibility = Visibility.Collapsed;
+                
             }
 
             if (pbEnergia.Value <= 10)
@@ -194,6 +196,25 @@ namespace ProyectoFinal
 
         }
 
-        
+        private void arrastrarHelado(object sender, MouseButtonEventArgs e)
+        {
+            DataObject dataO = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
+;        }
+
+        private void cvCabeza_DragEnter(object sender, DragEventArgs e)
+        {
+            Image imagen = (Image)e.Data.GetData(typeof(Image));
+            switch (imagen.Name)
+            {
+                case "helado":comerHelado(imagen);
+                    break;
+            }
+        }
+
+        private void comerHelado(Image imgOrigen)
+        {
+            imgOrigen.Visibility = Visibility.Hidden;
+        }
     }
 }
