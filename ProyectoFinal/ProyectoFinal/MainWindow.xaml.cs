@@ -126,28 +126,7 @@ namespace ProyectoFinal
             
         }
 
-        private void btComer_Click(object sender, RoutedEventArgs e)
-        {
-
-            
-            pbApetito.Value += 20;
-            
-            cvManzana.Visibility = Visibility.Visible;
-            cvHelado.Visibility = Visibility.Visible;
-            Storyboard comida;
-            comida = (Storyboard)this.Resources["sbComida"];
-            comida.SpeedRatio = 3.0;
-            comida.Begin(this);
-
-            //Cuando se acabe de comer que desaparezcan los alimentos
-           /* 
-            
-                cvManzana.Visibility = Visibility.Collapsed;
-                cvHelado.Visibility = Visibility.Collapsed;
-            
-            */
-        }
-
+       
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             
@@ -248,16 +227,19 @@ namespace ProyectoFinal
         private void comerHelado(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
+            pbApetito.Value += 20;
         }
 
         private void comerManzana(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
+            pbApetito.Value += 20;
         }
 
         private void comerLechuga(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
+            pbApetito.Value += 20;
         }
 
         private void comerZanahoria(Image imgOrigen)
@@ -268,6 +250,7 @@ namespace ProyectoFinal
         private void comerBurguer(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
+            pbApetito.Value += 20;
         }
 
     }

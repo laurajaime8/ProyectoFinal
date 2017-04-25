@@ -3975,11 +3975,6 @@
                     <ImageBrush ImageSource="slep.ico"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btComer" Content="" Height="150" VerticalAlignment="Bottom" Width="150" Click="btComer_Click" Canvas.Top="152.5" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="eat.png"/>
-                </Button.Background>
-            </Button>
             <Button x:Name="btJugar" Content="" Height="150" VerticalAlignment="Bottom" Width="150" Click="btJugar_Click" Canvas.Top="302.5" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="playing.png"/>
