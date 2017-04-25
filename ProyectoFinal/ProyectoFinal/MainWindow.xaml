@@ -3354,7 +3354,7 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Canvas>
-            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="312" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="12.5" AllowDrop="True" DragEnter="cvCabeza_DragEnter">
+            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="312" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="12.5" AllowDrop="True" Drop="cvCabeza_Drop">
                 <Canvas.Resources>
                     <Storyboard x:Name="subirCabeza" x:Key="subirCabezaKey">
                         <DoubleAnimation Storyboard.TargetName="cvCabeza"
@@ -3986,32 +3986,22 @@
                 </Button.Background>
             </Button>
         </Canvas>
-        <StackPanel x:Name="spAlimentos" HorizontalAlignment="Right" Margin="0,179.5,59,0" Width="317.5">
-            <Button x:Name="btManzana" Content="" Height="100" Margin="91.5,0,126,0" Width="100" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="teachers_day.png"/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="btLechuga" Content="" Height="100" Margin="91.5,0,126,0" Width="100" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="lettuce-512.png"/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="btBurguer" Content="" Height="100" Margin="91.5,0,126,0" Width="100" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="burger-outline-filled.png"/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="btZanahoria" Content="" Height="100" Margin="91.5,0,126,0" Width="100" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="256-256-617cadce12117d6c81fd1ebf96ea96e8-carrot.png"/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="btHelado" Content="" Height="100" Margin="91.5,0,126,0" Width="100" MouseLeftButtonDown="arrastrarHelado" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="helado.png"/>
-                </Button.Background>
-            </Button>
+        <StackPanel x:Name="spAlimentos" HorizontalAlignment="Right" Margin="0,179.5,59,0" Width="317.5" Visibility="Hidden">
+            <Image x:Name="manzana" Height="88.095" Margin="99,0,73,0" RenderTransformOrigin="0.51,-0.978" Source="manzana.png" MouseDown="arrastrarManzana">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.546"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.726"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="helado" Height="79" Margin="137.5,0,88,0" RenderTransformOrigin="0.196,-0.956" Source="helado.png" MouseDown="arrastrarHelado"/>
+            <Image x:Name="lechuga" Height="69" Margin="137.5,0,88,0" Source="lettuce-512.png" MouseDown="arrastrarLechuga"/>
+            <Image x:Name="zanahoria" Height="66" Margin="137.5,0,88,0" Source="256-256-617cadce12117d6c81fd1ebf96ea96e8-carrot.png" MouseDown="arrastrarZanahoria"/>
+            <Image x:Name="burguer" Height="88" Margin="141.5,0,88,0" Source="burger-outline-filled.png" MouseDown="arrastrarBurguer"/>
+            <Image x:Name="image" Height="105" Margin="104,0,126,0"/>
         </StackPanel>
     </Grid>
 </Window>

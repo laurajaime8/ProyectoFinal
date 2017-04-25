@@ -202,12 +202,45 @@ namespace ProyectoFinal
             DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
 ;        }
 
-        private void cvCabeza_DragEnter(object sender, DragEventArgs e)
+        private void arrastrarManzana(object sender, MouseButtonEventArgs e)
         {
-            Image imagen = (Image)e.Data.GetData(typeof(Image));
+            DataObject dataO = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
+        }
+
+        private void arrastrarLechuga(object sender, MouseButtonEventArgs e)
+        {
+            DataObject dataO = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
+        }
+
+        private void arrastrarZanahoria(object sender, MouseButtonEventArgs e)
+        {
+            DataObject dataO = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
+        }
+
+        private void arrastrarBurguer(object sender, MouseButtonEventArgs e)
+        {
+            DataObject dataO = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, dataO, DragDropEffects.Move);
+        }
+
+
+        private void cvCabeza_Drop(object sender, DragEventArgs e)
+        {
+           Image imagen = (Image)e.Data.GetData(typeof(Image));
             switch (imagen.Name)
             {
+                case "manzana":comerManzana(imagen);
+                    break;
                 case "helado":comerHelado(imagen);
+                    break;
+                case "lechuga":comerLechuga(imagen);
+                    break;
+                case "zanahoria":comerZanahoria(imagen);
+                    break;
+                case "burguer":comerBurguer(image);
                     break;
             }
         }
@@ -216,5 +249,26 @@ namespace ProyectoFinal
         {
             imgOrigen.Visibility = Visibility.Hidden;
         }
+
+        private void comerManzana(Image imgOrigen)
+        {
+            imgOrigen.Visibility = Visibility.Hidden;
+        }
+
+        private void comerLechuga(Image imgOrigen)
+        {
+            imgOrigen.Visibility = Visibility.Hidden;
+        }
+
+        private void comerZanahoria(Image imgOrigen)
+        {
+            imgOrigen.Visibility = Visibility.Hidden;
+        }
+
+        private void comerBurguer(Image imgOrigen)
+        {
+            imgOrigen.Visibility = Visibility.Hidden;
+        }
+
     }
 }
