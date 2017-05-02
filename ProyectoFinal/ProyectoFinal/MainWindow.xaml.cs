@@ -219,7 +219,7 @@ namespace ProyectoFinal
                     break;
                 case "zanahoria":comerZanahoria(imagen);
                     break;
-                case "burguer":comerBurguer(image);
+                case "burguer":comerBurguer(imagen);
                     break;
             }
         }
