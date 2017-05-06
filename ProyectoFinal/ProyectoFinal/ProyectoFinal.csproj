@@ -165,6 +165,18 @@
   <ItemGroup>
     <Resource Include="manzana.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="skull-crossbones-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eyeguy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="skull-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="halloween_8-512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

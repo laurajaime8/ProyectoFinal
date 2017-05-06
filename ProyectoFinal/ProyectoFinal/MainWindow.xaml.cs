@@ -27,7 +27,7 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(10.0);
+            t1.Interval = TimeSpan.FromSeconds(7.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
         }
@@ -35,8 +35,8 @@ namespace ProyectoFinal
         private void reloj(object sender, EventArgs e)
         {
             pbEnergia.Value -= 10;
-            pbApetito.Value -= 10;
-            pbDiversion.Value -= 10;
+            pbApetito.Value -= 30;
+            pbDiversion.Value -= 20;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -47,8 +47,9 @@ namespace ProyectoFinal
             Storyboard estarCansado;
             estarCansado = (Storyboard)this.Resources["sbEnergia0"];
 
+            //Cambio de accion al estar aburrido
             Storyboard estarAburrido;
-            estarAburrido = (Storyboard)this.Resources["sbDiversion0"];
+            estarAburrido = (Storyboard)this.Resources["sbAburrido"];
 
             Storyboard lleno100;
             lleno100 = (Storyboard)this.Resources["sbApetito100"];
@@ -59,40 +60,70 @@ namespace ProyectoFinal
             Storyboard diversion100;
             diversion100 = (Storyboard)this.Resources["sbDiversion100"];
 
+            Storyboard muerto;
+            muerto = (Storyboard)this.Resources["sbMuerto"];
 
             moverOjos.Begin(this);
 
+            elLengua.Visibility = Visibility.Hidden;
+            cvZetas.Visibility = Visibility.Hidden;
+            
             //Para las progressBar NEGATIVAS
-            if (pbApetito.Value <= 10)
+            if (pbApetito.Value == 0 && pbDiversion.Value ==0 && pbEnergia.Value == 0)
+            {
+                muerto.Begin(this);
+                cvCabeza.Visibility = Visibility.Hidden;
+                calavera.Visibility = Visibility.Visible;
+            }
+            
+            else if ((pbApetito.Value == pbDiversion.Value)&& (pbApetito.Value == pbEnergia.Value) && (pbEnergia.Value == pbDiversion.Value)) {
+                //Si se solapan no hacer nada
+                muerto.Stop();
+                estarAburrido.Stop();
+                estarCansado.Stop();
+            }
+            if (pbApetito.Value<= 10)
             {
                 elLengua.Visibility = Visibility.Visible;
                 tenerHambre.Begin(this);
                 spAlimentos.Visibility = Visibility.Visible;
-            }
-            else if (pbApetito.Value > 10)
-            {
-                tenerHambre.Remove(this);
-                elLengua.Visibility = Visibility.Collapsed;
                 
+                if(pbApetito.Value > 10)
+                {
+                  // elLengua.Visibility = Visibility.Hidden;
+                   tenerHambre.Remove(this);
+                    
+                }
             }
+             
+                
+   
 
-            if (pbEnergia.Value <= 10)
+            //Sueño
+          /* if (pbEnergia.Value <= 10)
             {
-                estarCansado.Begin(this);                
+                
+                cvZetas.Visibility = Visibility.Visible;
+                estarCansado.Begin(this);
+                
+                         
             }
             else if (pbEnergia.Value > 10)
             {
                 estarCansado.Remove(this);
-            }
+                cvZetas.Visibility = Visibility.Hidden;
+            }*/
 
-            if (pbDiversion.Value <= 10)
+            //Diversion
+          /*  if (pbDiversion.Value <= 10)
             {
-                estarAburrido.Begin(this);
+               estarAburrido.Begin(this);
+
             }
             else if (pbDiversion.Value > 10)
             {
                 estarAburrido.Remove(this);
-            }
+            }*/
 
             //Para las progressBar POSITIVAS
 
@@ -111,10 +142,10 @@ namespace ProyectoFinal
             {
                 diversion100.Begin(this);
             }
-             
-
         }
 
+
+       
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
@@ -131,40 +162,22 @@ namespace ProyectoFinal
         {
             
             cvMariposa.Visibility = Visibility.Visible;
-
             pbDiversion.Value += 20;
-
-            
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
             mariposa.Begin(this);
-           
-        
+            cvMariposa.Visibility = Visibility.Hidden;
+
+
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
             volarCanvas.To = new Thickness(0, 0, 20, 150);
             volarCanvas.AutoReverse = true;
             volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
             cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
-        
             }
         
-
-
-        private void alegrar(object sender, MouseButtonEventArgs e)
-        {
-            /*
-            Storyboard sbAlegrar = (Storyboard)cvCabeza.Resources["subirCabezaKey"];
-            Storyboard sbPupilaIzq = (Storyboard)pupilaIzq.Resources["pupilaIzqGrandeKey"];
-            Storyboard sbPupilaDer = (Storyboard)pupilaDer.Resources["pupilaDerGrandeKey"];
-            sbAlegrar.Begin();
-            sbPupilaIzq.Begin();
-            sbPupilaDer.Begin();
-            */
-        }
-
-  
 
         private void matarOruga(object sender, MouseButtonEventArgs e)
         {
