@@ -74,10 +74,10 @@ namespace ProyectoFinal
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
 
-            if ((pbApetito.Value <= 10 && pbDiversion.Value <= 10) ||
-                (pbApetito.Value <= 10 && pbEnergia.Value <= 10) ||
-                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10) ||
-                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10))
+            if ((pbApetito.Value <= 0 && pbDiversion.Value <= 0) ||
+                (pbApetito.Value <= 0 && pbEnergia.Value <= 0) ||
+                (pbDiversion.Value <= 0 && pbEnergia.Value <= 0) ||
+                (pbDiversion.Value <= 0 && pbEnergia.Value <= 0 && pbApetito.Value <= 0))
             {
                 cvCabeza.Visibility = Visibility.Hidden;
                 calavera.Visibility = Visibility.Visible;
@@ -160,15 +160,18 @@ namespace ProyectoFinal
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
-            pbEnergia.Value += 20;
-
+    
             Storyboard dormir;
             dormir = (Storyboard)this.Resources["sbDormir"];
             dormir.Begin();
-            
+            //btJugar.IsHitTestVisible = false;
+
+            pbEnergia.Value += 20;
+
+          
         }
 
-       
+
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             
