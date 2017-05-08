@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
+
 namespace ProyectoFinal
 {
     /// <summary>
@@ -32,24 +33,27 @@ namespace ProyectoFinal
             t1.Start();
         }
 
+
         private void reloj(object sender, EventArgs e)
         {
-            pbEnergia.Value -= 10;
-            pbApetito.Value -= 30;
-            pbDiversion.Value -= 20;
+            pbEnergia.Value -= 20;
+            pbApetito.Value -= 5;
+            pbDiversion.Value -= 10;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
 
+            //Cuando tienen las barras casi vacías
             Storyboard tenerHambre;
             tenerHambre = (Storyboard)this.Resources["sbApetito0"];
 
             Storyboard estarCansado;
             estarCansado = (Storyboard)this.Resources["sbEnergia0"];
 
-            //Cambio de accion al estar aburrido
             Storyboard estarAburrido;
             estarAburrido = (Storyboard)this.Resources["sbAburrido"];
+
+            //Cuando tienen las barras llenas
 
             Storyboard lleno100;
             lleno100 = (Storyboard)this.Resources["sbApetito100"];
@@ -60,6 +64,8 @@ namespace ProyectoFinal
             Storyboard diversion100;
             diversion100 = (Storyboard)this.Resources["sbDiversion100"];
 
+
+            //Bicho muerto -> Todas las barras a 0
             Storyboard muerto;
             muerto = (Storyboard)this.Resources["sbMuerto"];
 
@@ -67,85 +73,90 @@ namespace ProyectoFinal
 
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
-            
-            //Para las progressBar NEGATIVAS
-            if (pbApetito.Value == 0 && pbDiversion.Value ==0 && pbEnergia.Value == 0)
+
+            if ((pbApetito.Value <= 10 && pbDiversion.Value <= 10) ||
+                (pbApetito.Value <= 10 && pbEnergia.Value <= 10) ||
+                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10) ||
+                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10))
             {
-                muerto.Begin(this);
                 cvCabeza.Visibility = Visibility.Hidden;
                 calavera.Visibility = Visibility.Visible;
+                estarAburrido.Remove();
+                estarCansado.Remove();
+                tenerHambre.Remove();
             }
-            
-            else if ((pbApetito.Value == pbDiversion.Value)&& (pbApetito.Value == pbEnergia.Value) && (pbEnergia.Value == pbDiversion.Value)) {
-                //Si se solapan no hacer nada
-                muerto.Stop();
-                estarAburrido.Stop();
-                estarCansado.Stop();
+            else {
+                cvCabeza.Visibility = Visibility.Visible;
+                calavera.Visibility = Visibility.Hidden;
             }
-            if (pbApetito.Value<= 10)
-            {
-                elLengua.Visibility = Visibility.Visible;
-                tenerHambre.Begin(this);
-                spAlimentos.Visibility = Visibility.Visible;
-                
-                if(pbApetito.Value > 10)
-                {
-                  // elLengua.Visibility = Visibility.Hidden;
-                   tenerHambre.Remove(this);
-                    
-                }
-            }
-             
-                
-   
+
 
             //Sueño
-           if (pbEnergia.Value <= 10)
-            {
-                
+            if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
                 cvZetas.Visibility = Visibility.Visible;
                 estarCansado.Begin(this);
-                
-                         
-            }
+            
+            } 
             else if (pbEnergia.Value > 10)
             {
-                estarCansado.Remove(this);
-                cvZetas.Visibility = Visibility.Hidden;
+               estarCansado.Remove(this);
+               cvZetas.Visibility = Visibility.Hidden;
             }
 
             //Diversion
-            if (pbDiversion.Value <= 10)
+            if (pbDiversion.Value <= 10 && pbEnergia.Value > 10 && pbDiversion.Value > 10)
             {
-               estarAburrido.Begin(this);
-
+                estarAburrido.Begin(this);
             }
             else if (pbDiversion.Value > 10)
             {
                 estarAburrido.Remove(this);
             }
+            
 
+
+            //Apetito
+           if (pbApetito.Value<= 10)
+           {
+               elLengua.Visibility = Visibility.Visible;
+               tenerHambre.Begin(this);
+               spAlimentos.Visibility = Visibility.Visible;
+
+               if(pbApetito.Value > 10)
+               {
+                  elLengua.Visibility = Visibility.Hidden;
+                  tenerHambre.Remove(this);
+
+               }
+           }
+           
+
+
+            
+
+                         
+            
             //Para las progressBar POSITIVAS
 
-            if (pbApetito.Value >= 90)
+            if (pbApetito.Value >= 90 && pbEnergia.Value < 90 && pbDiversion.Value < 90)
             {
                 lleno100.Begin(this);
             }
 
-            if (pbEnergia.Value >= 90)
+            if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
             {
                 energia100.Begin(this);
-               
+
             }
 
-            if (pbDiversion.Value >= 100)
+            if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
             {
                 diversion100.Begin(this);
             }
+            
         }
 
 
-       
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {

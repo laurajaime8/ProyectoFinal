@@ -177,6 +177,12 @@
   <ItemGroup>
     <Resource Include="halloween_8-512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vinilo-rama-de-arbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="14192508_1676493292671841_1725137477775050983_n %282%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

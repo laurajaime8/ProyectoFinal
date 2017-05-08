@@ -2336,22 +2336,17 @@
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera2">
                 <EasingColorKeyFrame KeyTime="0:0:4.3" Value="#FFFBF7F9"/>
             </ColorAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvRama">
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.5">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Visibility>Hidden</Visibility>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvHeimlich">
                 <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="91.476"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.3" Value="91.476"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHeimlich">
                 <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="62"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.3" Value="62"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHeimlich">
                 <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="-12"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.3" Value="-12"/>
             </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="mofleteDer">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Hidden}"/>
@@ -2382,6 +2377,23 @@
             </ObjectAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="mancha8">
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Rama">
+                <EasingDoubleKeyFrame KeyTime="0" Value="3.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Rama">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-74.571"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-56.571"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Rama">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-93"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Rama">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cvRama">
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbComida" RepeatBehavior="2x" AutoReverse="True">
@@ -3963,22 +3975,6 @@
                 </Rectangle.Fill>
             </Rectangle>
         </Canvas>
-        <Canvas x:Name="cvRama" Margin="601.757,151.166,-154,329.24" Visibility="Hidden">
-            <Path Data="M397.03598,0 C690.41379,-1.1792663E-06 928.2435,95.102332 928.2435,212.41701 928.2435,219.74917 927.31442,226.99457 925.50095,234.13542 L925.36984,234.59405 925.21664,233.92009 C895.19333,118.44544 645.5206,28.333998 341.96497,28.333991 215.48346,28.333998 98.356613,43.978347 2.5756683,70.583274 L0,71.317023 3.8265381,69.592604 C100.99921,26.840403 241.17902,-1.1792663E-06 397.03598,0 z" Stretch="Fill" Height="234.594" Width="928.243">
-                <Path.Fill>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFD63276" Offset="0"/>
-                        <GradientStop Color="#FFA9C157" Offset="1"/>
-                        <GradientStop Color="#FFCB546E"/>
-                        <GradientStop Color="#FF2D320B"/>
-                        <GradientStop Color="#FF2D320B" Offset="0.173"/>
-                        <GradientStop Color="#FF394012" Offset="0.257"/>
-                        <GradientStop Color="#FF62721D" Offset="0.414"/>
-                        <GradientStop Color="#FF2D320B" Offset="0.62"/>
-                    </RadialGradientBrush>
-                </Path.Fill>
-            </Path>
-        </Canvas>
         <Canvas x:Name="cvManzana" HorizontalAlignment="Right" Margin="0,283.76,432.998,351.74" Width="75.667" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
             <Canvas.RenderTransform>
                 <TransformGroup>
@@ -4147,5 +4143,20 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Canvas x:Name="cvRama" Margin="601.757,145,-154.227,318" Visibility="Hidden">
+            <Path x:Name="Rama" Data="M306.61081,0 L928.47009,0 928.47009,251.99999 306.61081,251.99999 306.61081,244.99999 3.2430041,244.99999 3.2430041,76.57116 2.5756593,76.749268 0,77.483002 3.2430041,76.021546 3.2430041,2.9999872 306.61081,2.9999872 z" RenderTransformOrigin="0.499877705929784,0.492063478127208" Stretch="Fill" Height="252" Width="928.47">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <ImageBrush ImageSource="vinilo-rama-de-arbol.jpg"/>
+                </Path.Fill>
+            </Path>
+        </Canvas>
     </Grid>
 </Window>
