@@ -100,7 +100,7 @@ namespace ProyectoFinal
    
 
             //Sueño
-          /* if (pbEnergia.Value <= 10)
+           if (pbEnergia.Value <= 10)
             {
                 
                 cvZetas.Visibility = Visibility.Visible;
@@ -112,10 +112,10 @@ namespace ProyectoFinal
             {
                 estarCansado.Remove(this);
                 cvZetas.Visibility = Visibility.Hidden;
-            }*/
+            }
 
             //Diversion
-          /*  if (pbDiversion.Value <= 10)
+            if (pbDiversion.Value <= 10)
             {
                estarAburrido.Begin(this);
 
@@ -123,7 +123,7 @@ namespace ProyectoFinal
             else if (pbDiversion.Value > 10)
             {
                 estarAburrido.Remove(this);
-            }*/
+            }
 
             //Para las progressBar POSITIVAS
 
