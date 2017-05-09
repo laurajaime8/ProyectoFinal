@@ -4176,9 +4176,12 @@
                 <ImageBrush ImageSource="RMIs0gk.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="89" Background="#FF358B1B">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="55.5" VerticalAlignment="Top" Width="92" Background="{x:Null}" Margin="10,40.667,0,0">
             <Button/>
-            <MenuItem x:Name="menuItem1" Header="Menu" Height="25" Width="62.915">
+            <MenuItem x:Name="menuItem1" Header="" Height="55.5" Width="64">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="house-304005_960_720.png"/>
+                </MenuItem.Background>
                 <Button Content="Mi perfil" Background="#FF508F41" Click="perfil"/>
                 <Button Content="Juegos" Background="#FF508F41" Click="juegos"/>
                 <Button Content="Ayuda" Background="#FF358B1B" Click="ayuda"/>
