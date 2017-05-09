@@ -79,10 +79,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MiPerfil.xaml.cs">
       <DependentUpon>MiPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.xaml.cs">
+      <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -208,6 +215,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="house-304005_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pequena_bichos_pixar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="help-browser.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
