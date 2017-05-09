@@ -86,7 +86,10 @@ namespace ProyectoFinal
                 tenerHambre.Remove();
                 btJugar.IsHitTestVisible = false;
                 btDormir.IsHitTestVisible = false;
+                if (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10) {
 
+                    GameOver.Visibility = Visibility.Visible;
+                }
             }
             else {
                 cvCabeza.Visibility = Visibility.Visible;

@@ -4158,5 +4158,10 @@
                 </Path.Fill>
             </Path>
         </Canvas>
+        <Rectangle x:Name="GameOver" Stroke="Black" Visibility="Hidden">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="RMIs0gk.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
     </Grid>
 </Window>
