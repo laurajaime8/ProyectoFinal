@@ -36,9 +36,9 @@ namespace ProyectoFinal
 
         private void reloj(object sender, EventArgs e)
         {
-            pbEnergia.Value -= 20;
-            pbApetito.Value -= 5;
-            pbDiversion.Value -= 10;
+            pbEnergia.Value -= 10;
+            pbApetito.Value -= 20;
+            pbDiversion.Value -= 20;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -74,16 +74,19 @@ namespace ProyectoFinal
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
 
-            if ((pbApetito.Value <= 0 && pbDiversion.Value <= 0) ||
-                (pbApetito.Value <= 0 && pbEnergia.Value <= 0) ||
-                (pbDiversion.Value <= 0 && pbEnergia.Value <= 0) ||
-                (pbDiversion.Value <= 0 && pbEnergia.Value <= 0 && pbApetito.Value <= 0))
+            if ((pbApetito.Value <= 10 && pbDiversion.Value <= 10) ||
+                (pbApetito.Value <= 10 && pbEnergia.Value <= 10) ||
+                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10) ||
+                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10))
             {
                 cvCabeza.Visibility = Visibility.Hidden;
                 calavera.Visibility = Visibility.Visible;
                 estarAburrido.Remove();
                 estarCansado.Remove();
                 tenerHambre.Remove();
+                btJugar.IsHitTestVisible = false;
+                btDormir.IsHitTestVisible = false;
+
             }
             else {
                 cvCabeza.Visibility = Visibility.Visible;
@@ -104,7 +107,7 @@ namespace ProyectoFinal
             }
 
             //Diversion
-            if (pbDiversion.Value <= 10 && pbEnergia.Value > 10 && pbDiversion.Value > 10)
+            if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
             {
                 estarAburrido.Begin(this);
             }
@@ -116,25 +119,20 @@ namespace ProyectoFinal
 
 
             //Apetito
-           if (pbApetito.Value<= 10)
+           if (pbApetito.Value<= 10 && pbDiversion.Value > 10 && pbEnergia.Value > 10)
            {
                elLengua.Visibility = Visibility.Visible;
                tenerHambre.Begin(this);
                spAlimentos.Visibility = Visibility.Visible;
 
-               if(pbApetito.Value > 10)
-               {
-                  elLengua.Visibility = Visibility.Hidden;
-                  tenerHambre.Remove(this);
+            }
 
-               }
-           }
-           
-
-
-            
-
-                         
+            if (pbApetito.Value > 10)
+            {
+                elLengua.Visibility = Visibility.Hidden;
+                tenerHambre.Remove(this);
+                spAlimentos.Visibility = Visibility.Hidden;
+            }
             
             //Para las progressBar POSITIVAS
 
