@@ -23,5 +23,33 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void ayuda(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y dos de sus necesidades se ven agotadas, la oruga morirá.");
+        }
+
+        private void miPerfinl(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miPerfil(object sender, RoutedEventArgs e)
+        {
+            MiPerfil frm = new MiPerfil();
+            frm.Show();
+        }
+
+        private void juegos(object sender, RoutedEventArgs e)
+        {
+            Juegos frm2 = new Juegos();
+            frm2.Show();
+        }
+
+        private void resumen(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

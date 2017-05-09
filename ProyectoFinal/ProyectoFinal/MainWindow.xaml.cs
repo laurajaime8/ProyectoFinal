@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-
+using System.Xml;
 
 namespace ProyectoFinal
 {
@@ -31,6 +31,31 @@ namespace ProyectoFinal
             t1.Interval = TimeSpan.FromSeconds(7.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
+
+            //XML
+
+            XmlTextReader XMLreader = new XmlTextReader("Cthulhu.xml");
+            while (XMLreader.Read())
+            {
+                if (XMLreader.NodeType == XmlNodeType.Element)
+                {
+                    if (XMLreader.Name == "Comida")
+                    {
+                        XMLreader.Read();
+                        pbApetito.Value = XMLreader.ReadContentAsDouble();
+                    }
+                    if (XMLreader.Name == "Energia")
+                    {
+                        XMLreader.Read();
+                        pbEnergia.Value = XMLreader.ReadContentAsDouble();
+                    }
+                    if (XMLreader.Name == "Diversion")
+                    {
+                        XMLreader.Read();
+                        pbDiversion.Value = XMLreader.ReadContentAsDouble();
+                    }
+                }
+            }
         }
 
 
@@ -295,23 +320,6 @@ namespace ProyectoFinal
             pbApetito.Value += 20;
         }
 
-        private void ayuda(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y dos de sus necesidades se ven agotadas, la oruga morirá.");
-        }
-
-        private void perfil(object sender, RoutedEventArgs e)
-        {
-            MiPerfil frm = new MiPerfil();
-            frm.Show();
-        }
-
-        private void juegos(object sender, RoutedEventArgs e)
-        {
-            Juegos frm2 = new Juegos();
-            frm2.Show();
-        }
-
         private void volarMosca(object sender, DragEventArgs e)
         {
             
@@ -320,6 +328,13 @@ namespace ProyectoFinal
 
             //mosca.Begin();
             //if(imgMosca)
+        }
+
+        private void menuPrinc(object sender, RoutedEventArgs e)
+        {
+            Principal frm2 = new Principal();
+            frm2.Show();
+            t1.Stop();
         }
     }
     

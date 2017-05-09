@@ -4176,17 +4176,6 @@
                 <ImageBrush ImageSource="RMIs0gk.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="55.5" VerticalAlignment="Top" Width="92" Background="{x:Null}" Margin="10,40.667,0,0">
-            <Button/>
-            <MenuItem x:Name="menuItem1" Header="" Height="55.5" Width="64">
-                <MenuItem.Background>
-                    <ImageBrush ImageSource="house-304005_960_720.png"/>
-                </MenuItem.Background>
-                <Button Content="Mi perfil" Background="#FF508F41" Click="perfil"/>
-                <Button Content="Juegos" Background="#FF508F41" Click="juegos"/>
-                <Button Content="Ayuda" Background="#FF358B1B" Click="ayuda"/>
-            </MenuItem>
-        </Menu>
         <Image x:Name="imgMosca" HorizontalAlignment="Left" Margin="264.5,209.34,0,348.5" Width="162" Source="insects-fly_icon-icons.com_72457.png" RenderTransformOrigin="0.5,0.5" DragEnter="volarMosca" Visibility="Hidden">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -4197,5 +4186,10 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Button x:Name="princip" Content="" HorizontalAlignment="Left" Height="70" Margin="26.333,40.667,0,0" VerticalAlignment="Top" Width="65.667" Click="menuPrinc" Foreground="{x:Null}" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="house-304005_960_720.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
