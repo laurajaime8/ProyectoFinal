@@ -56,6 +56,15 @@ namespace ProyectoFinal
                     }
                 }
             }
+            //XmlTextWriter writer = new XmlTextWriter("Cthulhu.xml", null);
+
+       
+
+            //writer.WriteEndElement();
+
+         
+            //writer.Close();
+
         }
 
 
