@@ -101,6 +101,7 @@ namespace ProyectoFinal
             if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
                 cvZetas.Visibility = Visibility.Visible;
                 estarCansado.Begin(this);
+                //estarCansado.ompleted += EstarCansado_Completed;
             
             } 
             else if (pbEnergia.Value > 10)
@@ -157,21 +158,33 @@ namespace ProyectoFinal
             
         }
 
+        private void EstarCansado_Completed(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
 
+            //btJugar.IsHitTestVisible = true;
+        }
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
     
             Storyboard dormir;
             dormir = (Storyboard)this.Resources["sbDormir"];
+            dormir.Completed += Dormir_Completed;
             dormir.Begin();
-            //btJugar.IsHitTestVisible = false;
+            btJugar.IsHitTestVisible = false;
+            btDormir.IsHitTestVisible = false;
 
             pbEnergia.Value += 20;
 
-          
         }
 
+        private void Dormir_Completed(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Funciona");
+            btJugar.IsHitTestVisible = true;
+            btDormir.IsHitTestVisible = true;
+        }
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
