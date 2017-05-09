@@ -1,0 +1,14 @@
+﻿<Window x:Class="ProyectoFinal.Juegos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d"
+        Title="Juegos" Height="300" Width="300">
+    <Grid Background="#FF508F41">
+        <Button x:Name="btnJuegoMonedas" Content="Recolecta monedas" Height="56" Margin="22.001,19.001,38.666,0" VerticalAlignment="Top" FontSize="15" Background="#FFDDDDDD"/>
+        <Button x:Name="btnJuegoMosca" Content="Caza a la mosca" Margin="22.001,0,38.666,56.666" FontSize="15" Background="#FFDDDDDD" Height="56" VerticalAlignment="Bottom" Click="juegoMosca"/>
+
+    </Grid>
+</Window>

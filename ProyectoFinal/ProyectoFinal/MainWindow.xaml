@@ -2466,6 +2466,20 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-15"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="mosca">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imgMosca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="193.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imgMosca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-133.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imgMosca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.447"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imgMosca">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.462"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -4162,13 +4176,23 @@
                 <ImageBrush ImageSource="RMIs0gk.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Background="#FF358B1B">
-            <Button Content="boton1"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="89" Background="#FF358B1B">
             <Button/>
-            <MenuItem Header="MenuItem" Height="25" Width="62.915">
-                <Button/>
-                <MenuItem/>
+            <MenuItem x:Name="menuItem1" Header="Menu" Height="25" Width="62.915">
+                <Button Content="Mi perfil" Background="#FF508F41" Click="perfil"/>
+                <Button Content="Juegos" Background="#FF508F41" Click="juegos"/>
+                <Button Content="Ayuda" Background="#FF358B1B" Click="ayuda"/>
             </MenuItem>
         </Menu>
+        <Image x:Name="imgMosca" HorizontalAlignment="Left" Margin="264.5,209.34,0,348.5" Width="162" Source="insects-fly_icon-icons.com_72457.png" RenderTransformOrigin="0.5,0.5" DragEnter="volarMosca" Visibility="Hidden">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.986"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>

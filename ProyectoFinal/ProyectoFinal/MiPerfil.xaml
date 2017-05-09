@@ -1,0 +1,15 @@
+﻿<Window x:Class="ProyectoFinal.MiPerfil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d"
+        Title="Mi Perfil" Height="300" Width="300">
+    <Grid Background="#FF508F41">
+        <Label x:Name="lblNivel" Content="Nivel:" HorizontalAlignment="Left" Height="34.333" Margin="10,10,0,0" VerticalAlignment="Top" Width="61.333" FontSize="20"/>
+        <ProgressBar x:Name="pbNivel" Height="16.333" Margin="71.333,21.997,63,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLogros" Content="Logros" HorizontalAlignment="Left" Height="26.333" Margin="10,83.666,0,0" VerticalAlignment="Top" Width="45.333"/>
+        <Label x:Name="lblExperiencia" Content="Experiencia:" HorizontalAlignment="Left" Height="26.333" Margin="10,39,0,0" VerticalAlignment="Top" Width="71.333"/>
+    </Grid>
+</Window>

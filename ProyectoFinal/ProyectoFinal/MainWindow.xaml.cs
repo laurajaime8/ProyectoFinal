@@ -73,6 +73,7 @@ namespace ProyectoFinal
 
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
+            //imgMosca.Visibility = Visibility.Hidden;
 
             if ((pbApetito.Value <= 10 && pbDiversion.Value <= 10) ||
                 (pbApetito.Value <= 10 && pbEnergia.Value <= 10) ||
@@ -294,5 +295,32 @@ namespace ProyectoFinal
             pbApetito.Value += 20;
         }
 
+        private void ayuda(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y dos de sus necesidades se ven agotadas, la oruga morirá.");
+        }
+
+        private void perfil(object sender, RoutedEventArgs e)
+        {
+            MiPerfil frm = new MiPerfil();
+            frm.Show();
+        }
+
+        private void juegos(object sender, RoutedEventArgs e)
+        {
+            Juegos frm2 = new Juegos();
+            frm2.Show();
+        }
+
+        private void volarMosca(object sender, DragEventArgs e)
+        {
+            
+            Storyboard mosca;
+            mosca = (Storyboard)this.Resources["sbMosca"];
+
+            //mosca.Begin();
+            //if(imgMosca)
+        }
     }
+    
 }
