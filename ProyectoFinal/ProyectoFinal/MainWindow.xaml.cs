@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,6 +16,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.Xml;
+using System.ComponentModel;
+using System.Drawing;
+
+
 
 namespace ProyectoFinal
 {
@@ -24,6 +29,9 @@ namespace ProyectoFinal
     public partial class MainWindow : Window
     {
         DispatcherTimer t1;
+        private SoundPlayer bucleCancion = new SoundPlayer("cancionBichos.wav");
+        private SoundPlayer simpleSound = new SoundPlayer("bostezo.wav");
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +40,9 @@ namespace ProyectoFinal
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
+
+
+            bucleCancion.PlayLooping();
             persistenciaEntrar();
 
     }
@@ -40,9 +51,10 @@ namespace ProyectoFinal
 
         private void reloj(object sender, EventArgs e)
         {
-            pbEnergia.Value -= 20;
-            pbApetito.Value -= 5;
-            pbDiversion.Value -= 5;
+            
+            pbEnergia.Value -= 0;
+            pbApetito.Value -= 0;
+            pbDiversion.Value -= 0;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -150,12 +162,12 @@ namespace ProyectoFinal
                 lleno100.Begin(this);
             }
 
-            if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
+           /* if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
             {
                 energia100.Begin(this);
 
             }
-
+            */
             if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
             {
                 diversion100.Begin(this);
@@ -168,11 +180,13 @@ namespace ProyectoFinal
 
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
+            simpleSound.Stop();
+
         }
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
-    
+           
             Storyboard dormir;
             dormir = (Storyboard)this.Resources["sbDormir"];
             dormir.Completed += Dormir_Completed;
@@ -181,7 +195,9 @@ namespace ProyectoFinal
             btDormir.IsHitTestVisible = false;
 
             pbEnergia.Value += 20;
-
+        
+            simpleSound.Play();
+            
         }
 
         private void Dormir_Completed(object sender, EventArgs e)
