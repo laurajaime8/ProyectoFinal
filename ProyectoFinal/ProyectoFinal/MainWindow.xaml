@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Heimlich" 
         Height="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}" 
-        Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
+        Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Icon="heimlich-bichos.jpg" Closing="terminar">
     <Window.Resources>
         <Storyboard x:Key="sbMoverParpado" RepeatBehavior="Forever" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqDebajo">
