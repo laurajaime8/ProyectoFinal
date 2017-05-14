@@ -165,9 +165,9 @@ namespace ProyectoFinal
 
         private void EstarCansado_Completed(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
 
-            //btJugar.IsHitTestVisible = true;
+            btJugar.IsHitTestVisible = true;
+            btDormir.IsHitTestVisible = true;
         }
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
@@ -189,19 +189,24 @@ namespace ProyectoFinal
             //MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
+            
         }
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             
             cvMariposa.Visibility = Visibility.Visible;
-            pbDiversion.Value += 20;
+           
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
+            
+           
+            mariposa.Completed += EstarCansado_Completed;
             mariposa.Begin(this);
-            cvMariposa.Visibility = Visibility.Hidden;
-
+            btJugar.IsHitTestVisible = false;
+            btDormir.IsHitTestVisible = false;
+            pbDiversion.Value += 20;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
