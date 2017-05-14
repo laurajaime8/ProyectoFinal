@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Menú Principal" Height="446" Width="500" Foreground="#FFE62828" ResizeMode="NoResize" Icon="heimlich-bichos.jpg" IsTabStop="True" IsHitTestVisible="True" UseLayoutRounding="False">
+        Title="Menú Principal" Height="744" Width="1384" Foreground="#FFE62828" ResizeMode="NoResize" Icon="heimlich-bichos.jpg" IsTabStop="True" IsHitTestVisible="True" UseLayoutRounding="False">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="pequena_bichos_pixar.jpg"/>
         </Grid.Background>
         <Canvas x:Name="cvBotones" Margin="57.707,51.073,21.829,45.695">
-            <Button x:Name="button" Content="Resumen" Foreground="#FF180121" Height="40" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="165" Canvas.Left="93.769" Canvas.Top="113.512" d:LayoutOverrides="Width" Click="resumen">
+            <Button x:Name="btnResumen" Content="Resumen" Foreground="#FF180121" Height="70" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="227" Canvas.Left="177.769" Canvas.Top="228.953" Click="resumen">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF1E06F" Offset="0"/>
@@ -19,7 +19,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_Copy" Content="Mi Perfil" Foreground="#FF180121" Height="40" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="165" Canvas.Left="93.769" Canvas.Top="191.96" d:LayoutOverrides="Width" Click="miPerfil">
+            <Button x:Name="btnMiPerfil" Content="Mi Perfil" Foreground="#FF180121" Height="70" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="227" Canvas.Left="755.464" Canvas.Top="228.953" Click="miPerfil">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF1E06F" Offset="0"/>
@@ -27,7 +27,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_Copy1" Content="Juegos" Foreground="#FF180121" Height="40" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="165" Canvas.Left="93.769" Canvas.Top="266.906" d:LayoutOverrides="Width" Click="juegos">
+            <Button x:Name="btnJuegos" Content="Juegos" Foreground="#FF180121" Height="70" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="227" Canvas.Left="755.464" Canvas.Top="398.953" Click="juegos">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF1E06F" Offset="0"/>
@@ -35,12 +35,12 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="bontonAyuda" Content="" Foreground="#FF180121" Height="53.326" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="56.683" Canvas.Left="334.781" Canvas.Top="253.58" Click="ayuda">
+            <Button x:Name="bontonAyuda" Content="" Foreground="#FF180121" Height="80" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="80" Canvas.Left="1134.781" Canvas.Top="525.58" Click="ayuda">
                 <Button.Background>
                     <ImageBrush ImageSource="help-browser.png"/>
                 </Button.Background>
             </Button>
-            <Label x:Name="label" Content="HEIMLICH" Height="97.025" FontWeight="Bold" FontFamily="Ravie" FontSize="53.333" Background="{x:Null}" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Width="414.464">
+            <Label x:Name="lblBicho" Content="HEIMLICH" Height="147.831" FontWeight="Bold" FontFamily="Ravie" FontSize="96" Background="{x:Null}" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Width="704.464" Canvas.Left="278" Canvas.Top="49.122">
                 <Label.Effect>
                     <DropShadowEffect/>
                 </Label.Effect>
@@ -63,6 +63,14 @@
                     </LinearGradientBrush>
                 </Label.BorderBrush>
             </Label>
+            <Button x:Name="btnNuevaPartida" Content="Nueva Partida" Foreground="#FF180121" Height="70" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="227" Canvas.Left="177.769" Canvas.Top="398.953" Click="resumen">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF1E06F" Offset="0"/>
+                        <GradientStop Color="#FF581870" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
 
         </Canvas>
 

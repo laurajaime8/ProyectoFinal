@@ -49,7 +49,8 @@ namespace ProyectoFinal
         private void resumen(object sender, RoutedEventArgs e)
         {
             this.Close();
-
+            MainWindow main = new MainWindow();
+            main.Show();
         }
     }
 }

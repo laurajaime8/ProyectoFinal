@@ -28,92 +28,21 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(7.0);
+            t1.Interval = TimeSpan.FromSeconds(10.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
-            //XML
-
-            /*  XmlTextReader XMLreader = new XmlTextReader("Cthulhu.xml");
-              while (XMLreader.Read())
-              {
-                  if (XMLreader.NodeType == XmlNodeType.Element)
-                  {
-                      if (XMLreader.Name == "Comida")
-                      {
-                          XMLreader.Read();
-                          pbApetito.Value = XMLreader.ReadContentAsDouble();
-                      }
-                      if (XMLreader.Name == "Energia")
-                      {
-                          XMLreader.Read();
-                          pbEnergia.Value = XMLreader.ReadContentAsDouble();
-                      }
-                      if (XMLreader.Name == "Diversion")
-                      {
-                          XMLreader.Read();
-                          pbDiversion.Value = XMLreader.ReadContentAsDouble();
-                      }
-                  }
-              }*/
-            //XmlTextWriter writer = new XmlTextWriter("Cthulhu.xml", null);
-
-
-
-            //writer.WriteEndElement();
-
-
-            //writer.Close();
-
-       
-            XmlTextReader myXMLreader = new XmlTextReader("Cthulhu.xml");
-            while (myXMLreader.Read())
-            {
-                if (myXMLreader.NodeType == XmlNodeType.Element)
-                {
-                    if (myXMLreader.Name == "Diversion")
-                    {
-                        myXMLreader.Read();
-                        pbDiversion.Value = myXMLreader.ReadContentAsDouble();
-                    }
-                    if (myXMLreader.Name == "Comida")
-                    {
-                        myXMLreader.Read();
-                        pbApetito.Value = myXMLreader.ReadContentAsDouble();
-                    }
-                    if (myXMLreader.Name == "Energia")
-                    {
-                        myXMLreader.Read();
-                        pbEnergia.Value = myXMLreader.ReadContentAsDouble();
-                    }
-                }
-            }
-        
+            persistenciaEntrar();
 
     }
        
-       /* private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
-            settings.IndentChars = ("    ");
-            using (XmlWriter writer = XmlWriter.Create("Cthulhu.xml", settings))
-            {
-                writer.WriteStartElement("Atributos");
-                writer.WriteElementString("Comida", pbApetito.Value + "");
-                writer.WriteElementString("Energia", pbEnergia.Value + "");
-                writer.WriteElementString("Diversion", pbDiversion.Value + "");
-                writer.WriteEndElement();
-                writer.Flush();
-                // writer.Close();
-            }
-        }*/
+       
 
         private void reloj(object sender, EventArgs e)
         {
-            pbEnergia.Value -= 10;
-            pbApetito.Value -= 20;
-            pbDiversion.Value -= 20;
+            pbEnergia.Value -= 20;
+            pbApetito.Value -= 5;
+            pbDiversion.Value -= 5;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -384,11 +313,15 @@ namespace ProyectoFinal
         {
             Principal frm2 = new Principal();
             frm2.Show();
-           // t1.Stop();
+            this.Close();
         }
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            persistenciaSalir();
+        }
+
+        public void persistenciaSalir() {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
             settings.IndentChars = ("    ");
@@ -401,6 +334,30 @@ namespace ProyectoFinal
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();
+            }
+        }
+        public void persistenciaEntrar() {
+            XmlTextReader myXMLreader = new XmlTextReader("Cthulhu.xml");
+            while (myXMLreader.Read())
+            {
+                if (myXMLreader.NodeType == XmlNodeType.Element)
+                {
+                    if (myXMLreader.Name == "Diversion")
+                    {
+                        myXMLreader.Read();
+                        pbDiversion.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                    if (myXMLreader.Name == "Comida")
+                    {
+                        myXMLreader.Read();
+                        pbApetito.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                    if (myXMLreader.Name == "Energia")
+                    {
+                        myXMLreader.Read();
+                        pbEnergia.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                }
             }
         }
     }
