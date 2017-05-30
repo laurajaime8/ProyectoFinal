@@ -27,10 +27,9 @@ namespace ProyectoFinal
         public Principal(MainWindow padre_)
         {
             padre = padre_;
-          
+            
             InitializeComponent();
-            
-            
+         
         }
 
         private void ayuda(object sender, RoutedEventArgs e)
@@ -57,8 +56,10 @@ namespace ProyectoFinal
 
         private void resumen(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
             padre.ShowDialog();
         }
+
+       
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Menú Principal" Height="744" Width="1384" Foreground="#FFE62828" ResizeMode="NoResize" Icon="heimlich-bichos.jpg" IsTabStop="True" IsHitTestVisible="True" UseLayoutRounding="False">
+        Title="Menú Principal" Height="744" Width="1384" Foreground="#FFE62828" ResizeMode="NoResize" Icon="heimlich-bichos.jpg" IsTabStop="True" IsHitTestVisible="True" UseLayoutRounding="False" WindowStyle="None">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="pequena_bichos_pixar.jpg"/>

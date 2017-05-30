@@ -43,7 +43,7 @@ namespace ProyectoFinal
 
             cvMariposa.Visibility = Visibility.Hidden;
 
-            bucleCancion.PlayLooping();
+           // bucleCancion.PlayLooping();
             persistenciaEntrar();
 
     }
@@ -357,6 +357,7 @@ namespace ProyectoFinal
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
+           
             persistenciaSalir();
         }
 
