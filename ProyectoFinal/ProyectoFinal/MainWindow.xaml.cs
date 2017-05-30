@@ -43,7 +43,7 @@ namespace ProyectoFinal
 
             cvMariposa.Visibility = Visibility.Hidden;
 
-            //bucleCancion.PlayLooping();
+            bucleCancion.PlayLooping();
             persistenciaEntrar();
 
     }
@@ -148,19 +148,23 @@ namespace ProyectoFinal
                tenerHambre.Begin(this);
                spAlimentos.Visibility = Visibility.Visible;
 
-                if (spAlimentos.Visibility == Visibility.Hidden) {
-                    spAlimentos.Visibility = Visibility.Visible;
-                }
-
             }
 
             if (pbApetito.Value > 10)
             {
                 elLengua.Visibility = Visibility.Hidden;
                 tenerHambre.Remove(this);
-                spAlimentos.Visibility = Visibility.Hidden;
+                
             }
-            
+            if (pbApetito.Value >= 90)
+            {
+                elLengua.Visibility = Visibility.Collapsed;
+                tenerHambre.Remove();
+                spAlimentos.Visibility = Visibility.Hidden ;
+
+
+            }
+
             //Para las progressBar POSITIVAS
 
             if (pbApetito.Value >= 90 && pbEnergia.Value < 90 && pbDiversion.Value < 90)
@@ -304,25 +308,26 @@ namespace ProyectoFinal
 
         private void comerHelado(Image imgOrigen)
         {
-            imgOrigen.Visibility = Visibility.Hidden;
+          //  imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
         }
 
         private void comerManzana(Image imgOrigen)
         {
-            imgOrigen.Visibility = Visibility.Hidden;
+           // imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
         }
 
         private void comerLechuga(Image imgOrigen)
         {
-            imgOrigen.Visibility = Visibility.Hidden;
+          //  imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
         }
 
         private void comerZanahoria(Image imgOrigen)
         {
-            imgOrigen.Visibility = Visibility.Hidden;
+         //   imgOrigen.Visibility = Visibility.Hidden;
+            pbApetito.Value += 20;
         }
 
         private void comerBurguer(Image imgOrigen)
@@ -343,10 +348,11 @@ namespace ProyectoFinal
 
         private void menuPrinc(object sender, RoutedEventArgs e)
         {
-            Principal frm2 = new Principal();
-            persistenciaSalir();
-            frm2.Show();
-            this.Close();
+            Principal frm2 = new Principal(this);
+            //persistenciaSalir();
+            this.Hide();
+            frm2.ShowDialog();
+            
         }
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)

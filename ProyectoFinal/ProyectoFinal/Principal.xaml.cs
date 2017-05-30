@@ -19,9 +19,18 @@ namespace ProyectoFinal
     /// </summary>
     public partial class Principal : Window
     {
-        public Principal()
+        MainWindow padre;
+       /* public Principal()
         {
             InitializeComponent();
+        }*/
+        public Principal(MainWindow padre_)
+        {
+            padre = padre_;
+          
+            InitializeComponent();
+            
+            
         }
 
         private void ayuda(object sender, RoutedEventArgs e)
@@ -48,9 +57,8 @@ namespace ProyectoFinal
 
         private void resumen(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            MainWindow main = new MainWindow();
-            main.Show();
+            this.Hide();
+            padre.ShowDialog();
         }
     }
 }
