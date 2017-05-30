@@ -35,9 +35,10 @@ namespace ProyectoFinal
 
         public MainWindow()
         {
-           
 
+            
             InitializeComponent();
+            etiquetas();
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
@@ -53,8 +54,9 @@ namespace ProyectoFinal
         public MainWindow(XmlTextReader myXMLreader)
         {
 
-
+           
             InitializeComponent();
+            etiquetas();
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
@@ -67,6 +69,12 @@ namespace ProyectoFinal
 
         }
 
+        public void  etiquetas() {
+            btnCasa.ToolTip = "Menú Principal";
+            btnSalir.ToolTip = "Salir de la Aplicación";
+            btJugar.ToolTip = "Jugar";
+            btDormir.ToolTip = "Dormir";
+        }
 
 
         private void reloj(object sender, EventArgs e)

@@ -30,6 +30,12 @@ namespace ProyectoFinal
             padre = padre_;
             
             InitializeComponent();
+            btnJuegos.ToolTip = "Juegos disponibles";
+            btnAyuda.ToolTip = "Ayuda";
+            btnMiPerfil.ToolTip = "Perfil del Usuario";
+            btnNuevaPartida.ToolTip = "Cargar Nueva Partida";
+            btnResumen.ToolTip = "Continuar Partida";
+            btnSalir.ToolTip = "Salir de la aplicación";
          
         }
 

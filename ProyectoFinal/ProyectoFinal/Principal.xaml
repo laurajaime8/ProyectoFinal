@@ -35,7 +35,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="bontonAyuda" Content="" Foreground="#FF180121" Height="111.652" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="98" Canvas.Left="1134.781" Canvas.Top="378.301" Click="ayuda">
+            <Button x:Name="btnAyuda" Content="" Foreground="#FF180121" Height="111.652" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="98" Canvas.Left="1134.781" Canvas.Top="378.301" Click="ayuda">
                 <Button.Background>
                     <ImageBrush ImageSource="help-browser.png"/>
                 </Button.Background>
