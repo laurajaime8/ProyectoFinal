@@ -55,24 +55,42 @@ namespace ProyectoFinal
             frm2.Show();
         }
 
-        private void resumen(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            padre.ShowDialog();
-        }
+     
 
         private void salir(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("¿Desea salir de la aplicación?.",
+                "Heimlich - Salir Aplicación",
+                MessageBoxButton.YesNo, MessageBoxImage.Question)
+                == MessageBoxResult.Yes)
+                this.Close();
             padre.Close();
         }
 
         private void nuevaPartida(object sender, RoutedEventArgs e)
         {
-            padre.Close();
-            XmlTextReader myXMLreader = new XmlTextReader("PartidaNueva.xml");
-            MainWindow main = new MainWindow( myXMLreader);
-            main.Show();
+            if (MessageBox.Show("¿Desea empezar una nueva partida? No se guardará la anterior.",
+                "Heimlich - Nueva Partida",
+           MessageBoxButton.YesNo, MessageBoxImage.Question)
+            == MessageBoxResult.Yes)
+            {
+                padre.Close();
+                XmlTextReader myXMLreader = new XmlTextReader("PartidaNueva.xml");
+                MainWindow main = new MainWindow(myXMLreader);
+                main.Show();
+            }
+        }
+
+        private void resume(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("¿Quieres continuar con la partida guardada?", "Heimlich - Resume",
+            MessageBoxButton.YesNo, MessageBoxImage.Question)
+             == MessageBoxResult.Yes)
+            {
+                this.Close();
+                padre.ShowDialog();
+            }
+           
         }
     }
 }
