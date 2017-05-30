@@ -31,18 +31,19 @@ namespace ProyectoFinal
         DispatcherTimer t1;
         private SoundPlayer bucleCancion = new SoundPlayer("cancionBichos.wav");
         private SoundPlayer simpleSound = new SoundPlayer("bostezo.wav");
+        private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
 
         public MainWindow()
         {
             InitializeComponent();
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(10.0);
+            t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
+            cvMariposa.Visibility = Visibility.Hidden;
 
-
-            bucleCancion.PlayLooping();
+            //bucleCancion.PlayLooping();
             persistenciaEntrar();
 
     }
@@ -106,6 +107,7 @@ namespace ProyectoFinal
                 if (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10) {
 
                     GameOver.Visibility = Visibility.Visible;
+                    gameOver.Play();
                 }
             }
             else {
@@ -146,6 +148,10 @@ namespace ProyectoFinal
                tenerHambre.Begin(this);
                spAlimentos.Visibility = Visibility.Visible;
 
+                if (spAlimentos.Visibility == Visibility.Hidden) {
+                    spAlimentos.Visibility = Visibility.Visible;
+                }
+
             }
 
             if (pbApetito.Value > 10)
@@ -162,12 +168,12 @@ namespace ProyectoFinal
                 lleno100.Begin(this);
             }
 
-           /* if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
+            if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
             {
                 energia100.Begin(this);
 
             }
-            */
+            
             if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
             {
                 diversion100.Begin(this);
@@ -177,9 +183,10 @@ namespace ProyectoFinal
 
         private void EstarCansado_Completed(object sender, EventArgs e)
         {
-
+           // MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
+            cvMariposa.Visibility = Visibility.Collapsed;
             simpleSound.Stop();
 
         }
@@ -205,23 +212,27 @@ namespace ProyectoFinal
             //MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
-            
+         
+
+
         }
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
             
-            cvMariposa.Visibility = Visibility.Visible;
+         
            
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
-            
+
+          
            
             mariposa.Completed += EstarCansado_Completed;
             mariposa.Begin(this);
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
+            cvMariposa.Visibility = Visibility.Visible;
             pbDiversion.Value += 20;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
@@ -333,6 +344,7 @@ namespace ProyectoFinal
         private void menuPrinc(object sender, RoutedEventArgs e)
         {
             Principal frm2 = new Principal();
+            persistenciaSalir();
             frm2.Show();
             this.Close();
         }
