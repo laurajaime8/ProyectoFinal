@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace ProyectoFinal
 {
@@ -60,6 +61,18 @@ namespace ProyectoFinal
             padre.ShowDialog();
         }
 
-       
+        private void salir(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            padre.Close();
+        }
+
+        private void nuevaPartida(object sender, RoutedEventArgs e)
+        {
+            padre.Close();
+            XmlTextReader myXMLreader = new XmlTextReader("PartidaNueva.xml");
+            MainWindow main = new MainWindow( myXMLreader);
+            main.Show();
+        }
     }
 }

@@ -35,6 +35,8 @@ namespace ProyectoFinal
 
         public MainWindow()
         {
+           
+
             InitializeComponent();
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
@@ -46,16 +48,33 @@ namespace ProyectoFinal
            // bucleCancion.PlayLooping();
             persistenciaEntrar();
 
-    }
-       
-       
+         }
+
+        public MainWindow(XmlTextReader myXMLreader)
+        {
+
+
+            InitializeComponent();
+            t1 = new DispatcherTimer();
+            t1.Interval = TimeSpan.FromSeconds(5.0);
+            t1.Tick += new EventHandler(reloj);
+            t1.Start();
+
+            cvMariposa.Visibility = Visibility.Hidden;
+
+            // bucleCancion.PlayLooping();
+            persistenciaEntrarPartidaNueva(myXMLreader);
+
+        }
+
+
 
         private void reloj(object sender, EventArgs e)
         {
             
-            pbEnergia.Value -= 0;
+            pbEnergia.Value -= 20;
             pbApetito.Value -= 0;
-            pbDiversion.Value -= 0;
+            pbDiversion.Value -= 10;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -399,6 +418,39 @@ namespace ProyectoFinal
                     }
                 }
             }
+        }
+        public void persistenciaEntrarPartidaNueva(XmlTextReader myXMLreader)
+        {
+            
+            while (myXMLreader.Read())
+            {
+                if (myXMLreader.NodeType == XmlNodeType.Element)
+                {
+                    if (myXMLreader.Name == "Diversion")
+                    {
+                        myXMLreader.Read();
+                        pbDiversion.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                    if (myXMLreader.Name == "Comida")
+                    {
+                        myXMLreader.Read();
+                        pbApetito.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                    if (myXMLreader.Name == "Energia")
+                    {
+                        myXMLreader.Read();
+                        pbEnergia.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                }
+            }
+        }
+
+        private void salir(object sender, RoutedEventArgs e)
+        {
+            //Preguntar
+            this.Hide();
+            persistenciaSalir();
+            this.Close();
         }
     }
     
