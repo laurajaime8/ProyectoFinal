@@ -4147,7 +4147,7 @@
                 <ImageBrush ImageSource="house-304005_960_720.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnSalir" Content="" Foreground="#FF180121" Height="111.652" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="98" HorizontalAlignment="Right" Margin="0,0,121.219,54.87" VerticalAlignment="Bottom" Click="salir">
+        <Button x:Name="btnSalir" Content="" Foreground="#FF180121" Height="111.652" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="98" HorizontalAlignment="Right" Margin="0,0,121.219,54.87" VerticalAlignment="Bottom" Click="salir" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="exit.png"/>
             </Button.Background>

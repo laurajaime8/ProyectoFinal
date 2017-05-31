@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Juegos" Height="300" Width="300">
     <Grid Background="#FF508F41">
-        <Button x:Name="btnJuegoMonedas" Content="Recolecta monedas" Height="56" Margin="22.001,19.001,38.666,0" VerticalAlignment="Top" FontSize="15" Background="#FFDDDDDD"/>
-        <Button x:Name="btnJuegoMosca" Content="Caza a la mosca" Margin="22.001,0,38.666,56.666" FontSize="15" Background="#FFDDDDDD" Height="56" VerticalAlignment="Bottom" Click="juegoMosca"/>
+        <Button x:Name="btnJuegoMonedas" Content="Laberinto" Height="56" Margin="30.781,51.928,29.886,0" VerticalAlignment="Top" FontSize="15" Background="#FFDDDDDD" Click="laberinto"/>
+        <Button x:Name="btnJuegoMosca" Content="Caza a la mosca" Margin="30.781,0,29.886,56.666" FontSize="15" Background="#FFDDDDDD" Height="56" VerticalAlignment="Bottom" Click="juegoMosca"/>
 
     </Grid>
 </Window>

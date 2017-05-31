@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProyectoFinal.Laberinto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d"
+        Title="Laberinto" Height="495" Width="631.5" Background="#FF73C133">
+    <Grid Height="464" VerticalAlignment="Top">
+        <Path Data="M0.5,158.5 L19.000001,158.5 19.000001,463.5 0.5,463.5 z M0.5,0.5 L19.000001,0.5 19.000001,102.5 0.5,102.5 z" Fill="#FF0B0B0C" HorizontalAlignment="Left" Margin="135.5,0,0,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Path Data="M0.5,349.5 L19.000002,349.5 19.000002,463.5 0.5,463.5 z M0.5,0.5 L19.000002,0.5 19.000002,296 0.5,296 z" Fill="#FF0B0B0C" HorizontalAlignment="Right" Margin="0,0,126.5,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Path Data="M0.5,275.5 L19.000001,275.5 19.000001,463.5 0.5,463.5 z M0.5,0.5 L19.000001,0.5 19.000001,234.5 0.5,234.5 z" Fill="#FF0B0B0C" HorizontalAlignment="Left" Margin="194,0,0,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Path Data="M0.5,275.5 L18.999995,275.5 18.999995,463.5 0.5,463.5 z M0.5,82 L18.999995,82 18.999995,234.5 0.5,234.5 z M0.5,0.5 L18.999995,0.5 18.999995,19.999998 0.5,19.999998 z" Fill="#FF0B0B0C" HorizontalAlignment="Left" Margin="251,0,0,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Path Data="M0.5,444 L18.999995,444 18.999995,463.5 0.5,463.5 z M0.5,148 L18.999995,148 18.999995,411.5 0.5,411.5 z M0.5,82 L18.999995,82 18.999995,102.5 0.5,102.5 z M0.5,0.5 L18.999995,0.5 18.999995,19.999998 0.5,19.999998 z" Fill="#FF0B0B0C" Margin="309.5,0,294.5,0" Stretch="Fill" Stroke="Black"/>
+        <Path Data="M0.5,444 L18.999995,444 18.999995,463.5 0.5,463.5 z M0.5,148 L18.999995,148 18.999995,411.5 0.5,411.5 z M0.5,82 L18.999995,82 18.999995,102.5 0.5,102.5 z M0.5,0.5 L18.999995,0.5 18.999995,19.999998 0.5,19.999998 z" Fill="#FF0B0B0C" HorizontalAlignment="Right" Margin="0,0,233,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Path Data="M0.5,444 L18.999994,444 18.999994,463.5 0.5,463.5 z M0.5,0.5 L18.999994,0.5 18.999994,411.5 0.5,411.5 z" Fill="#FF0B0B0C" HorizontalAlignment="Right" Margin="0,0,177.5,0" Stretch="Fill" Stroke="Black" Width="19.5"/>
+        <Rectangle Fill="#FF0B0B0C" Height="19.5" Margin="135.5,0,126.5,0" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FF0B0B0C" Height="19.5" Margin="135.5,0,126.5,0" Stroke="Black" VerticalAlignment="Bottom"/>
+        <Path Data="M290.5,0.5 L361,0.5 361,19.000002 290.5,19.000002 z M115,0.5 L255.5,0.5 255.5,19.000002 115,19.000002 z M0.5,0.5 L78.5,0.5 78.5,19.000002 0.5,19.000002 z" Fill="#FF0B0B0C" Height="19.5" Margin="135.5,82.5,126.5,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
+        <Path Data="M116,0.5 L303.5,0.5 303.5,18.999996 116,18.999996 z M57.5,0.5 L78,0.5 78,18.999996 57.5,18.999996 z M0.5,0.5 L21.000002,0.5 21.000002,18.999996 0.5,18.999996 z" Fill="#FF0B0B0C" Height="19.5" Margin="193,148.5,126.5,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
+        <Path Data="M173.5,0.5 L361,0.5 361,19.000001 173.5,19.000001 z M58,0.5 L135.5,0.5 135.5,19.000001 58,19.000001 z M0.5,0.5 L20.000002,0.5 20.000002,19.000001 0.5,19.000001 z" Fill="#FF0B0B0C" Margin="135.5,214.5,126.5,230" Stretch="Fill" Stroke="Black"/>
+        <Path Data="M173.5,0.5 L361,0.5 361,18.999996 173.5,18.999996 z M0.5,0.5 L135.5,0.5 135.5,18.999996 0.5,18.999996 z" Fill="#FF0B0B0C" Height="19.5" Margin="135.5,0,126.5,168.5" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
+        <Path Data="M341.5,0.5 L361,0.5 361,19.000001 341.5,19.000001 z M173.5,0.5 L311,0.5 311,19.000001 173.5,19.000001 z M0.5,0.5 L135.5,0.5 135.5,19.000001 0.5,19.000001 z" Fill="#FF0B0B0C" Height="19.5" Margin="135.5,0,126.5,104" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
+        <Path Data="M341.5,0.5 L361,0.5 361,19.000001 341.5,19.000001 z M173.5,0.5 L311,0.5 311,19.000001 173.5,19.000001 z M0.5,0.5 L135.5,0.5 135.5,19.000001 0.5,19.000001 z" Fill="#FF0B0B0C" Height="19.5" Margin="135.5,0,126.5,53" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

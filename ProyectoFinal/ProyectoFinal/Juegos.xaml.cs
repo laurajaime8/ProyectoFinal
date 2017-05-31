@@ -34,12 +34,19 @@ namespace ProyectoFinal
            
         }
 
-       /* private void mosquita(object sender, DragEventArgs e)
+        private void laberinto(object sender, RoutedEventArgs e)
         {
-           // frm.imgMosca;
+            Laberinto laberinto = new Laberinto();
+            this.Close();
+            laberinto.Show();
+        }
 
-            throw new NotImplementedException();
+        /* private void mosquita(object sender, DragEventArgs e)
+         {
+            // frm.imgMosca;
 
-        }*/
+             throw new NotImplementedException();
+
+         }*/
     }
 }

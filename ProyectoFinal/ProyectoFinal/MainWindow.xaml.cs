@@ -33,6 +33,8 @@ namespace ProyectoFinal
         private SoundPlayer simpleSound = new SoundPlayer("bostezo.wav");
         private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
 
+
+
         public MainWindow()
         {
 
@@ -46,7 +48,7 @@ namespace ProyectoFinal
 
             cvMariposa.Visibility = Visibility.Hidden;
 
-           // bucleCancion.PlayLooping();
+            bucleCancion.PlayLooping();
             persistenciaEntrar();
 
          }
@@ -68,6 +70,8 @@ namespace ProyectoFinal
             persistenciaEntrarPartidaNueva(myXMLreader);
 
         }
+
+
 
         public void  etiquetas() {
             btnCasa.ToolTip = "Menú Principal";
@@ -224,7 +228,7 @@ namespace ProyectoFinal
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
-           
+            
             Storyboard dormir;
             dormir = (Storyboard)this.Resources["sbDormir"];
             dormir.Completed += Dormir_Completed;
