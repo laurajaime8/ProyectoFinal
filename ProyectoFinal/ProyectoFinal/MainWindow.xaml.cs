@@ -18,7 +18,7 @@ using System.Windows.Threading;
 using System.Xml;
 using System.ComponentModel;
 using System.Drawing;
-
+using System.Threading;
 
 
 namespace ProyectoFinal
@@ -41,6 +41,11 @@ namespace ProyectoFinal
             
             InitializeComponent();
             etiquetas();
+            var th = new Thread(ExecuteInForeground);
+            th.Start();
+            Thread.Sleep(1000);
+
+
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
@@ -48,7 +53,6 @@ namespace ProyectoFinal
 
             cvMariposa.Visibility = Visibility.Hidden;
 
-            bucleCancion.PlayLooping();
             persistenciaEntrar();
 
          }
@@ -59,6 +63,10 @@ namespace ProyectoFinal
            
             InitializeComponent();
             etiquetas();
+            var th = new Thread(ExecuteInForeground);
+            th.Start();
+            Thread.Sleep(1000);
+
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
@@ -66,11 +74,15 @@ namespace ProyectoFinal
 
             cvMariposa.Visibility = Visibility.Hidden;
 
-            // bucleCancion.PlayLooping();
             persistenciaEntrarPartidaNueva(myXMLreader);
 
         }
+        private static void  ExecuteInForeground()
+        {
 
+            SoundPlayer bucleCancion = new SoundPlayer("cancionBichos.wav");
+            bucleCancion.PlayLooping();
+        }
 
 
         public void  etiquetas() {
@@ -84,9 +96,9 @@ namespace ProyectoFinal
         private void reloj(object sender, EventArgs e)
         {
             
-            pbEnergia.Value -= 20;
-            pbApetito.Value -= 0;
-            pbDiversion.Value -= 10;
+            pbEnergia.Value -= 0;
+            pbApetito.Value -= 20;
+            pbDiversion.Value -= 0;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -322,6 +334,7 @@ namespace ProyectoFinal
         private void cvCabeza_Drop(object sender, DragEventArgs e)
         {
            Image imagen = (Image)e.Data.GetData(typeof(Image));
+         
             switch (imagen.Name)
             {
                 case "manzana":comerManzana(imagen);

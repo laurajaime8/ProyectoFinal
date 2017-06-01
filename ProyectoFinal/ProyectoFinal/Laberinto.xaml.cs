@@ -23,5 +23,48 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+       
+        private void Empezar() {
+            
+            
+        }
+
+       /* private void inicio(object sender, MouseButtonEventArgs e)
+        {
+           DataObject dataO = new DataObject(((Label)sender));
+            DragDrop.DoDragDrop((Label)sender, dataO, DragDropEffects.Move);
+        }
+
+        private void final(object sender, DragEventArgs e)
+        {
+           Label label = (Label)e.Data.GetData(typeof(Label));
+            MessageBox.Show("Bien hecho!");
+       
+        }*/
+
+        private void pared_colision(object sender, MouseEventArgs e)
+        {
+            if (btnInicio.IsEnabled == false)
+            {
+                MessageBox.Show("Fail");
+                btnInicio.IsEnabled = true;
+                btnFinal.IsEnabled = false;
+            }
+        }
+
+        private void inicio(object sender, MouseEventArgs e)
+        {
+            btnInicio.IsEnabled = false;
+            btnFinal.IsEnabled = true;
+
+        }
+
+        private void final(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Enhorabuena, reto conseguido!");
+            btnInicio.IsEnabled = true;
+            btnFinal.IsEnabled = false;
+        }
     }
 }
