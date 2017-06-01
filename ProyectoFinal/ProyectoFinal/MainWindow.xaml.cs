@@ -42,8 +42,8 @@ namespace ProyectoFinal
             InitializeComponent();
             etiquetas();
             var th = new Thread(ExecuteInForeground);
-            th.Start();
-            Thread.Sleep(1000);
+           // th.Start();
+           // Thread.Sleep(1000);
 
 
             t1 = new DispatcherTimer();
@@ -64,8 +64,8 @@ namespace ProyectoFinal
             InitializeComponent();
             etiquetas();
             var th = new Thread(ExecuteInForeground);
-            th.Start();
-            Thread.Sleep(1000);
+          //  th.Start();
+          //  Thread.Sleep(1000);
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);

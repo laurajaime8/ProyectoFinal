@@ -22,49 +22,46 @@ namespace ProyectoFinal
         public Laberinto()
         {
             InitializeComponent();
+            btnFinal.IsHitTestVisible = false;
+
         }
 
-       
-        private void Empezar() {
-            
-            
-        }
 
-       /* private void inicio(object sender, MouseButtonEventArgs e)
-        {
-           DataObject dataO = new DataObject(((Label)sender));
-            DragDrop.DoDragDrop((Label)sender, dataO, DragDropEffects.Move);
-        }
-
-        private void final(object sender, DragEventArgs e)
-        {
-           Label label = (Label)e.Data.GetData(typeof(Label));
-            MessageBox.Show("Bien hecho!");
-       
-        }*/
+  
 
         private void pared_colision(object sender, MouseEventArgs e)
         {
-            if (btnInicio.IsEnabled == false)
+            if (btnInicio.IsHitTestVisible == false)
             {
                 MessageBox.Show("Fail");
-                btnInicio.IsEnabled = true;
-                btnFinal.IsEnabled = false;
+                btnInicio.IsHitTestVisible = true;
+                btnFinal.IsHitTestVisible = false;
             }
         }
 
         private void inicio(object sender, MouseEventArgs e)
         {
-            btnInicio.IsEnabled = false;
-            btnFinal.IsEnabled = true;
+            btnInicio.IsHitTestVisible = false;
+            btnFinal.IsHitTestVisible = true;
 
         }
 
         private void final(object sender, MouseEventArgs e)
         {
             MessageBox.Show("Enhorabuena, reto conseguido!");
-            btnInicio.IsEnabled = true;
-            btnFinal.IsEnabled = false;
+            btnInicio.IsHitTestVisible = true;
+            btnFinal.IsHitTestVisible = false;
+        }
+
+        private void cerrar(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+        }
+
+        
+        private void informacion(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bienvenido al juego del laberinto! En primer lugar deberás de poner el ratón sobre la hormiga y tendrás que guiarlo por el laberinto hasta llegar al final. No podrás tocar las paredes ya que si no tendrás que empezar de nuevo. Buena suerte!",
+               "Información", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
