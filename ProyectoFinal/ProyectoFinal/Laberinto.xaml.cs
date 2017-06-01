@@ -87,7 +87,7 @@ namespace ProyectoFinal
 
         private void final(object sender, MouseEventArgs e)
         {
-
+            t1.Stop();
             if (MessageBox.Show("¿Desea guardar el tiempo conseguido en tu perfil?.",
               "Heimlich - Laberinto",
               MessageBoxButton.YesNo, MessageBoxImage.Question)
@@ -97,7 +97,7 @@ namespace ProyectoFinal
 
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false;
-            t1.Stop();
+            
 
             seg = 0;
             min = 0;

@@ -55,11 +55,6 @@ namespace ProyectoFinal
             frm.Show();
         }
 
-        private void juegos(object sender, RoutedEventArgs e)
-        {
-            Juegos frm2 = new Juegos();
-            frm2.Show();
-        }
 
      
 
@@ -97,6 +92,12 @@ namespace ProyectoFinal
                 padre.ShowDialog();
             }
            
+        }
+
+        private void juego(object sender, RoutedEventArgs e)
+        {
+            Laberinto laberinto = new Laberinto();
+            laberinto.Show();
         }
     }
 }

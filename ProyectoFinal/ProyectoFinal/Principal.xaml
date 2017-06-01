@@ -27,7 +27,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnJuegos" Content="Juegos" Foreground="#FF180121" Height="91" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="243" Canvas.Left="755.464" Canvas.Top="398.953" Click="juegos">
+            <Button x:Name="btnJuegos" Content="Juego: Laberinto" Foreground="#FF180121" Height="91" FontWeight="Bold" FontSize="29.333" OpacityMask="#FF20CB47" Width="243" Canvas.Left="755.464" Canvas.Top="398.953" Click="juego">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF1E06F" Offset="0"/>

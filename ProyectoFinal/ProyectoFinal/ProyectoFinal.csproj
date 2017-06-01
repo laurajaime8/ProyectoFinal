@@ -58,10 +58,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Juegos.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Laberinto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,9 +71,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Avatar.cs" />
-    <Compile Include="Juegos.xaml.cs">
-      <DependentUpon>Juegos.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Laberinto.xaml.cs">
       <DependentUpon>Laberinto.xaml</DependentUpon>
     </Compile>
