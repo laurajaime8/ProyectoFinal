@@ -24,6 +24,7 @@ namespace ProyectoFinal
         int seg = 0;
         int min = 0;
         int hora = 0;
+        MiPerfil perfil = new MiPerfil();
 
         public Laberinto()
         {
@@ -56,9 +57,8 @@ namespace ProyectoFinal
                 + min.ToString().PadLeft(2, '0') +
                 ":" + seg.ToString().PadLeft(2, '0');
 
-            
+    
         }
-
 
 
         private void pared_colision(object sender, MouseEventArgs e)
@@ -80,9 +80,17 @@ namespace ProyectoFinal
         private void inicio(object sender, MouseEventArgs e)
         {
             lblCronometro.Content = "00:00:00";
+
             btnInicio.IsHitTestVisible = false;
             btnFinal.IsHitTestVisible = true;
             t1.IsEnabled = true;
+
+
+
+            
+
+          
+           
         }
 
         private void final(object sender, MouseEventArgs e)
@@ -97,12 +105,27 @@ namespace ProyectoFinal
 
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false;
-            
+
+            if (seg == 5)
+            {
+                
+                perfil.lblRapido.Visibility = Visibility.Visible;
+                MessageBox.Show("Has desbloqueado el logro: Super rápido",
+                  "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                
+            }
+            if (seg == 20)
+            {
+                perfil.lblTortuga.Visibility = Visibility.Visible;
+                MessageBox.Show("Has desbloqueado el logro: Tortugo",
+                  "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
 
             seg = 0;
             min = 0;
             hora = 0;
         }
+
 
         private void cerrar(object sender, System.ComponentModel.CancelEventArgs e)
         {

@@ -5,11 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Mi Perfil" Height="300" Width="300">
-    <Grid Background="#FF508F41">
-        <Label x:Name="lblNivel" Content="Nivel:" HorizontalAlignment="Left" Height="34.333" Margin="10,10,0,0" VerticalAlignment="Top" Width="61.333" FontSize="20"/>
-        <ProgressBar x:Name="pbNivel" Height="16.333" Margin="71.333,21.997,63,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblLogros" Content="Logros" HorizontalAlignment="Left" Height="26.333" Margin="10,83.666,0,0" VerticalAlignment="Top" Width="45.333"/>
-        <Label x:Name="lblExperiencia" Content="Experiencia:" HorizontalAlignment="Left" Height="26.333" Margin="10,39,0,0" VerticalAlignment="Top" Width="71.333"/>
+        Title="Mi Perfil" Height="400" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="dibujos-bichos-disney.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblNivel" Content="Nivel:" HorizontalAlignment="Left" Height="60.08" Margin="10,10,0,0" VerticalAlignment="Top" Width="101.333" FontSize="36" Background="{x:Null}"/>
+        <ProgressBar x:Name="pbNivel" Height="27.333" Margin="116.333,29.747,71.333,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLogros" Height="40.333" Margin="10,83.666,10,0" VerticalAlignment="Top" FontSize="20" Background="#FFD61919" Grid.ColumnSpan="2" FontWeight="Bold" Content="                                  Logros"/>
+        <Label x:Name="lblNivelPorciento" Content="" Height="57.08" Margin="-66.333,10,10,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Grid.Column="1"/>
+        <Label x:Name="lblTortuga" Content="                         Tortuga Ninja" Height="40.333" Margin="32,128.999,33,0" VerticalAlignment="Top" FontSize="20" Background="#FF18811D" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblRapido" Content="&#x9;            Super rápido" Margin="32,174.332,33,154.335" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label x:Name="lblPatoso" Content="   &#x9;        Patoso number one" Height="40.333" Margin="32,0,33,109.002" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label x:Name="lblMasMuertes" Content="&#x9;&#x9;Asesino nato" Height="40.333" Margin="32,0,33,63.669" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label x:Name="lblTodosLogros" Content="&#x9;        Logreador profesional" Height="40.333" Margin="32,0,33,18.336" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Image x:Name="tortuga" Height="45.333" Source="turtle-icon_36958.png" Stretch="Fill" Width="53" HorizontalAlignment="Left" Margin="58.333,123.999,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.434,0.694"/>
+        <Image x:Name="rapido" Margin="57,174.332,0,154.335" Source="run-512.png" Stretch="Fill" HorizontalAlignment="Left" Width="43.333"/>
+        <Image x:Name="patoso_png" Margin="32,0,0,109.002" Source="patoso.png" Stretch="Fill" HorizontalAlignment="Left" Width="105.333" Height="40.333" VerticalAlignment="Bottom"/>
+        <Image x:Name="asesino_png" Margin="32,0,0,58.669" Source="asesino.png" Stretch="Fill" HorizontalAlignment="Left" Height="62.334" VerticalAlignment="Bottom" Width="79.333" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="38.516"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="logreador_png" Height="40.333" Margin="46,0,0,18.336" Source="logreador.png" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="65.333"/>
     </Grid>
 </Window>

@@ -378,353 +378,45 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-7.306"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbDiversion0" AutoReverse="True" RepeatBehavior="1x">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="ptCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.184"/>
+        <Storyboard x:Key="sbDiversion0" AutoReverse="True" RepeatBehavior="2x">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvCabeza">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="10.883"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ptCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.5"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="mano1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-20.97"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ptCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.329"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mano1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-14"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ptCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-22.5"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="mano1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mofleteIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-8.637"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="posaBrazoDespues2">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-16.52"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="mofleteIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15.454"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-0.731"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="6"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-1.739"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-14"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="9.259"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="mofleteIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.179"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvAburrido">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-6.482"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="mofleteIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.214"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cvAburrido">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.812"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.4"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cvAburrido">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.967"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.238"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvAburrido">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-28"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antenaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-2.913"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antenaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-38.086"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antenaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39.17"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antenaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="12.26"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="antenaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.147"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="antenaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.686"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="antenaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.757"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="antenaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.58"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoIzqDebajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-2.313"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoIzqDebajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-26.476"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ojoIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1.999"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-28.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-26.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pupilaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoDerArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="8.101"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoDerArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-35.415"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pupilaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="6.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-26"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-28.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ojoDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="7.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoDerAbajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="6.284"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoDerAbajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-22.335"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoIzqArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-2.285"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoIzqArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-26.697"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-24.056"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-10.125"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-25.194"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="14.069"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="ojoDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.379"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.719"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="ojoIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.375"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.713"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.867"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="pupilaIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.667"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="pupilaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.407"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.271"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.608"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqDebajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.39"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqDebajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.857"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoDerArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.311"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoDerArriba">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.944"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoDerAbajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.215"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoDerAbajo">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.014"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.872"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.489"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.605"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.52"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="narizDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-3.296"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="narizDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="10.296"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="narizDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-11.065"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="narizDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.521"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="narizIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.723"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="narizIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1.096"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="narizIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-9.403"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="narizIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-3.701"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ptCabeza">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="mofleteIzq">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.983"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="mofleteIzq">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="mofleteIzq">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB757C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.987"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.983"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.004"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="mofleteDer">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB757C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="mofleteDer">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.97"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="49.874"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-40.725"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoDerArriba">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB757C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoDerAbajo">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFB757C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoIzqDebajo">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF9F57C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="parpadoIzqArriba">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF9F57C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ojera1">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera1">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ojera2">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera2">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ojera4">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF9F57C1"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="ojera3">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera4">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="ojera3">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFC15774"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="189.784"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="boca">
-                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF1A205D"/>
-            </ColorAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bola5">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="19"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bola5">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-57"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="50.566"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="3"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="aro11">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-33"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="amarillo1">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="7"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="amarillo1">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-36"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="azul9">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="6"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="azul9">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-35"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="31.967"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-18"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="aro10">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="3.334"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mancha_4">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="8.667"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="mancha_4">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-19.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bola3">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bola3">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="23.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bola4">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="25"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bola4">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-26"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="cvHeimlich">
-                <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="260.572,150,31.427,14.528"/>
-                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="150,150,31.427,14.528"/>
-            </ThicknessAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHeimlich">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-6"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="58"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHeimlich">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-52"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-54"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvAburrido">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="5"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbMariposa" RepeatBehavior="3x" AutoReverse="True">
@@ -1004,6 +696,18 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.857"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.735"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.757"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cvHambre">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.094"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvHambre">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cvHambre">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.085"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvHambre">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-4"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbApetito100" AutoReverse="True">
@@ -2387,23 +2091,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="7"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbAburrido" AutoReverse="True">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-6"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.437"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mano1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-10"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="mano1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-2.226"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="posaBrazoDespues2">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-9"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
         <Storyboard x:Key="sbMuerto" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="calavera">
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.021"/>
@@ -2418,20 +2105,6 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="calavera">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-15"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-15"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="mosca">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imgMosca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="193.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imgMosca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-133.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imgMosca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.447"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imgMosca">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.462"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -4152,5 +3825,60 @@
                 <ImageBrush ImageSource="exit.png"/>
             </Button.Background>
         </Button>
+        <Canvas x:Name="cvHambre" HorizontalAlignment="Right" Height="94.001" Margin="0,85.499,399.947,0" VerticalAlignment="Top" Width="169.746" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse Height="13.5" Stroke="Black" Width="13.582" Canvas.Top="80.501"/>
+            <Ellipse Height="22.174" Stroke="Black" Width="23.582" Canvas.Left="18.582" Canvas.Top="59.501"/>
+            <Ellipse Height="62.174" Stroke="Black" Width="127.582" Canvas.Left="42.164"/>
+            <Image x:Name="sandwich_png" Source="sandwich.png" Stretch="Fill" Width="56" Height="76.5" Canvas.Left="74.751" Canvas.Top="-8.326"/>
+        </Canvas>
+        <Canvas x:Name="cvAburrido" HorizontalAlignment="Right" Height="107.916" Margin="0,112.136,224.886,0" VerticalAlignment="Top" Width="302.029" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse Fill="{x:Null}" Height="29.5" Stroke="Black" Width="29.973" Canvas.Top="32.864"/>
+            <Ellipse Fill="{x:Null}" Height="34.84" Stroke="Black" Width="41" RenderTransformOrigin="0.5,0.5" Canvas.Left="38.915" Canvas.Top="39.538">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="5.248"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse Fill="{x:Null}" Height="107.916" Stroke="Black" Width="199.228" RenderTransformOrigin="0.5,0.5" Canvas.Left="102.801">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="12.136"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Image x:Name="aburrido_png" Source="aburrido.png" Stretch="Fill" Height="82.372" Width="106.634" RenderTransformOrigin="0.5,0.5" Canvas.Left="145.151" Canvas.Top="17.968">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="8.406"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Canvas>
     </Grid>
 </Window>

@@ -24,8 +24,11 @@ namespace ProyectoFinal
             InitializeComponent();
             pbNivel.Value = 0;
 
+ 
 
-            //if(pbNivel)
+           
+
+            
         }
     }
 }

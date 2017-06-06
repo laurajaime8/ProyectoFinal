@@ -42,12 +42,12 @@ namespace ProyectoFinal
             InitializeComponent();
             etiquetas();
             var th = new Thread(ExecuteInForeground);
-           // th.Start();
-           // Thread.Sleep(1000);
+            th.Start();
+            Thread.Sleep(1000);
 
 
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(5.0);
+            t1.Interval = TimeSpan.FromSeconds(2.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
@@ -64,13 +64,13 @@ namespace ProyectoFinal
             InitializeComponent();
             etiquetas();
             var th = new Thread(ExecuteInForeground);
-          //  th.Start();
-          //  Thread.Sleep(1000);
+            th.Start();
+            Thread.Sleep(1000);
 
-            t1 = new DispatcherTimer();
+        /*    t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(5.0);
             t1.Tick += new EventHandler(reloj);
-            t1.Start();
+            t1.Start();*/
 
             cvMariposa.Visibility = Visibility.Hidden;
 
@@ -95,10 +95,10 @@ namespace ProyectoFinal
 
         private void reloj(object sender, EventArgs e)
         {
-            
-            pbEnergia.Value -= 0;
-            pbApetito.Value -= 20;
-            pbDiversion.Value -= 0;
+            //Decrementar la barra en:
+            pbEnergia.Value -= 1;
+            pbApetito.Value -= 1;
+            pbDiversion.Value -= 3;
 
             Storyboard moverOjos;
             moverOjos = (Storyboard)this.Resources["sbMoverParpado"];
@@ -111,7 +111,7 @@ namespace ProyectoFinal
             estarCansado = (Storyboard)this.Resources["sbEnergia0"];
 
             Storyboard estarAburrido;
-            estarAburrido = (Storyboard)this.Resources["sbAburrido"];
+            estarAburrido = (Storyboard)this.Resources["sbDiversion0"];
 
             //Cuando tienen las barras llenas
 
@@ -129,16 +129,18 @@ namespace ProyectoFinal
             Storyboard muerto;
             muerto = (Storyboard)this.Resources["sbMuerto"];
 
-            moverOjos.Begin(this);
 
+            moverOjos.Begin(this);
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
+
             //imgMosca.Visibility = Visibility.Hidden;
 
-            if ((pbApetito.Value <= 10 && pbDiversion.Value <= 10) ||
-                (pbApetito.Value <= 10 && pbEnergia.Value <= 10) ||
-                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10) ||
-                (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10))
+
+
+
+
+            if (pbApetito.Value == 0 && pbDiversion.Value == 0 && pbEnergia.Value == 0)
             {
                 cvCabeza.Visibility = Visibility.Hidden;
                 calavera.Visibility = Visibility.Visible;
@@ -147,16 +149,14 @@ namespace ProyectoFinal
                 tenerHambre.Remove();
                 btJugar.IsHitTestVisible = false;
                 btDormir.IsHitTestVisible = false;
-                if (pbDiversion.Value <= 10 && pbEnergia.Value <= 10 && pbApetito.Value <= 10) {
-
-                    GameOver.Visibility = Visibility.Visible;
-                    gameOver.Play();
-                }
-            }
-            else {
+                GameOver.Visibility = Visibility.Visible;
+                gameOver.Play();
+            }else
+            {
                 cvCabeza.Visibility = Visibility.Visible;
                 calavera.Visibility = Visibility.Hidden;
             }
+
 
 
             //Sueño
@@ -166,66 +166,71 @@ namespace ProyectoFinal
                 //estarCansado.ompleted += EstarCansado_Completed;
             
             } 
-            else if (pbEnergia.Value > 10)
+            if (pbEnergia.Value > 10)
             {
                estarCansado.Remove(this);
                cvZetas.Visibility = Visibility.Hidden;
             }
 
             //Diversion
-            if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
-            {
-                estarAburrido.Begin(this);
-            }
-            else if (pbDiversion.Value > 10)
-            {
-                estarAburrido.Remove(this);
-            }
-            
+                 if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
+                 {
+                     estarAburrido.Begin(this);
+                     cvAburrido.Visibility = Visibility.Visible;
+
+                 }
+                  if (pbDiversion.Value > 5)
+                 {
+                     estarAburrido.Remove(this);
+                     cvAburrido.Visibility = Visibility.Hidden;
+                 }
+       
 
 
             //Apetito
-           if (pbApetito.Value<= 10 && pbDiversion.Value > 10 && pbEnergia.Value > 10)
-           {
-               elLengua.Visibility = Visibility.Visible;
-               tenerHambre.Begin(this);
-               spAlimentos.Visibility = Visibility.Visible;
-
-            }
-
-            if (pbApetito.Value > 10)
+            if (pbApetito.Value<= 10 && pbDiversion.Value > 10 && pbEnergia.Value > 10)
             {
-                elLengua.Visibility = Visibility.Hidden;
-                tenerHambre.Remove(this);
-                
-            }
-            if (pbApetito.Value >= 90)
-            {
-                elLengua.Visibility = Visibility.Collapsed;
-                tenerHambre.Remove();
-                spAlimentos.Visibility = Visibility.Hidden ;
+                elLengua.Visibility = Visibility.Visible;
+                cvHambre.Visibility = Visibility.Visible;
+                tenerHambre.Begin(this);
+
+                spAlimentos.Visibility = Visibility.Visible;
+
+             }
+            if (pbApetito.Value > 5)
+             {
+                 elLengua.Visibility = Visibility.Hidden;
+                 tenerHambre.Remove(this);
+
+             }
+           /* if (pbApetito.Value >= 80)
+             {
+                 elLengua.Visibility = Visibility.Collapsed;
+                 tenerHambre.Remove();
+                 spAlimentos.Visibility = Visibility.Hidden;
+             }*/
 
 
-            }
+
 
             //Para las progressBar POSITIVAS
 
-            if (pbApetito.Value >= 90 && pbEnergia.Value < 90 && pbDiversion.Value < 90)
-            {
-                lleno100.Begin(this);
-            }
+            /* if (pbApetito.Value >= 90 && pbEnergia.Value < 90 && pbDiversion.Value < 90)
+             {
+                 lleno100.Begin(this);
+             }
 
-            if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
-            {
-                energia100.Begin(this);
+             if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
+             {
+                 energia100.Begin(this);
 
-            }
-            
-            if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
-            {
-                diversion100.Begin(this);
-            }
-            
+             }
+
+             if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
+             {
+                 diversion100.Begin(this);
+             }*/
+
         }
 
         private void EstarCansado_Completed(object sender, EventArgs e)
@@ -248,7 +253,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
 
-            pbEnergia.Value += 20;
+            pbEnergia.Value += 50;
         
             simpleSound.Play();
             
@@ -266,9 +271,7 @@ namespace ProyectoFinal
 
         private void btJugar_Click(object sender, RoutedEventArgs e)
         {
-            
-         
-           
+
             Storyboard mariposa;
             mariposa = (Storyboard)this.Resources["sbMariposa"];
             mariposa.SpeedRatio = 3.0;
@@ -280,7 +283,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
             cvMariposa.Visibility = Visibility.Visible;
-            pbDiversion.Value += 20;
+            pbDiversion.Value += 50;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
@@ -353,7 +356,7 @@ namespace ProyectoFinal
         private void comerHelado(Image imgOrigen)
         {
           //  imgOrigen.Visibility = Visibility.Hidden;
-            pbApetito.Value += 20;
+            pbApetito.Value += 10;
         }
 
         private void comerManzana(Image imgOrigen)
@@ -377,7 +380,7 @@ namespace ProyectoFinal
         private void comerBurguer(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
-            pbApetito.Value += 20;
+            pbApetito.Value += 30;
         }
 
         private void volarMosca(object sender, DragEventArgs e)
@@ -401,7 +404,6 @@ namespace ProyectoFinal
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
-           
             persistenciaSalir();
         }
 
