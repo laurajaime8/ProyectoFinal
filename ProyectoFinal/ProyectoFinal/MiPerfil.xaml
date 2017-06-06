@@ -18,24 +18,33 @@
         <ProgressBar x:Name="pbNivel" Height="27.333" Margin="116.333,29.747,71.333,0" VerticalAlignment="Top"/>
         <Label x:Name="lblLogros" Height="40.333" Margin="10,83.666,10,0" VerticalAlignment="Top" FontSize="20" Background="#FFD61919" Grid.ColumnSpan="2" FontWeight="Bold" Content="                                  Logros"/>
         <Label x:Name="lblNivelPorciento" Content="" Height="57.08" Margin="-66.333,10,10,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Grid.Column="1"/>
-        <Label x:Name="lblTortuga" Content="                         Tortuga Ninja" Height="40.333" Margin="32,128.999,33,0" VerticalAlignment="Top" FontSize="20" Background="#FF18811D" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblRapido" Content="&#x9;            Super rápido" Margin="32,174.332,33,154.335" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <Label x:Name="lblPatoso" Content="   &#x9;        Patoso number one" Height="40.333" Margin="32,0,33,109.002" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <Label x:Name="lblMasMuertes" Content="&#x9;&#x9;Asesino nato" Height="40.333" Margin="32,0,33,63.669" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <Label x:Name="lblTodosLogros" Content="&#x9;        Logreador profesional" Height="40.333" Margin="32,0,33,18.336" VerticalAlignment="Bottom" FontSize="20" Background="#FF18811D" Grid.ColumnSpan="2" FontWeight="Bold"/>
-        <Image x:Name="tortuga" Height="45.333" Source="turtle-icon_36958.png" Stretch="Fill" Width="53" HorizontalAlignment="Left" Margin="58.333,123.999,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.434,0.694"/>
-        <Image x:Name="rapido" Margin="57,174.332,0,154.335" Source="run-512.png" Stretch="Fill" HorizontalAlignment="Left" Width="43.333"/>
-        <Image x:Name="patoso_png" Margin="32,0,0,109.002" Source="patoso.png" Stretch="Fill" HorizontalAlignment="Left" Width="105.333" Height="40.333" VerticalAlignment="Bottom"/>
-        <Image x:Name="asesino_png" Margin="32,0,0,58.669" Source="asesino.png" Stretch="Fill" HorizontalAlignment="Left" Height="62.334" VerticalAlignment="Bottom" Width="79.333" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="38.516"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image x:Name="logreador_png" Height="40.333" Margin="46,0,0,18.336" Source="logreador.png" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="65.333"/>
+        <Canvas x:Name="cvLogros" Grid.ColumnSpan="2" Margin="32,123.999,33,18.336">
+            <Label x:Name="lblTortuga" Content="                         Tortuga Ninja" Height="40.333" FontSize="20" Background="#FF18811D" FontWeight="Bold" Canvas.Top="5" Width="427"/>
+            <Label x:Name="lblRapido" Content="&#x9;            Super rápido" FontSize="20" Background="#FF18811D" FontWeight="Bold" Height="40.333" Canvas.Top="50.333" Width="427"/>
+            <Label x:Name="lblPatoso" Content="   &#x9;        Patoso number one" Height="40.333" FontSize="20" Background="#FF18811D" FontWeight="Bold" Canvas.Top="95.666" Width="427"/>
+            <Label x:Name="lblMasMuertes" Content="&#x9;&#x9;Asesino nato" Height="40.333" FontSize="20" Background="#FF18811D" FontWeight="Bold" Canvas.Top="140.999" Width="427"/>
+            <Label x:Name="lblTodosLogros" Content="&#x9;        Logreador profesional" Height="40.333" FontSize="20" Background="#FF18811D" FontWeight="Bold" Canvas.Top="186.332" Width="427"/>
+            <Image x:Name="tortuga" Height="45.333" Source="turtle-icon_36958.png" Stretch="Fill" Width="53" RenderTransformOrigin="-1.434,0.694" Canvas.Left="26.333"/>
+            <Image x:Name="rapido" Source="run-512.png" Stretch="Fill" Width="43.333" Height="40.333" Canvas.Left="25" Canvas.Top="50.333"/>
+            <Image x:Name="patoso_png" Source="patoso.png" Stretch="Fill" Width="105.333" Height="40.333" Canvas.Top="95.666"/>
+            <Image x:Name="asesino_png" Source="asesino.png" Stretch="Fill" Height="62.334" Width="79.333" RenderTransformOrigin="0.5,0.5" Canvas.Top="123.998">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="38.516"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="logreador_png" Height="40.333" Source="logreador.png" Stretch="Fill" Width="65.333" Canvas.Left="14" Canvas.Top="186.332"/>
+        </Canvas>
+        <Image x:Name="mTortuga" Margin="0,132,-9,0" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Image x:Name="mRapido" Margin="0,178,-9,159" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Visibility="Hidden"/>
+        <Image x:Name="mPatoso" Margin="0,0,-9,114" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
+        <Image x:Name="mAsesino" Margin="0,0,-9,68" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
+        <Image x:Name="mLogro" Margin="0,0,-9,21" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
+        <Label x:Name="lblExperiencia" Content="Experiencia:" HorizontalAlignment="Left" Height="60.08" Margin="10,45.233,0,0" VerticalAlignment="Top" Width="127.333" Background="{x:Null}" FontSize="22"/>
+        <Label x:Name="txtExperiencia" Content="" Height="21.586" Margin="137.333,57.08,193,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

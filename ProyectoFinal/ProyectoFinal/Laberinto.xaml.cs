@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Xml;
 
 namespace ProyectoFinal
 {
@@ -25,8 +26,8 @@ namespace ProyectoFinal
         int min = 0;
         int hora = 0;
         MiPerfil perfil = new MiPerfil();
-
-        public Laberinto()
+      
+        public Laberinto(XmlTextReader myXMLreader)
         {
             InitializeComponent();
             btnFinal.IsHitTestVisible = false;
@@ -85,11 +86,6 @@ namespace ProyectoFinal
             btnFinal.IsHitTestVisible = true;
             t1.IsEnabled = true;
 
-
-
-            
-
-          
            
         }
 
@@ -108,17 +104,19 @@ namespace ProyectoFinal
 
             if (seg == 5)
             {
-                
-                perfil.lblRapido.Visibility = Visibility.Visible;
+                perfil.mRapido.Visibility = Visibility.Visible;
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                
+                perfil.pbNivel.Value += 10;
+
             }
             if (seg == 20)
             {
                 perfil.lblTortuga.Visibility = Visibility.Visible;
                 MessageBox.Show("Has desbloqueado el logro: Tortugo",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                perfil.pbNivel.Value += 10;
+              
             }
 
             seg = 0;
@@ -137,5 +135,37 @@ namespace ProyectoFinal
             MessageBox.Show("Bienvenido al juego del laberinto! En primer lugar deberás de poner el ratón sobre la hormiga y tendrás que guiarlo por el laberinto hasta llegar al final. No podrás tocar las paredes ya que si no tendrás que empezar de nuevo. Buena suerte!",
                "Información", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+
+        public void persistenciaSalir()
+        {
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = ("    ");
+            using (XmlWriter writer = XmlWriter.Create("Perfil.xml", settings))
+            {
+                writer.WriteStartElement("Atributos");
+                writer.WriteElementString("Nivel", perfil.pbNivel.Value + "");
+                
+                writer.WriteEndElement();
+                writer.Flush();
+                // writer.Close();
+            }
+        }
+        public void persistenciaEntrar()
+        {
+            XmlTextReader myXMLreader = new XmlTextReader("Perfil.xml");
+            while (myXMLreader.Read())
+            {
+                if (myXMLreader.NodeType == XmlNodeType.Element)
+                { }
+                    if (myXMLreader.Name == "Nivel")
+                    {
+                        myXMLreader.Read();
+                        perfil.pbNivel.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                
+                }
+            }
+        }
     }
-}

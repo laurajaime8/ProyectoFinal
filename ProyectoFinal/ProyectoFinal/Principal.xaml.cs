@@ -96,7 +96,8 @@ namespace ProyectoFinal
 
         private void juego(object sender, RoutedEventArgs e)
         {
-            Laberinto laberinto = new Laberinto();
+            XmlTextReader perfilXML = new XmlTextReader("Perfil.xml");
+            Laberinto laberinto = new Laberinto(perfilXML);
             laberinto.Show();
         }
     }

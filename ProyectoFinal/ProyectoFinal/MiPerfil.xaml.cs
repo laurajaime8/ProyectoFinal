@@ -22,13 +22,12 @@ namespace ProyectoFinal
         public MiPerfil()
         {
             InitializeComponent();
-            pbNivel.Value = 0;
-
- 
-
            
 
             
+            
+            
+  
         }
     }
 }
