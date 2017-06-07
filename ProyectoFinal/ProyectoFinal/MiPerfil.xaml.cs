@@ -20,6 +20,7 @@ namespace ProyectoFinal
     public partial class MiPerfil : Window
     {
         Button b1, b2, b3, b4, b5, b6;
+        ProgressBar pb;
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -42,12 +43,15 @@ namespace ProyectoFinal
             this.b5 = b5;
             this.b6 = b6;
 
+            Laberinto lab = new Laberinto(pbNivel);
+
         }
-        public MiPerfil()
+        public MiPerfil(ProgressBar pb)
         {
             InitializeComponent();
-
-
+            this.pb = pb;
+           
         }
+        
     }
 }

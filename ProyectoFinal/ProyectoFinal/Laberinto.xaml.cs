@@ -26,8 +26,8 @@ namespace ProyectoFinal
         int seg = 0;
         int min = 0;
         int hora = 0;
-        MiPerfil perfil = new MiPerfil();
         Button b1, b2, b3, b4, b5, b6;
+        ProgressBar pb;
       
         public Laberinto(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
@@ -40,13 +40,16 @@ namespace ProyectoFinal
             this.b4 = b4;
             this.b5 = b5;
             this.b6 = b6;
-
+            
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(1.0);
             t1.Tick += new EventHandler(reloj);
             
 
+        }
+        public Laberinto(ProgressBar pb) {
+            this.pb = pb;
         }
 
         private void reloj(object sender, EventArgs e)
@@ -101,30 +104,29 @@ namespace ProyectoFinal
         private void final(object sender, MouseEventArgs e)
         {
             t1.Stop();
-            if (MessageBox.Show("¿Desea guardar el tiempo conseguido en tu perfil?.",
+           /* if (MessageBox.Show("¿Desea guardar el tiempo conseguido en tu perfil?.",
               "Heimlich - Laberinto",
               MessageBoxButton.YesNo, MessageBoxImage.Question)
               == MessageBoxResult.Yes) {
                 MessageBox.Show("Guardado correctamente!");
-            }
+            }*/
 
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false;
 
-            if (seg == 5)
+            if (seg <= 5)
             {
-                perfil.mRapido.Visibility = Visibility.Visible;
+                //perfil.mRapido.Visibility = Visibility.Visible;
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                perfil.pbNivel.Value += 10;
-
+                //pb.Value += 10;
             }
             if (seg == 20)
             {
-                perfil.lblTortuga.Visibility = Visibility.Visible;
+               /* perfil.lblTortuga.Visibility = Visibility.Visible;
                 MessageBox.Show("Has desbloqueado el logro: Tortugo",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                perfil.pbNivel.Value += 10;
+                perfil.pbNivel.Value += 10;*/
               
             }
 
@@ -144,7 +146,7 @@ namespace ProyectoFinal
         }
 
 
-        public void persistenciaSalir()
+        /*public void persistenciaSalir()
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
@@ -175,7 +177,7 @@ namespace ProyectoFinal
                 }
             myXMLreader.Close();
             }
-
+            */
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
             b1.IsHitTestVisible = true;
