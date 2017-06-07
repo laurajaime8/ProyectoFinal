@@ -19,15 +19,23 @@ namespace ProyectoFinal
     /// </summary>
     public partial class MiPerfil : Window
     {
+        Button b1, b2, b3, b4;
+        public MiPerfil(Button b1, Button b2, Button b3, Button b4)
+        {
+            InitializeComponent();
+
+            this.b1 = b1;
+            this.b2 = b2;
+            this.b3 = b3;
+            this.b4 = b4;
+
+
+        }
         public MiPerfil()
         {
             InitializeComponent();
-           
 
-            
-            
-            
-  
+
         }
     }
 }

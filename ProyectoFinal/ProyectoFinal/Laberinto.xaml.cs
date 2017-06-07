@@ -21,7 +21,7 @@ namespace ProyectoFinal
     /// </summary>
     public partial class Laberinto : Window
     {
-        Principal padre;
+    
         DispatcherTimer t1;
         int seg = 0;
         int min = 0;
