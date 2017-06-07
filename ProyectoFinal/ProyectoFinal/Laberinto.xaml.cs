@@ -21,16 +21,24 @@ namespace ProyectoFinal
     /// </summary>
     public partial class Laberinto : Window
     {
+        Principal padre;
         DispatcherTimer t1;
         int seg = 0;
         int min = 0;
         int hora = 0;
         MiPerfil perfil = new MiPerfil();
+        Button b1, b2, b3, b4;
       
-        public Laberinto(XmlTextReader myXMLreader)
+        public Laberinto(Button b1, Button b2, Button b3, Button b4)
         {
             InitializeComponent();
             btnFinal.IsHitTestVisible = false;
+
+            this.b1 = b1;
+            this.b2 = b2;
+            this.b3 = b3;
+            this.b4 = b4;
+
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(1.0);
@@ -86,7 +94,7 @@ namespace ProyectoFinal
             btnFinal.IsHitTestVisible = true;
             t1.IsEnabled = true;
 
-           
+            padre.Close();
         }
 
         private void final(object sender, MouseEventArgs e)
@@ -125,9 +133,7 @@ namespace ProyectoFinal
         }
 
 
-        private void cerrar(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-        }
+      
 
         
         private void informacion(object sender, RoutedEventArgs e)
@@ -166,6 +172,15 @@ namespace ProyectoFinal
                     }
                 
                 }
+            myXMLreader.Close();
             }
+
+        private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            b1.IsHitTestVisible = true;
+            b2.IsHitTestVisible = true;
+            b3.IsHitTestVisible = true;
+            b4.IsHitTestVisible = true;
         }
+    }
     }

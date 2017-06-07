@@ -21,33 +21,38 @@ namespace ProyectoFinal
     public partial class Principal : Window
     {
         MainWindow padre;
-       /* public Principal()
+
+        /*public Principal()
         {
             InitializeComponent();
+            toopTils();
         }*/
         public Principal(MainWindow padre_)
         {
             padre = padre_;
             
             InitializeComponent();
+            toopTils();
+
+
+        }
+
+        public void toopTils() {
             btnJuegos.ToolTip = "Juegos disponibles";
             btnAyuda.ToolTip = "Ayuda";
             btnMiPerfil.ToolTip = "Perfil del Usuario";
             btnNuevaPartida.ToolTip = "Cargar Nueva Partida";
             btnResumen.ToolTip = "Continuar Partida";
             btnSalir.ToolTip = "Salir de la aplicación";
-         
         }
+        
 
         private void ayuda(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y dos de sus necesidades se ven agotadas, la oruga morirá.");
         }
 
-        private void miPerfinl(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
 
         private void miPerfil(object sender, RoutedEventArgs e)
         {
@@ -96,9 +101,16 @@ namespace ProyectoFinal
 
         private void juego(object sender, RoutedEventArgs e)
         {
-            XmlTextReader perfilXML = new XmlTextReader("Perfil.xml");
-            Laberinto laberinto = new Laberinto(perfilXML);
+            //XmlTextReader perfilXML = new XmlTextReader("Perfil.xml");
+            Laberinto laberinto = new Laberinto(this.btnJuegos, this.btnMiPerfil,
+            this.btnNuevaPartida, this.btnResumen);
+            btnMiPerfil.IsHitTestVisible = false;
+            btnResumen.IsHitTestVisible = false;
+            btnNuevaPartida.IsHitTestVisible = false;
+            btnJuegos.IsHitTestVisible = false;
             laberinto.Show();
         }
+
+       
     }
 }

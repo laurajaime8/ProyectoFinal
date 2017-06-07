@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Laberinto" Height="495" Width="631.5" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Laberinto" Height="495" Width="631.5" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="terminar">
     <Window.Background>
         <ImageBrush ImageSource="trabajo en equipo.jpg" TileMode="FlipX"/>
     </Window.Background>

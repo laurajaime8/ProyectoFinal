@@ -539,6 +539,7 @@ namespace ProyectoFinal
                     }
                 }
             }
+            myXMLreader.Close();
         }
         public void persistenciaEntrarPartidaNueva(XmlTextReader myXMLreader)
         {
@@ -564,6 +565,7 @@ namespace ProyectoFinal
                     }
                 }
             }
+            myXMLreader.Close();
         }
 
         private void salir(object sender, RoutedEventArgs e)
