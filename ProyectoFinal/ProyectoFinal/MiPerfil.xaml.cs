@@ -19,8 +19,19 @@ namespace ProyectoFinal
     /// </summary>
     public partial class MiPerfil : Window
     {
-        Button b1, b2, b3, b4;
-        public MiPerfil(Button b1, Button b2, Button b3, Button b4)
+        Button b1, b2, b3, b4, b5, b6;
+
+        private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            b1.IsHitTestVisible = true;
+            b2.IsHitTestVisible = true;
+            b3.IsHitTestVisible = true;
+            b4.IsHitTestVisible = true;
+            b5.IsHitTestVisible = true;
+            b6.IsHitTestVisible = true;
+        }
+
+        public MiPerfil(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
             InitializeComponent();
 
@@ -28,7 +39,8 @@ namespace ProyectoFinal
             this.b2 = b2;
             this.b3 = b3;
             this.b4 = b4;
-
+            this.b5 = b5;
+            this.b6 = b6;
 
         }
         public MiPerfil()

@@ -57,7 +57,7 @@ namespace ProyectoFinal
         private void miPerfil(object sender, RoutedEventArgs e)
         {
             MiPerfil frm = new MiPerfil(this.btnJuegos, this.btnMiPerfil,
-            this.btnNuevaPartida, this.btnResumen);
+            this.btnNuevaPartida, this.btnResumen, this.btnSalir, this.btnAyuda);
             botonDeshabilitados();
 
             frm.Show();
@@ -106,7 +106,7 @@ namespace ProyectoFinal
         {
             //XmlTextReader perfilXML = new XmlTextReader("Perfil.xml");
             Laberinto laberinto = new Laberinto(this.btnJuegos, this.btnMiPerfil,
-            this.btnNuevaPartida, this.btnResumen);
+            this.btnNuevaPartida, this.btnResumen, this.btnAyuda, this.btnSalir);
             botonDeshabilitados();
             laberinto.Show();
         }
@@ -116,6 +116,8 @@ namespace ProyectoFinal
             btnResumen.IsHitTestVisible = false;
             btnNuevaPartida.IsHitTestVisible = false;
             btnJuegos.IsHitTestVisible = false;
+            btnSalir.IsHitTestVisible = false;
+            btnAyuda.IsHitTestVisible = false;
         }
 
        

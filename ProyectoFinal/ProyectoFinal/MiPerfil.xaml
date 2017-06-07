@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Mi Perfil" Height="400" Width="500">
+        Title="Mi Perfil" Height="400" Width="500" Closing="terminar">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="71*"/>

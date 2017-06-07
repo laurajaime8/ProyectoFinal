@@ -27,9 +27,9 @@ namespace ProyectoFinal
         int min = 0;
         int hora = 0;
         MiPerfil perfil = new MiPerfil();
-        Button b1, b2, b3, b4;
+        Button b1, b2, b3, b4, b5, b6;
       
-        public Laberinto(Button b1, Button b2, Button b3, Button b4)
+        public Laberinto(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
             InitializeComponent();
             btnFinal.IsHitTestVisible = false;
@@ -38,6 +38,8 @@ namespace ProyectoFinal
             this.b2 = b2;
             this.b3 = b3;
             this.b4 = b4;
+            this.b5 = b5;
+            this.b6 = b6;
 
 
             t1 = new DispatcherTimer();
@@ -94,7 +96,6 @@ namespace ProyectoFinal
             btnFinal.IsHitTestVisible = true;
             t1.IsEnabled = true;
 
-            padre.Close();
         }
 
         private void final(object sender, MouseEventArgs e)
@@ -181,6 +182,8 @@ namespace ProyectoFinal
             b2.IsHitTestVisible = true;
             b3.IsHitTestVisible = true;
             b4.IsHitTestVisible = true;
+            b5.IsHitTestVisible = true;
+            b6.IsHitTestVisible = true;
         }
     }
     }
