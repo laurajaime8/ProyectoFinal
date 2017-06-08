@@ -44,6 +44,7 @@ namespace ProyectoFinal
             this.b6 = b6;
 
             Laberinto lab = new Laberinto(pbNivel);
+            //txtExperiencia.TextInput = "10";
 
         }
         public MiPerfil(ProgressBar pb)

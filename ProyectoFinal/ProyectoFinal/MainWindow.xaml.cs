@@ -40,6 +40,7 @@ namespace ProyectoFinal
 
             
             InitializeComponent();
+            txtLevel.Text = "1";
             etiquetas();
             var th = new Thread(ExecuteInForeground);
             th.Start();
@@ -100,6 +101,7 @@ namespace ProyectoFinal
             pbEnergia.Value -= 4;
             pbApetito.Value -= 2;
             pbDiversion.Value -= 3;
+            
 
             //STORYBOARDS////////
             Storyboard moverOjos;
@@ -142,7 +144,8 @@ namespace ProyectoFinal
             Storyboard medioMuerto;
             medioMuerto = (Storyboard)this.Resources["sbTodoBajo"];
 
-
+            int contadorMuertes = 0;
+            int contadorDormir = 0;
             //Acciones
             if (pbApetito.Value == 0 && pbDiversion.Value == 0 && pbEnergia.Value == 0)
             {
@@ -160,18 +163,18 @@ namespace ProyectoFinal
                MessageBoxButton.YesNo, MessageBoxImage.Question)
                == MessageBoxResult.Yes)
                 {
+                    pbApetito.Value = 10;
+                    pbDiversion.Value = 10;
+                    pbEnergia.Value = 10;
                     Principal pr = new Principal(this);
                     GameOver.Visibility = Visibility.Hidden;
                     pr.Show();
                 }
-                   
-            } else
-            {
-                cvCabeza.Visibility = Visibility.Visible;
-                calavera.Visibility = Visibility.Hidden;
+                contadorMuertes = contadorMuertes + 1;
+
             }
 
-
+          
 
             //Barras iguales a 10 todas
             if (pbEnergia.Value <= 10 && pbApetito.Value <= 10 && pbDiversion.Value <= 10)
@@ -196,14 +199,18 @@ namespace ProyectoFinal
             if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
                 cvZetas.Visibility = Visibility.Visible;
                 estarCansado.Begin(this);
+                contadorDormir = contadorDormir + 1;
             } else if (pbEnergia.Value > 10 && pbApetito.Value > 10 && pbDiversion.Value > 10)
             {
                 estarCansado.Stop();
                 estarCansado.Remove();
-
                 cvZetas.Visibility = Visibility.Hidden;
             }
 
+            if (contadorDormir >= 5)
+            {
+                txtLevel.Text = "2";
+            }
 
             //Diversion
               if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)

@@ -3912,5 +3912,7 @@
                 </Image.RenderTransform>
             </Image>
         </Canvas>
+        <Label x:Name="lblLevel" Content="Nivel:" HorizontalAlignment="Right" Height="55.666" Margin="0,176.384,84.5,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
+        <TextBlock x:Name="txtLevel" HorizontalAlignment="Right" Height="44.87" Margin="0,179.5,43,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" Text="1" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
     </Grid>
 </Window>
