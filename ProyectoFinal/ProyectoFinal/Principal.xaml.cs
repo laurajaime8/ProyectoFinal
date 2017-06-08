@@ -88,9 +88,14 @@ namespace ProyectoFinal
             == MessageBoxResult.Yes)
             {
                 padre.Close();
+                padre.musica();
+
                 XmlTextReader myXMLreader = new XmlTextReader("PartidaNueva.xml");
                 MainWindow main = new MainWindow(myXMLreader);
+                main.InitializeComponent();
                 main.Show();
+              
+                this.Close();
             }
         }
 
@@ -123,7 +128,11 @@ namespace ProyectoFinal
             btnSalir.IsHitTestVisible = false;
             btnAyuda.IsHitTestVisible = false;
         }
+        public void botonResumeFalse ()
+        {
+            btnResumen.IsHitTestVisible = false;
 
+        }
        
     }
 }

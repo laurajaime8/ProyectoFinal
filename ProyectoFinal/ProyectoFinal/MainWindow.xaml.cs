@@ -29,10 +29,9 @@ namespace ProyectoFinal
     public partial class MainWindow : Window
     {
         DispatcherTimer t1;
-        private SoundPlayer bucleCancion = new SoundPlayer("cancionBichos.wav");
         private SoundPlayer simpleSound = new SoundPlayer("bostezo.wav");
         private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
-
+        private MediaPlayer sonido;
 
 
         public MainWindow()
@@ -42,9 +41,14 @@ namespace ProyectoFinal
             InitializeComponent();
             txtLevel.Text = "1";
             etiquetas();
-            var th = new Thread(ExecuteInForeground);
-            th.Start();
-            Thread.Sleep(1000);
+
+            sonido = new MediaPlayer();
+            sonido.Volume = 0.01;
+
+
+            sonido.Open(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\..\\..\\bin\\Debug\\cancionBichos.wav"));
+            sonido.MediaEnded += new EventHandler(Media_Ended);
+            sonido.Play();
 
 
             t1 = new DispatcherTimer();
@@ -61,12 +65,15 @@ namespace ProyectoFinal
         public MainWindow(XmlTextReader myXMLreader)
         {
 
-           
             InitializeComponent();
             etiquetas();
-            var th = new Thread(ExecuteInForeground);
-            th.Start();
-            Thread.Sleep(1000);
+
+            sonido = new MediaPlayer();
+            sonido.Volume = 0.01;
+
+            sonido.Open(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\..\\..\\bin\\Debug\\cancionBichos.wav"));
+            sonido.MediaEnded += new EventHandler(Media_Ended);
+            sonido.Play();
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromSeconds(3.0);
@@ -78,13 +85,12 @@ namespace ProyectoFinal
             persistenciaEntrarPartidaNueva(myXMLreader);
 
         }
-        private static void  ExecuteInForeground()
+
+        private void Media_Ended(object sender, EventArgs e)
         {
-
-            SoundPlayer bucleCancion = new SoundPlayer("cancionBichos.wav");
-            bucleCancion.PlayLooping();
+            sonido.Open(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\..\\..\\bin\\Debug\\cancionBichos.wav"));
+            sonido.Play();
         }
-
 
         public void  etiquetas() {
             btnCasa.ToolTip = "Menú Principal";
@@ -147,32 +153,45 @@ namespace ProyectoFinal
             int contadorMuertes = 0;
             int contadorDormir = 0;
             //Acciones
-            if (pbApetito.Value == 0 && pbDiversion.Value == 0 && pbEnergia.Value == 0)
-            {
-                cvCabeza.Visibility = Visibility.Hidden;
-                calavera.Visibility = Visibility.Visible;
-                estarAburrido.Remove();
-                estarCansado.Remove();
-                tenerHambre.Remove();
-                btJugar.IsHitTestVisible = false;
-                btDormir.IsHitTestVisible = false;
-                GameOver.Visibility = Visibility.Visible;
-                // gameOver.Play();
-                if (MessageBox.Show("¿Quieres empezar una nueva partida?.",
-               "Has perdido...",
-               MessageBoxButton.YesNo, MessageBoxImage.Question)
-               == MessageBoxResult.Yes)
+        
+                
+                if ((pbApetito.Value == 0 && pbDiversion.Value == 0) ||
+                (pbApetito.Value == 0 && pbEnergia.Value == 0) ||
+                (pbDiversion.Value == 0 && pbEnergia.Value == 0))
                 {
-                    pbApetito.Value = 10;
-                    pbDiversion.Value = 10;
-                    pbEnergia.Value = 10;
-                    Principal pr = new Principal(this);
-                    GameOver.Visibility = Visibility.Hidden;
-                    pr.Show();
-                }
-                contadorMuertes = contadorMuertes + 1;
+                   /* cvCabeza.Visibility = Visibility.Hidden;
+                    calavera.Visibility = Visibility.Visible;
+                    estarAburrido.Remove();
+                    estarCansado.Remove();
+                    tenerHambre.Remove();
+                    btJugar.IsHitTestVisible = false;
+                    btDormir.IsHitTestVisible = false;
+                    */
+                    GameOver.Visibility = Visibility.Visible;
+                    lblLevel.Content = "";
+                    txtLevel.Text = "";
+                    sonido.Stop();
+                   // gameOver.Play();
+                    
+                   /* if (MessageBox.Show("¿Quieres empezar una nueva partida?.",
+                   "Has perdido...",
+                   MessageBoxButton.YesNo, MessageBoxImage.Question)
+                   == MessageBoxResult.Yes)
+                    {
+                       // gameOver.Stop();
 
-            }
+                        pbApetito.Value = 10;
+                        pbDiversion.Value = 10;
+                        pbEnergia.Value = 10;
+                        Principal pr = new Principal(this);
+                        GameOver.Visibility = Visibility.Hidden;
+                        pr.botonResumeFalse();
+                        pr.Show();
+                    }
+                    contadorMuertes = contadorMuertes + 1;
+                    */
+                }
+            
 
           
 
@@ -500,9 +519,15 @@ namespace ProyectoFinal
         private void salir(object sender, RoutedEventArgs e)
         {
             //Preguntar
+            sonido.Stop();
+            gameOver.Stop();
             this.Hide();
             persistenciaSalir();
             this.Close();
+        }
+        public void musica() {
+
+            sonido.Volume = 0;
         }
     }
     
