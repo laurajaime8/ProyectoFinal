@@ -37,6 +37,10 @@ namespace ProyectoFinal
 
         }
 
+        public Principal()
+        {
+        }
+
         public void toopTils() {
             btnJuegos.ToolTip = "Juegos disponibles";
             btnAyuda.ToolTip = "Ayuda";
@@ -49,7 +53,7 @@ namespace ProyectoFinal
 
         private void ayuda(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y dos de sus necesidades se ven agotadas, la oruga morirá.");
+            MessageBox.Show("Este juego ha sido creado por: Oliva Galvez y Laura Jaime. Cuando la oruga es desatendida por un tiempo largo y sus necesidades se ven agotadas, la oruga morirá.");
         }
 
       

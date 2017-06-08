@@ -47,7 +47,7 @@ namespace ProyectoFinal
 
 
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(2.0);
+            t1.Interval = TimeSpan.FromSeconds(3.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
@@ -68,7 +68,7 @@ namespace ProyectoFinal
             Thread.Sleep(1000);
 
             t1 = new DispatcherTimer();
-            t1.Interval = TimeSpan.FromSeconds(1.0);
+            t1.Interval = TimeSpan.FromSeconds(3.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
@@ -95,11 +95,11 @@ namespace ProyectoFinal
 
         private void reloj(object sender, EventArgs e)
         {
-            int codigo=0;
+           
             //Decrementar la barra en:
-            pbEnergia.Value -= 5;
-            pbApetito.Value -= 1;
-            pbDiversion.Value -= 1;
+            pbEnergia.Value -= 4;
+            pbApetito.Value -= 2;
+            pbDiversion.Value -= 3;
 
             //STORYBOARDS////////
             Storyboard moverOjos;
@@ -139,6 +139,8 @@ namespace ProyectoFinal
             //imgMosca.Visibility = Visibility.Hidden;
 
 
+            Storyboard medioMuerto;
+            medioMuerto = (Storyboard)this.Resources["sbTodoBajo"];
 
 
             //Acciones
@@ -152,8 +154,18 @@ namespace ProyectoFinal
                 btJugar.IsHitTestVisible = false;
                 btDormir.IsHitTestVisible = false;
                 GameOver.Visibility = Visibility.Visible;
-                gameOver.Play();
-            }else
+                // gameOver.Play();
+                if (MessageBox.Show("¿Quieres empezar una nueva partida?.",
+               "Has perdido...",
+               MessageBoxButton.YesNo, MessageBoxImage.Question)
+               == MessageBoxResult.Yes)
+                {
+                    Principal pr = new Principal(this);
+                    GameOver.Visibility = Visibility.Hidden;
+                    pr.Show();
+                }
+                   
+            } else
             {
                 cvCabeza.Visibility = Visibility.Visible;
                 calavera.Visibility = Visibility.Hidden;
@@ -161,169 +173,76 @@ namespace ProyectoFinal
 
 
 
-            if (pbEnergia.Value <= 10)
+            //Barras iguales a 10 todas
+            if (pbEnergia.Value <= 10 && pbApetito.Value <= 10 && pbDiversion.Value <= 10)
             {
-                codigo = 1;
-            }else
-            if(pbApetito.Value <= 10)
+                medioMuerto.Begin();
+                
+            } else if (pbEnergia.Value > 10 || pbApetito.Value > 10 || pbDiversion.Value > 10)
             {
-                codigo = 2;
-            }else
-            if (pbDiversion.Value <= 10)
-            {
-                codigo = 3;
+                medioMuerto.Stop();
             }
 
-            if (pbEnergia.Value > 10)
+            //Dos barras bajas
+            if((pbEnergia.Value <= 10 && pbApetito.Value <= 10) || (pbEnergia.Value <= 10 && pbDiversion.Value <= 10) && (pbApetito.Value <= 10 || pbDiversion.Value <= 10))
             {
-                codigo = 4;
+                medioMuerto.Begin();
             }else
-            if (pbApetito.Value > 10)
             {
-                codigo = 5;
-            }else
-            if (pbDiversion.Value > 10)
-            {
-                codigo = 6;
+                medioMuerto.Remove();
             }
 
-            switch (codigo)
-            {
-                case 1:
-                    cvZetas.Visibility = Visibility.Visible;
-                    estarCansado.Begin(this);
-                    break;
-                case 2:
-                    elLengua.Visibility = Visibility.Visible;
-                    cvHambre.Visibility = Visibility.Visible;
-                    tenerHambre.Begin(this);               
-                    spAlimentos.Visibility = Visibility.Visible;
-                    break;
-                case 3:
-                    estarAburrido.Begin(this);
-                    cvAburrido.Visibility = Visibility.Visible;
-                    break;
-
-                case 4:
-                    estarCansado.Stop(this);
-                    cvZetas.Visibility = Visibility.Hidden;
-                    break;
-                case 5:
-                    elLengua.Visibility = Visibility.Hidden;
-                    tenerHambre.Stop(this);
-                    spAlimentos.Visibility = Visibility.Hidden;
-                    break;
-                case 6:
-                    estarAburrido.Stop(this);
-                    cvAburrido.Visibility = Visibility.Visible;
-                    break;     
-
-            }
-/*
             //Sueño
-            if (pbEnergia.Value <= 10 && (pbApetito.Value < 10 || pbDiversion.Value < 10)) {
+            if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
                 cvZetas.Visibility = Visibility.Visible;
                 estarCansado.Begin(this);
-            
-            }
-            if (pbEnergia.Value <= 10 && (pbApetito.Value > 10 || pbDiversion.Value > 10))
+            } else if (pbEnergia.Value > 10 && pbApetito.Value > 10 && pbDiversion.Value > 10)
             {
-                cvZetas.Visibility = Visibility.Visible;
-                estarCansado.Begin(this);
+                estarCansado.Stop();
+                estarCansado.Remove();
 
-            }
-            if (pbEnergia.Value > 10 && (pbApetito.Value < 10 || pbDiversion.Value < 10))
-            {
-                estarCansado.Stop(this);
-               cvZetas.Visibility = Visibility.Hidden;
-            }
-            if (pbEnergia.Value > 10 && (pbApetito.Value > 10 || pbDiversion.Value > 10))
-            {
-                estarCansado.Stop(this);
                 cvZetas.Visibility = Visibility.Hidden;
             }
 
+
             //Diversion
-            if (pbDiversion.Value <= 10 && (pbApetito.Value > 10 || pbEnergia.Value > 10))
-            {
-                     estarAburrido.Begin(this);
-                     cvAburrido.Visibility = Visibility.Visible;
+              if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
+              {
+                       estarAburrido.Begin();
+                       cvAburrido.Visibility = Visibility.Visible;
 
-            }
-            if (pbDiversion.Value <= 10 && (pbApetito.Value > 10 || pbEnergia.Value > 10))
-            {
-                estarAburrido.Begin(this);
-                cvAburrido.Visibility = Visibility.Visible;
-
-            }
-            if (pbDiversion.Value > 10 && (pbApetito.Value > 10 || pbEnergia.Value > 10))
-            {
-                estarAburrido.Stop(this);
+              }else if (pbDiversion.Value > 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
+              {
+                estarAburrido.Stop();
+                estarAburrido.Remove();
                 cvAburrido.Visibility = Visibility.Hidden;
+              }
+              
 
-            }
-            if (pbDiversion.Value > 10 && (pbApetito.Value < 10 || pbEnergia.Value < 10))
-            {
-                estarAburrido.Stop(this);
-                cvAburrido.Visibility = Visibility.Visible;
-
-            }
-
-
+              
 
             //Apetito
-            if (pbApetito.Value<= 10 && (pbDiversion.Value > 10 || pbEnergia.Value > 10))
+            if (pbApetito.Value < 20)
             {
-                elLengua.Visibility = Visibility.Visible;
-                cvHambre.Visibility = Visibility.Visible;
-                tenerHambre.Begin(this);
-
                 spAlimentos.Visibility = Visibility.Visible;
-
-             }
-            if (pbApetito.Value <= 10 && (pbDiversion.Value < 10 || pbEnergia.Value < 10))
+            }else if (pbApetito.Value > 50)
             {
-                elLengua.Visibility = Visibility.Visible;
-                cvHambre.Visibility = Visibility.Visible;
-                tenerHambre.Begin(this);
-
-                spAlimentos.Visibility = Visibility.Visible;
-
-            }
-            if (pbApetito.Value > 10 && (pbDiversion.Value > 10 || pbEnergia.Value > 10))
-            {
-                 elLengua.Visibility = Visibility.Hidden;
-                 tenerHambre.Stop(this);
                 spAlimentos.Visibility = Visibility.Hidden;
-
             }
-            if (pbApetito.Value > 10 && (pbDiversion.Value < 10 || pbEnergia.Value < 10))
+           
+
+            if (pbApetito.Value <= 10 && pbDiversion.Value > 10 && pbEnergia.Value > 10)
+            {
+                elLengua.Visibility = Visibility.Visible;
+                cvHambre.Visibility = Visibility.Visible;
+                tenerHambre.Begin();
+            }else if (pbApetito.Value > 10 && pbDiversion.Value > 10 && pbEnergia.Value > 10)
             {
                 elLengua.Visibility = Visibility.Hidden;
-                tenerHambre.Stop(this);
-                spAlimentos.Visibility = Visibility.Hidden;
-
+                cvHambre.Visibility = Visibility.Hidden;
+                tenerHambre.Stop();
+                tenerHambre.Remove();
             }
-            
-            */
-
-            //Para las progressBar POSITIVAS
-
-            /* if (pbApetito.Value >= 90 && pbEnergia.Value < 90 && pbDiversion.Value < 90)
-             {
-                 lleno100.Begin(this);
-             }
-
-             if (pbEnergia.Value >= 90 && pbApetito.Value < 90 && pbDiversion.Value < 90)
-             {
-                 energia100.Begin(this);
-
-             }
-
-             if (pbDiversion.Value >= 100 && pbEnergia.Value < 90 && pbApetito.Value < 90)
-             {
-                 diversion100.Begin(this);
-             }*/
 
         }
 
@@ -334,8 +253,9 @@ namespace ProyectoFinal
             btDormir.IsHitTestVisible = true;
             cvMariposa.Visibility = Visibility.Collapsed;
             simpleSound.Stop();
-
         }
+
+
 
         private void btDormir_Click(object sender, RoutedEventArgs e)
         {
@@ -397,6 +317,8 @@ namespace ProyectoFinal
 
         }
 
+
+        //COMIDA
         private void arrastrarHelado(object sender, MouseButtonEventArgs e)
         {
             DataObject dataO = new DataObject(((Image)sender));
@@ -477,7 +399,7 @@ namespace ProyectoFinal
             pbApetito.Value += 30;
         }
 
-        private void volarMosca(object sender, DragEventArgs e)
+       private void volarMosca(object sender, DragEventArgs e)
         {
             
             Storyboard mosca;

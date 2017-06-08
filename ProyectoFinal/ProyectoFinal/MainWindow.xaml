@@ -380,43 +380,43 @@
         </Storyboard>
         <Storyboard x:Key="sbDiversion0" RepeatBehavior="2x" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvCabeza">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="10.883"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="10.883"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="mano1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-20.97"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-20.97"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="mano1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-14"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-14"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="mano1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="posaBrazoDespues2">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-16.52"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-16.52"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-0.731"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.731"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-1.739"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1.739"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
-                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="9.259"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="9.259"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvAburrido">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-6.482"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-6.482"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="cvAburrido">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.812"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.812"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="cvAburrido">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.967"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.967"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="cvAburrido">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-28"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-28"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cvAburrido">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="5"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbMariposa" RepeatBehavior="3x" AutoReverse="True">
@@ -2107,6 +2107,38 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-15"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbTodoBajo">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cvCabeza">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.976"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-0.826"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-0.44"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="boca">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="17.022"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqArriba">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1.497"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoIzqArriba">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.049"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoIzqArriba">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.348"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoDerAbajo">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1.624"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="parpadoDerAbajo">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-0.063"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="parpadoDerAbajo">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.551"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -3105,7 +3137,7 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Canvas>
-            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="313" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="10" AllowDrop="True" Drop="cvCabeza_Drop">
+            <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="313" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="10" AllowDrop="True" Drop="cvCabeza_Drop" Background="{x:Null}">
                 <Canvas.Resources>
                     <Storyboard x:Name="subirCabeza" x:Key="subirCabezaKey">
                         <DoubleAnimation Storyboard.TargetName="cvCabeza"

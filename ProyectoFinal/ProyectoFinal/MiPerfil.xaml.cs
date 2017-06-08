@@ -50,6 +50,8 @@ namespace ProyectoFinal
         {
             InitializeComponent();
             this.pb = pb;
+            pb = pbNivel;
+            pb.Value = 10;
            
         }
         
