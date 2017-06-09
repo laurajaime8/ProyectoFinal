@@ -3912,21 +3912,38 @@
                 </Image.RenderTransform>
             </Image>
         </Canvas>
-        <Label x:Name="lblLevel" Content="Nivel" HorizontalAlignment="Right" Height="55.666" Margin="0,95.667,73,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
-        <TextBlock x:Name="txtLevel" HorizontalAlignment="Right" Height="44.87" Margin="0,100.13,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" Text="1" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
-        <Button x:Name="btnQuitarVolumen" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,224.886,71" VerticalAlignment="Bottom" Click="volumenQuitar" BorderBrush="{x:Null}">
+        <Label x:Name="lblLevel" Content="Nivel" HorizontalAlignment="Right" Height="55.666" Margin="0,95.667,73,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC" Background="{x:Null}">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2CA43D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3F320" Offset="0"/>
+                    <GradientStop Color="#FFA9E83B" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBlock x:Name="txtLevel" HorizontalAlignment="Right" Height="44.87" Margin="0,100.13,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" Text="1" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FF28E690"/>
+        <Button x:Name="btnQuitarVolumen" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,199,71" VerticalAlignment="Bottom" Click="volumenQuitar" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="89841-200.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPonerVolumen" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,313,71" VerticalAlignment="Bottom" Click="ponerVolumen" BorderBrush="{x:Null}">
+        <Button x:Name="btnPonerVolumen" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,287,71" VerticalAlignment="Bottom" Click="ponerVolumen" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="volume-up-interface-symbol_icon-icons.com_73337.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblExperiencia" Content="Exp." HorizontalAlignment="Right" Height="55.666" Margin="0,144.103,73,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
-        <TextBlock x:Name="txtExp" HorizontalAlignment="Right" Height="44.87" Margin="0,150,35,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
-        <Button x:Name="btnInfo" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,148.386,71" VerticalAlignment="Bottom" Click="Info" BorderBrush="{x:Null}">
+        <Label x:Name="lblExperiencia" Content="" HorizontalAlignment="Right" Height="50" Margin="0,144.87,115.5,0" VerticalAlignment="Top" Width="50" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC">
+            <Label.Background>
+                <ImageBrush ImageSource="Estrella_mario.png"/>
+            </Label.Background>
+        </Label>
+        <TextBlock x:Name="txtExp" HorizontalAlignment="Right" Height="44.87" Margin="0,150,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FF28E690"/>
+        <Button x:Name="btnInfo" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,129,71" VerticalAlignment="Bottom" Click="Info" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="info.png"/>
             </Button.Background>

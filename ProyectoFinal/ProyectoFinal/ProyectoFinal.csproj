@@ -291,6 +291,12 @@
   <ItemGroup>
     <Resource Include="volume-up-interface-symbol_icon-icons.com_73337.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Estrella_mario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tumblr_inline_n2swm2mEmP1s7cnzk.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
