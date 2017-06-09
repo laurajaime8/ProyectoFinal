@@ -285,6 +285,12 @@
   <ItemGroup>
     <Resource Include="dead.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="89841-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="volume-up-interface-symbol_icon-icons.com_73337.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -43,7 +43,7 @@ namespace ProyectoFinal
             etiquetas();
 
             sonido = new MediaPlayer();
-            sonido.Volume = 0.01;
+            sonido.Volume = 1;
 
 
             sonido.Open(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\..\\..\\bin\\Debug\\cancionBichos.wav"));
@@ -59,6 +59,7 @@ namespace ProyectoFinal
             cvMariposa.Visibility = Visibility.Hidden;
 
             persistenciaEntrar();
+            btnPonerVolumen.IsHitTestVisible = false;
 
          }
 
@@ -69,7 +70,7 @@ namespace ProyectoFinal
             etiquetas();
 
             sonido = new MediaPlayer();
-            sonido.Volume = 0.01;
+            sonido.Volume = 1;
 
             sonido.Open(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\..\\..\\bin\\Debug\\cancionBichos.wav"));
             sonido.MediaEnded += new EventHandler(Media_Ended);
@@ -83,7 +84,7 @@ namespace ProyectoFinal
             cvMariposa.Visibility = Visibility.Hidden;
 
             persistenciaEntrarPartidaNueva(myXMLreader);
-
+            btnPonerVolumen.IsHitTestVisible = false;
         }
 
         private void Media_Ended(object sender, EventArgs e)
@@ -528,6 +529,20 @@ namespace ProyectoFinal
         public void musica() {
 
             sonido.Volume = 0;
+        }
+
+        private void volumenQuitar(object sender, RoutedEventArgs e)
+        {
+            sonido.Volume = 0;
+            btnQuitarVolumen.IsHitTestVisible = false;
+            btnPonerVolumen.IsHitTestVisible = true;
+        }
+
+        private void ponerVolumen(object sender, RoutedEventArgs e)
+        {
+            sonido.Volume = 1;
+            btnQuitarVolumen.IsHitTestVisible = true;
+            btnPonerVolumen.IsHitTestVisible = false;
         }
     }
     
