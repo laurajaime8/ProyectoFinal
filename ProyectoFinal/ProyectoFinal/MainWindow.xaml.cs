@@ -162,8 +162,8 @@ namespace ProyectoFinal
                     GameOver.Visibility = Visibility.Visible;
                     lblLevel.Content = "";
                     txtLevel.Text = "";
-                    lblExperiencia = "";
-                    txtExp = "";
+                    lblExperiencia.Content = "";
+                    txtExp.Text = "";
                     sonido.Stop();
                    
                 }
