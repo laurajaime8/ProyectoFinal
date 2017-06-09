@@ -21,7 +21,7 @@ namespace ProyectoFinal
         private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
         private MediaPlayer sonido;
         private int contadorExp = 0;
-        private object MessageBoxButtons;
+        
 
         public MainWindow()
         {
@@ -664,7 +664,7 @@ namespace ProyectoFinal
             {
                 MessageBox.Show("Enhorabuena, acabas de subir al nivel 1");
                 txtLevel.Text = "1";
-                Button OK;
+                
                // PicImage = Image.FromFile("aqui va la ruta y nombre de tu archivo de imagen")
                 //  MessageBox.Show("Typical installation is strongly recommended.",
                 //"Install information", MessageBoxButtons.OK,

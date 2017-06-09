@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace ProyectoFinal
 {
@@ -31,6 +32,14 @@ namespace ProyectoFinal
             b6.IsHitTestVisible = true;
         }
 
+        public MiPerfil(XmlTextReader myXMLreader) {
+
+            InitializeComponent();
+            int valor = 0;
+            persistenciaEscribir(valor);
+            //this.Close();
+        }
+
         public MiPerfil(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
             InitializeComponent();
@@ -42,6 +51,8 @@ namespace ProyectoFinal
             this.b5 = b5;
             this.b6 = b6;
 
+            persistenciaEntrar();
+            /*
             Laberinto lab = new Laberinto();
 
             this.Show();
@@ -69,6 +80,42 @@ namespace ProyectoFinal
             {
 
                 mLogro.Visibility = Visibility.Visible;
+            }
+            */
+        }
+        public void persistenciaEntrar()
+        {
+            int valor;
+            XmlTextReader myXMLreader = new XmlTextReader("LogroTortuga.xml");
+            while (myXMLreader.Read())
+            {
+                if (myXMLreader.NodeType == XmlNodeType.Element)
+                {
+                    if (myXMLreader.Name == "LogroTortuga")
+                    {
+                        myXMLreader.Read();
+                         valor = myXMLreader.ReadContentAsInt();
+                        if (valor == 1) {
+                            mTortuga.Visibility = Visibility.Visible;
+                        }
+                    }
+                    
+                }
+            }
+            myXMLreader.Close();
+        }
+        public void persistenciaEscribir(int valor)
+        {
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = ("    ");
+            using (XmlWriter writer = XmlWriter.Create("LogroTortuga.xml", settings))
+            {
+                writer.WriteStartElement("Atributos");
+                writer.WriteElementString("LogroTortuga", valor + "");
+                writer.WriteEndElement();
+                writer.Flush();
+                // writer.Close();
             }
         }
 

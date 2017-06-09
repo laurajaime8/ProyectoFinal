@@ -27,7 +27,7 @@ namespace ProyectoFinal
         int min = 0;
         int hora = 0;
         Button b1, b2, b3, b4, b5, b6;
-        ProgressBar pb;
+        
         
       
         public Laberinto(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
@@ -104,34 +104,26 @@ namespace ProyectoFinal
         private void final(object sender, MouseEventArgs e)
         {
             t1.Stop();
-           /* if (MessageBox.Show("¿Desea guardar el tiempo conseguido en tu perfil?.",
-              "Heimlich - Laberinto",
-              MessageBoxButton.YesNo, MessageBoxImage.Question)
-              == MessageBoxResult.Yes) {
-                MessageBox.Show("Guardado correctamente!");
-            }*/
-
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false; 
 
             MessageBox.Show("Has tardado " + min+ " minutos con " + seg + " segundos",
                  "Tiempo tardado", MessageBoxButton.OK, MessageBoxImage.Information);
-            MiPerfil mp = new MiPerfil(b1,b2,b3,b4,b5,b6);
+            //MiPerfil mp = new MiPerfil(b1,b2,b3,b4,b5,b6);
             if (seg <= 5)
             {
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                mp.mRapido.Visibility = Visibility.Visible;
-                mp.Show();
+                //mp.mRapido.Visibility = Visibility.Visible;
                 
             }
-            if (seg == 20)
+            if (seg >= 15)
             {
                 MessageBox.Show("Has desbloqueado el logro: Tortuga",
                     "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                mp.mTortuga.Visibility = Visibility.Visible;
-                mp.Show();
-
+                // mp.mTortuga.Visibility = Visibility.Visible;
+                int valor = 1;
+                persistenciaEscribir(valor);
             }
 
             seg = 0;
@@ -159,6 +151,21 @@ namespace ProyectoFinal
             b4.IsHitTestVisible = true;
             b5.IsHitTestVisible = true;
             b6.IsHitTestVisible = true;
+        }
+
+        public void persistenciaEscribir(int valor)
+        {
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = ("    ");
+            using (XmlWriter writer = XmlWriter.Create("LogroTortuga.xml", settings))
+            {
+                writer.WriteStartElement("Atributos");
+                writer.WriteElementString("LogroTortuga", valor + "");
+                writer.WriteEndElement();
+                writer.Flush();
+                // writer.Close();
+            }
         }
     }
     }

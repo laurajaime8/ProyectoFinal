@@ -92,10 +92,14 @@ namespace ProyectoFinal
                 padre.musica();
 
                 XmlTextReader myXMLreader = new XmlTextReader("PartidaNueva.xml");
+                XmlTextReader myXMLreader2 = new XmlTextReader("LogrosNuevaPartida.xml");
+                MiPerfil perfil = new MiPerfil(myXMLreader2);
+               
+               // perfil.InitializeComponent();
                 MainWindow main = new MainWindow(myXMLreader);
                 main.InitializeComponent();
                 main.Show();
-              
+                //perfil.Close();
                 this.Close();
             }
         }
