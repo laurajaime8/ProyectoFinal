@@ -32,14 +32,14 @@ namespace ProyectoFinal
         private SoundPlayer simpleSound = new SoundPlayer("bostezo.wav");
         private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
         private MediaPlayer sonido;
-
+        private int contadorExp = 0;
 
         public MainWindow()
         {
 
             
             InitializeComponent();
-            txtLevel.Text = "1";
+           
             etiquetas();
 
             sonido = new MediaPlayer();
@@ -98,6 +98,8 @@ namespace ProyectoFinal
             btnSalir.ToolTip = "Salir de la Aplicación";
             btJugar.ToolTip = "Jugar";
             btDormir.ToolTip = "Dormir";
+            btnPonerVolumen.ToolTip = "Poner Volumen";
+            btnQuitarVolumen.ToolTip = "Quitar Volumen";
         }
 
 
@@ -145,14 +147,10 @@ namespace ProyectoFinal
             elLengua.Visibility = Visibility.Hidden;
             cvZetas.Visibility = Visibility.Hidden;
 
-            //imgMosca.Visibility = Visibility.Hidden;
-
 
             Storyboard medioMuerto;
             medioMuerto = (Storyboard)this.Resources["sbTodoBajo"];
 
-            int contadorMuertes = 0;
-            int contadorDormir = 0;
             //Acciones
         
                 
@@ -160,37 +158,14 @@ namespace ProyectoFinal
                 (pbApetito.Value == 0 && pbEnergia.Value == 0) ||
                 (pbDiversion.Value == 0 && pbEnergia.Value == 0))
                 {
-                   /* cvCabeza.Visibility = Visibility.Hidden;
-                    calavera.Visibility = Visibility.Visible;
-                    estarAburrido.Remove();
-                    estarCansado.Remove();
-                    tenerHambre.Remove();
-                    btJugar.IsHitTestVisible = false;
-                    btDormir.IsHitTestVisible = false;
-                    */
+                  
                     GameOver.Visibility = Visibility.Visible;
                     lblLevel.Content = "";
                     txtLevel.Text = "";
+                    lblExperiencia = "";
+                    txtExp = "";
                     sonido.Stop();
-                   // gameOver.Play();
-                    
-                   /* if (MessageBox.Show("¿Quieres empezar una nueva partida?.",
-                   "Has perdido...",
-                   MessageBoxButton.YesNo, MessageBoxImage.Question)
-                   == MessageBoxResult.Yes)
-                    {
-                       // gameOver.Stop();
-
-                        pbApetito.Value = 10;
-                        pbDiversion.Value = 10;
-                        pbEnergia.Value = 10;
-                        Principal pr = new Principal(this);
-                        GameOver.Visibility = Visibility.Hidden;
-                        pr.botonResumeFalse();
-                        pr.Show();
-                    }
-                    contadorMuertes = contadorMuertes + 1;
-                    */
+                   
                 }
             
 
@@ -206,31 +181,19 @@ namespace ProyectoFinal
                 medioMuerto.Stop();
             }
 
-            //Dos barras bajas
-            if((pbEnergia.Value <= 10 && pbApetito.Value <= 10) || (pbEnergia.Value <= 10 && pbDiversion.Value <= 10) && (pbApetito.Value <= 10 || pbDiversion.Value <= 10))
-            {
-                medioMuerto.Begin();
-            }else
-            {
-                medioMuerto.Remove();
-            }
-
             //Sueño
             if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
                 cvZetas.Visibility = Visibility.Visible;
                 estarCansado.Begin(this);
-                contadorDormir = contadorDormir + 1;
-            } else if (pbEnergia.Value > 10 && pbApetito.Value > 10 && pbDiversion.Value > 10)
+               
+            } else if (pbEnergia.Value > 10 )
             {
                 estarCansado.Stop();
                 estarCansado.Remove();
                 cvZetas.Visibility = Visibility.Hidden;
             }
 
-            if (contadorDormir >= 5)
-            {
-                txtLevel.Text = "2";
-            }
+           
 
             //Diversion
               if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
@@ -280,6 +243,18 @@ namespace ProyectoFinal
             btDormir.IsHitTestVisible = true;
             cvMariposa.Visibility = Visibility.Collapsed;
             simpleSound.Stop();
+
+            if (txtLevel.Text == "0") {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1") {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2") {
+                nivel3();
+            } 
+            
+           
         }
 
 
@@ -305,8 +280,19 @@ namespace ProyectoFinal
             //MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
-         
 
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
 
         }
 
@@ -332,6 +318,8 @@ namespace ProyectoFinal
             volarCanvas.AutoReverse = true;
             volarCanvas.Duration = new Duration(TimeSpan.FromSeconds(2));
             cvHeimlich.BeginAnimation(Canvas.MarginProperty, volarCanvas);
+
+            
             }
         
 
@@ -398,32 +386,88 @@ namespace ProyectoFinal
 
         private void comerHelado(Image imgOrigen)
         {
-          //  imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 10;
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
         }
 
         private void comerManzana(Image imgOrigen)
         {
-           // imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
         }
 
         private void comerLechuga(Image imgOrigen)
         {
-          //  imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
         }
 
         private void comerZanahoria(Image imgOrigen)
         {
-         //   imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 20;
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
         }
 
         private void comerBurguer(Image imgOrigen)
         {
             imgOrigen.Visibility = Visibility.Hidden;
             pbApetito.Value += 30;
+            if (txtLevel.Text == "0")
+            {
+                nivel1();
+            }
+            else if (txtLevel.Text == "1")
+            {
+                nivel2();
+            }
+            else if (txtLevel.Text == "2")
+            {
+                nivel3();
+            }
         }
 
        private void volarMosca(object sender, DragEventArgs e)
@@ -431,15 +475,11 @@ namespace ProyectoFinal
             
             Storyboard mosca;
             mosca = (Storyboard)this.Resources["sbMosca"];
-
-            //mosca.Begin();
-            //if(imgMosca)
         }
 
         private void menuPrinc(object sender, RoutedEventArgs e)
         {
             Principal frm2 = new Principal(this);
-            //persistenciaSalir();
             this.Hide();
             frm2.ShowDialog();
             
@@ -460,6 +500,8 @@ namespace ProyectoFinal
                 writer.WriteElementString("Comida", pbApetito.Value + "");
                 writer.WriteElementString("Energia", pbEnergia.Value + "");
                 writer.WriteElementString("Diversion", pbDiversion.Value + "");
+                writer.WriteElementString("Nivel", txtLevel.Text + "");
+                writer.WriteElementString("Experiencia", txtExp.Text + "");
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();
@@ -486,6 +528,16 @@ namespace ProyectoFinal
                         myXMLreader.Read();
                         pbEnergia.Value = myXMLreader.ReadContentAsDouble();
                     }
+                    if (myXMLreader.Name == "Nivel")
+                    {
+                        myXMLreader.Read();
+                        txtLevel.Text = myXMLreader.ReadContentAsString();
+                    }
+                    if (myXMLreader.Name == "Experiencia")
+                    {
+                        myXMLreader.Read();
+                        txtExp.Text = myXMLreader.ReadContentAsString();
+                    }
                 }
             }
             myXMLreader.Close();
@@ -511,6 +563,16 @@ namespace ProyectoFinal
                     {
                         myXMLreader.Read();
                         pbEnergia.Value = myXMLreader.ReadContentAsDouble();
+                    }
+                    if (myXMLreader.Name == "Nivel")
+                    {
+                        myXMLreader.Read();
+                        txtLevel.Text = myXMLreader.ReadContentAsString();
+                    }
+                    if (myXMLreader.Name == "Experiencia")
+                    {
+                        myXMLreader.Read();
+                        txtExp.Text = myXMLreader.ReadContentAsString();
                     }
                 }
             }
@@ -544,6 +606,84 @@ namespace ProyectoFinal
             btnQuitarVolumen.IsHitTestVisible = true;
             btnPonerVolumen.IsHitTestVisible = false;
         }
+
+        public Boolean subidaNivel1() {
+            Boolean vale = false;
+
+            if (contadorExp == 20) {
+                vale = true;
+                
+            }
+            return vale;
+
+        }
+        public Boolean subidaNivel2()
+        {
+            Boolean vale = false;
+
+            if (contadorExp == 180)
+            {
+                vale = true;
+
+            }
+            return vale;
+
+        }
+        public Boolean subidaNivel3()
+        {
+            Boolean vale = false;
+
+            if (contadorExp >= 300)
+            {
+                vale = true;
+
+            }
+            return vale;
+
+        }
+
+        public void nivel1() {
+            contadorExp += 10;
+            txtExp.Text = contadorExp.ToString();
+            Boolean vale;
+            vale = subidaNivel1();
+
+            if (vale == true)
+            {
+                MessageBox.Show("Enhorabuena, acabas de subir al nivel 1");
+                txtLevel.Text = "1";
+            }
+        }
+        public void nivel2()
+        {
+            contadorExp += 5;
+            txtExp.Text = contadorExp.ToString();
+            Boolean vale;
+            vale = subidaNivel2();
+
+            if (vale == true)
+            {
+                MessageBox.Show("Enhorabuena, acabas de subir al nivel 2");
+                txtLevel.Text = "2";
+            }
+        }
+
+        public void nivel3()
+        {
+            contadorExp += 1;
+            txtExp.Text = contadorExp.ToString();
+            Boolean vale;
+            vale = subidaNivel3();
+
+            if (vale == true)
+            {
+                MessageBox.Show("Enhorabuena, acabas de subir al nivel 3 y por tanto has completado todos los niveles");
+                txtLevel.Text = "3";
+                MessageBox.Show("Nuevo logro desbloqueado: ¡Campeón!",
+               "Logro", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
     }
     
 }

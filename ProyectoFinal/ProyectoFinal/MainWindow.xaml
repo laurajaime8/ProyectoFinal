@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Heimlich" 
         Height="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}" 
-        Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Icon="heimlich-bichos.jpg" Closing="terminar" WindowStyle="None">
+        Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Icon="heimlich-bichos.jpg" Closing="terminar" WindowStyle="None" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <Storyboard x:Key="sbMoverParpado" RepeatBehavior="Forever" AutoReverse="True">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="parpadoIzqDebajo">
@@ -3912,8 +3912,8 @@
                 </Image.RenderTransform>
             </Image>
         </Canvas>
-        <Label x:Name="lblLevel" Content="Nivel:" HorizontalAlignment="Right" Height="55.666" Margin="0,145,84.5,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
-        <TextBlock x:Name="txtLevel" HorizontalAlignment="Right" Height="44.87" Margin="0,148.46,30.5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" Text="1" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
+        <Label x:Name="lblLevel" Content="Nivel" HorizontalAlignment="Right" Height="55.666" Margin="0,95.667,73,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
+        <TextBlock x:Name="txtLevel" HorizontalAlignment="Right" Height="44.87" Margin="0,100.13,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" Text="1" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
         <Button x:Name="btnQuitarVolumen" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,159.886,71" VerticalAlignment="Bottom" Click="volumenQuitar" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="89841-200.png"/>
@@ -3924,5 +3924,7 @@
                 <ImageBrush ImageSource="volume-up-interface-symbol_icon-icons.com_73337.png"/>
             </Button.Background>
         </Button>
+        <Label x:Name="lblExperiencia" Content="Exp." HorizontalAlignment="Right" Height="55.666" Margin="0,144.103,73,0" VerticalAlignment="Top" Width="140.386" FontSize="30" FontWeight="Bold" FontFamily="Snap ITC"/>
+        <TextBlock x:Name="txtExp" HorizontalAlignment="Right" Height="44.87" Margin="0,150,35,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Showcard Gothic" TextDecorations="{x:Null}" Foreground="#FFD80000"/>
     </Grid>
 </Window>

@@ -79,7 +79,7 @@ namespace ProyectoFinal
         {
             if (btnInicio.IsHitTestVisible == false)
             {
-                MessageBox.Show("Fail");
+                MessageBox.Show("Error, empieza de nuevo!");
                 t1.Stop();
                 lblCronometro.Content = "00:00:00";
                 seg = 0;
@@ -112,7 +112,10 @@ namespace ProyectoFinal
             }*/
 
             btnInicio.IsHitTestVisible = true;
-            btnFinal.IsHitTestVisible = false;
+            btnFinal.IsHitTestVisible = false; 
+
+            MessageBox.Show("Has tardado" + min+ " minutos con " + seg + "segundos",
+                 "Tiempo tardado", MessageBoxButton.OK, MessageBoxImage.Information);
 
             if (seg <= 5)
             {
