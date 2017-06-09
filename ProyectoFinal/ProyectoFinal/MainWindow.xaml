@@ -2139,6 +2139,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.551"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbNivel1"/>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -2147,6 +2148,7 @@
             <BeginStoryboard Storyboard="{StaticResource sbMoverPies}"/>
             <BeginStoryboard Storyboard="{StaticResource sbCambiarBolas}"/>
             <BeginStoryboard Storyboard="{StaticResource sbAntenas}"/>
+            <BeginStoryboard Storyboard="{StaticResource sbNivel1}"/>
 
         </EventTrigger>
     </Window.Triggers>
@@ -3109,34 +3111,6 @@
                     </Ellipse>
                 </Canvas>
             </Canvas>
-            <Canvas x:Name="cvHeces" Height="31" Width="72" Canvas.Left="10" Canvas.Top="374.5">
-                <Ellipse x:Name="hece1" Height="21" Width="72" Canvas.Top="10" Visibility="Hidden">
-                    <Ellipse.Fill>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FFA0891E" Offset="0"/>
-                            <GradientStop Color="#FF814C16" Offset="1"/>
-                            <GradientStop Color="#FF824F16" Offset="0.549"/>
-                        </LinearGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse x:Name="hece2" Height="15" Width="38" Canvas.Left="17" Canvas.Top="5" Visibility="Collapsed">
-                    <Ellipse.Fill>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FFA06529" Offset="0.354"/>
-                            <GradientStop Color="White" Offset="1"/>
-                            <GradientStop Color="#FF814C16" Offset="0.996"/>
-                        </LinearGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse x:Name="hece3" Height="10" Width="19.094" Canvas.Left="26.573" Visibility="Collapsed">
-                    <Ellipse.Fill>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FF814C16" Offset="0"/>
-                            <GradientStop Color="#FF9B5713" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-            </Canvas>
             <Canvas x:Name="cvCabeza" Height="166" Canvas.Left="313" Width="169" RenderTransformOrigin="0.5,0.5" Canvas.Top="10" AllowDrop="True" Drop="cvCabeza_Drop" Background="{x:Null}">
                 <Canvas.Resources>
                     <Storyboard x:Name="subirCabeza" x:Key="subirCabezaKey">
@@ -3186,7 +3160,7 @@
 
                         <Storyboard x:Name="cerrarOjoIzq" x:Key="cerrarOjoIzqKey">
                             <DoubleAnimation Storyboard.TargetName="ojoIzq"
-                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Height)"
                                              From="18" To="0" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
@@ -3207,7 +3181,7 @@
 
                         <Storyboard x:Name="cerrarOjoDer" x:Key="cerrarOjoDerKey">
                             <DoubleAnimation Storyboard.TargetName="ojoDer"
-                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Height)"
                                              From="18" To="0" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
@@ -3227,13 +3201,13 @@
                     <Ellipse.Resources>
                         <Storyboard x:Name="pupilaIzqGrande" x:Key="pupilaIzqGrandeKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaIzq"
-                                             Storyboard.TargetProperty="(Ellipse.Width)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Width)"
                                              From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
 
                         </Storyboard>
                         <Storyboard x:Name="pupilaIzqCerrar" x:Key="pupilaIzqCerrarKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaIzq"
-                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Height)"
                                              From="10" To="1" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
@@ -3356,14 +3330,14 @@
                     <Ellipse.Resources>
                         <Storyboard x:Name="pupilaDerGrande" x:Key="pupilaDerGrandeKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaDer"
-                                             Storyboard.TargetProperty="(Ellipse.Width)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Width)"
                                              From="5" To="8" Duration="0:0:2" AutoReverse="True"/>
 
                         </Storyboard>
 
                         <Storyboard x:Name="pupilaDerCerrar" x:Key="pupilaDerCerrarKey">
                             <DoubleAnimation Storyboard.TargetName="pupilaDer"
-                                             Storyboard.TargetProperty="(Ellipse.Height)"
+                                             Storyboard.TargetProperty="(FrameworkElement.Height)"
                                              From="10" To="1" Duration="0:0:5" AutoReverse="True"/>
 
                         </Storyboard>
@@ -3411,7 +3385,7 @@
                     <Ellipse.Resources>
                         <Storyboard x:Name="sbHambre" x:Key="sbHambreKey">
                             <DoubleAnimation BeginTime="00:00:00" Storyboard.TargetName="elLengua"
-                                               Storyboard.TargetProperty="(Ellipse.Width)" 
+                                               Storyboard.TargetProperty="(FrameworkElement.Width)" 
                                                 From="14" To="30" Duration="0:0:1"    
                                                 AutoReverse="True" />
 
@@ -3534,6 +3508,34 @@
                         </TransformGroup>
                     </Rectangle.RenderTransform>
                 </Rectangle>
+            </Canvas>
+            <Canvas x:Name="cvHeces" Height="31" Width="72" Canvas.Left="10" Canvas.Top="374.5">
+                <Ellipse x:Name="hece1" Height="21" Width="72" Canvas.Top="10" Visibility="Hidden">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA0891E" Offset="0"/>
+                            <GradientStop Color="#FF814C16" Offset="1"/>
+                            <GradientStop Color="#FF824F16" Offset="0.549"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="hece2" Height="15" Width="38" Canvas.Left="17" Canvas.Top="5" Visibility="Collapsed">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA06529" Offset="0.354"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF814C16" Offset="0.996"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="hece3" Height="10" Width="19.094" Canvas.Left="26.573" Visibility="Collapsed">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF814C16" Offset="0"/>
+                            <GradientStop Color="#FF9B5713" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
             </Canvas>
         </Canvas>
         <Canvas x:Name="cvPogressBar" Height="110.499" Margin="122.225,10,19,0" VerticalAlignment="Top">

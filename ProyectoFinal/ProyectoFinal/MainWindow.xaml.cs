@@ -1,24 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.Xml;
-using System.ComponentModel;
-using System.Drawing;
-using System.Threading;
 
 
 namespace ProyectoFinal
@@ -33,6 +21,7 @@ namespace ProyectoFinal
         private SoundPlayer gameOver = new SoundPlayer("gameOver.wav");
         private MediaPlayer sonido;
         private int contadorExp = 0;
+        private object MessageBoxButtons;
 
         public MainWindow()
         {
@@ -172,7 +161,7 @@ namespace ProyectoFinal
             medioMuerto = (Storyboard)this.Resources["sbTodoBajo"];
 
             //Acciones
-        
+            int contadorMuertes=0;
                 
                 if ((pbApetito.Value == 0 && pbDiversion.Value == 0) ||
                 (pbApetito.Value == 0 && pbEnergia.Value == 0) ||
@@ -185,11 +174,14 @@ namespace ProyectoFinal
                     lblExperiencia.Content = "";
                     txtExp.Text = "";
                     sonido.Stop();
-                   
+                contadorMuertes = contadorMuertes + 1;
+                if (contadorMuertes > 5)
+                {
+                    //Mostrar el logro de asesinato nato
                 }
-            
+                   
+               }
 
-          
 
             //Barras iguales a 10 todas
             if (pbEnergia.Value <= 10 && pbApetito.Value <= 10 && pbDiversion.Value <= 10)
@@ -672,7 +664,13 @@ namespace ProyectoFinal
             {
                 MessageBox.Show("Enhorabuena, acabas de subir al nivel 1");
                 txtLevel.Text = "1";
+                Button OK;
+               // PicImage = Image.FromFile("aqui va la ruta y nombre de tu archivo de imagen")
+                //  MessageBox.Show("Typical installation is strongly recommended.",
+                //"Install information", MessageBoxButtons.OK,
+                //                     MessageBoxIcon.Information)
             }
+
         }
         public void nivel2()
         {

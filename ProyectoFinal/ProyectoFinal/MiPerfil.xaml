@@ -14,9 +14,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="dibujos-bichos-disney.jpg"/>
         </Grid.Background>
-        <Label x:Name="lblNivel" Content="Nivel:" HorizontalAlignment="Left" Height="60.08" Margin="10,10,0,0" VerticalAlignment="Top" Width="101.333" FontSize="36" Background="{x:Null}"/>
-        <ProgressBar x:Name="pbNivel" Height="27.333" Margin="116.333,29.747,71.333,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblLogros" Height="40.333" Margin="10,83.666,10,0" VerticalAlignment="Top" FontSize="20" Background="#FFD61919" Grid.ColumnSpan="2" FontWeight="Bold" Content="                                  Logros"/>
+        <Label x:Name="lblLogros" Height="40.333" Margin="10,57.08,10,0" VerticalAlignment="Top" FontSize="20" Background="#FFD61919" Grid.ColumnSpan="2" FontWeight="Bold" Content="                                  Logros"/>
         <Label x:Name="lblNivelPorciento" Content="" Height="57.08" Margin="-66.333,10,10,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Grid.Column="1"/>
         <Canvas x:Name="cvLogros" Grid.ColumnSpan="2" Margin="32,123.999,33,18.336">
             <Label x:Name="lblTortuga" Content="                         Tortuga Ninja" Height="40.333" FontSize="20" Background="#FF18811D" FontWeight="Bold" Canvas.Top="5" Width="427"/>
@@ -44,7 +42,6 @@
         <Image x:Name="mPatoso" Margin="0,0,-9,114" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
         <Image x:Name="mAsesino" Margin="0,0,-9,68" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
         <Image x:Name="mLogro" Margin="0,0,-9,21" Source="medalla.png" Stretch="Fill" HorizontalAlignment="Right" Width="35" Height="32" VerticalAlignment="Bottom" Visibility="Hidden"/>
-        <Label x:Name="lblExperiencia" Content="Experiencia:" HorizontalAlignment="Left" Height="60.08" Margin="10,45.233,0,0" VerticalAlignment="Top" Width="127.333" Background="{x:Null}" FontSize="22"/>
         <Label x:Name="txtExperiencia" Content="" Height="21.586" Margin="137.333,57.08,193,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

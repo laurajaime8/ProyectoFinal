@@ -33,6 +33,7 @@ namespace ProyectoFinal
             
             InitializeComponent();
             toopTils();
+            
 
 
         }
@@ -113,6 +114,7 @@ namespace ProyectoFinal
 
         private void juego(object sender, RoutedEventArgs e)
         {
+       
             //XmlTextReader perfilXML = new XmlTextReader("Perfil.xml");
             Laberinto laberinto = new Laberinto(this.btnJuegos, this.btnMiPerfil,
             this.btnNuevaPartida, this.btnResumen, this.btnAyuda, this.btnSalir);

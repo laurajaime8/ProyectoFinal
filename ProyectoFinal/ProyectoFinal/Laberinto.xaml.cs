@@ -28,6 +28,7 @@ namespace ProyectoFinal
         int hora = 0;
         Button b1, b2, b3, b4, b5, b6;
         ProgressBar pb;
+        
       
         public Laberinto(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
@@ -48,8 +49,7 @@ namespace ProyectoFinal
             
 
         }
-        public Laberinto(ProgressBar pb) {
-            this.pb = pb;
+        public Laberinto() {
         }
 
         private void reloj(object sender, EventArgs e)
@@ -114,23 +114,24 @@ namespace ProyectoFinal
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false; 
 
-            MessageBox.Show("Has tardado" + min+ " minutos con " + seg + "segundos",
+            MessageBox.Show("Has tardado " + min+ " minutos con " + seg + " segundos",
                  "Tiempo tardado", MessageBoxButton.OK, MessageBoxImage.Information);
-
+            MiPerfil mp = new MiPerfil(b1,b2,b3,b4,b5,b6);
             if (seg <= 5)
             {
-                //perfil.mRapido.Visibility = Visibility.Visible;
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                //pb.Value += 10;
+                mp.mRapido.Visibility = Visibility.Visible;
+                mp.Show();
+                
             }
             if (seg == 20)
             {
-               /* perfil.lblTortuga.Visibility = Visibility.Visible;
-                MessageBox.Show("Has desbloqueado el logro: Tortugo",
-                  "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                perfil.pbNivel.Value += 10;*/
-              
+                MessageBox.Show("Has desbloqueado el logro: Tortuga",
+                    "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                mp.mTortuga.Visibility = Visibility.Visible;
+                mp.Show();
+
             }
 
             seg = 0;

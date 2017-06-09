@@ -20,7 +20,6 @@ namespace ProyectoFinal
     public partial class MiPerfil : Window
     {
         Button b1, b2, b3, b4, b5, b6;
-        ProgressBar pb;
 
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -43,18 +42,37 @@ namespace ProyectoFinal
             this.b5 = b5;
             this.b6 = b6;
 
-            Laberinto lab = new Laberinto(pbNivel);
-            //txtExperiencia.TextInput = "10";
+            Laberinto lab = new Laberinto();
 
+            this.Show();
+            if (mTortuga.Visibility == Visibility.Visible)
+            {
+                mTortuga.Visibility = Visibility.Visible;
+            }
+            if (mRapido.Visibility == Visibility.Visible)
+            {
+
+                mRapido.Visibility = Visibility.Visible;
+            }
+            if (mAsesino.Visibility == Visibility.Visible)
+            {
+
+                mAsesino.Visibility = Visibility.Visible;
+            }
+            if (mPatoso.Visibility == Visibility.Visible)
+            {
+
+                mPatoso.Visibility = Visibility.Visible;
+
+            }
+            if (mLogro.Visibility == Visibility.Visible)
+            {
+
+                mLogro.Visibility = Visibility.Visible;
+            }
         }
-        public MiPerfil(ProgressBar pb)
-        {
-            InitializeComponent();
-            this.pb = pb;
-            pb = pbNivel;
-            pb.Value = 10;
-           
-        }
-        
+
     }
-}
+        
+        }
+    
