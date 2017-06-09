@@ -144,43 +144,12 @@ namespace ProyectoFinal
         
         private void informacion(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Bienvenido al juego del laberinto! En primer lugar deberás de poner el ratón sobre la hormiga y tendrás que guiarlo por el laberinto hasta llegar al final. No podrás tocar las paredes ya que si no tendrás que empezar de nuevo. Buena suerte!",
+            MessageBox.Show("Bienvenido al minijuego del laberinto! En primer lugar deberás de poner el ratón sobre la hormiga y tendrás que guiarlo por el laberinto hasta llegar al final. No podrás tocar las paredes ya que si no tendrás que empezar de nuevo. Buena suerte!",
                "Información", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
 
-        /*public void persistenciaSalir()
-        {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
-            settings.IndentChars = ("    ");
-            using (XmlWriter writer = XmlWriter.Create("Perfil.xml", settings))
-            {
-                writer.WriteStartElement("Atributos");
-                writer.WriteElementString("Nivel", perfil.pbNivel.Value + "");
-                
-                writer.WriteEndElement();
-                writer.Flush();
-                // writer.Close();
-            }
-        }
-        public void persistenciaEntrar()
-        {
-            XmlTextReader myXMLreader = new XmlTextReader("Perfil.xml");
-            while (myXMLreader.Read())
-            {
-                if (myXMLreader.NodeType == XmlNodeType.Element)
-                { }
-                    if (myXMLreader.Name == "Nivel")
-                    {
-                        myXMLreader.Read();
-                        perfil.pbNivel.Value = myXMLreader.ReadContentAsDouble();
-                    }
-                
-                }
-            myXMLreader.Close();
-            }
-            */
+        
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
             b1.IsHitTestVisible = true;

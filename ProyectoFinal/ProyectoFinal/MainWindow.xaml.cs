@@ -100,16 +100,36 @@ namespace ProyectoFinal
             btDormir.ToolTip = "Dormir";
             btnPonerVolumen.ToolTip = "Poner Volumen";
             btnQuitarVolumen.ToolTip = "Quitar Volumen";
+            btnInfo.ToolTip = "Información acerca del juego";
         }
 
 
         private void reloj(object sender, EventArgs e)
         {
-           
-            //Decrementar la barra en:
-            pbEnergia.Value -= 4;
-            pbApetito.Value -= 2;
-            pbDiversion.Value -= 3;
+
+            if (txtLevel.Text == "0")
+            {
+                //Decrementar la barra en:
+                pbEnergia.Value -= 4;
+                pbApetito.Value -= 2;
+                pbDiversion.Value -= 3;
+            } else if (txtLevel.Text == "1") {
+                pbEnergia.Value -= 8;
+                pbApetito.Value -= 4;
+                pbDiversion.Value -= 6;
+
+            } else if (txtLevel.Text == "2") {
+
+                pbEnergia.Value -= 16;
+                pbApetito.Value -= 8;
+                pbDiversion.Value -= 12;
+            }
+            else if (txtLevel.Text == "3") {
+                pbEnergia.Value -= 4;
+                pbApetito.Value -= 2;
+                pbDiversion.Value -= 3;
+
+            }
             
 
             //STORYBOARDS////////
@@ -158,7 +178,7 @@ namespace ProyectoFinal
                 (pbApetito.Value == 0 && pbEnergia.Value == 0) ||
                 (pbDiversion.Value == 0 && pbEnergia.Value == 0))
                 {
-                  
+                    spAlimentos.Visibility = Visibility.Hidden;
                     GameOver.Visibility = Visibility.Visible;
                     lblLevel.Content = "";
                     txtLevel.Text = "";
@@ -684,6 +704,11 @@ namespace ProyectoFinal
             }
         }
 
+        private void Info(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bienvenido a este juego, las reglas son muy básicas, deberás de dar de comer a Heimlich, jugar con él y ponerle a dormir. Si no cumples una de estos dos objetivos la oruga se morirá y tendrás que empezar una nueva partida. Cada vez que realices alguna de estas tres opciones ganarás puntos de experiencia y con ello subirás de nivel. ¡Cuidado! Si subes de nivel las barras decrecerán cada vez más deprisa. ¡Mucho ánimo y suerte!",
+              "Información sobre el Juego", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
     
 }
