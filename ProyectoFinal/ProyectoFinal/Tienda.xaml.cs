@@ -35,9 +35,24 @@ namespace ProyectoFinal
              MessageBoxButton.YesNo, MessageBoxImage.Question)
               == MessageBoxResult.Yes)
             {
-                puntos = puntos - 20;
-                txtExp.Text = puntos.ToString();
-                //poner fondo en la ventana principal
+                if (this.puntos<20)
+                {
+                    MessageBox.Show("No tienes suficientes puntos para comprarlo",
+              "Puntos insuficientes", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else if (this.puntos>=20)
+                {
+                    puntos = puntos - 20;
+                    txtExp.Text = puntos.ToString();
+                    //poner fondo en la ventana principal
+                    MainWindow mw = new MainWindow();
+                    ImageBrush mb = new ImageBrush();
+                    mb.ImageSource = new BitmapImage(
+                        new Uri(@"sampleImages\fondo2.jpg", UriKind.Relative)
+                    );
+                    mw.Background = mb;
+                }
+                
             }
         }
 

@@ -114,9 +114,9 @@ namespace ProyectoFinal
                 pbDiversion.Value -= 12;
             }
             else if (txtLevel.Text == "3") {
-                pbEnergia.Value -= 4;
-                pbApetito.Value -= 2;
-                pbDiversion.Value -= 3;
+                pbEnergia.Value -= 24;
+                pbApetito.Value -= 10;
+                pbDiversion.Value -= 20;
 
             }
             
@@ -161,7 +161,7 @@ namespace ProyectoFinal
             medioMuerto = (Storyboard)this.Resources["sbTodoBajo"];
 
             //Acciones
-            int contadorMuertes=0;
+        
                 
                 if ((pbApetito.Value == 0 && pbDiversion.Value == 0) ||
                 (pbApetito.Value == 0 && pbEnergia.Value == 0) ||
@@ -174,12 +174,6 @@ namespace ProyectoFinal
                     lblExperiencia.Content = "";
                     txtExp.Text = "";
                     sonido.Stop();
-                contadorMuertes = contadorMuertes + 1;
-                if (contadorMuertes > 5)
-                {
-                    //Mostrar el logro de asesinato nato
-                }
-                   
                }
 
 
@@ -200,9 +194,9 @@ namespace ProyectoFinal
                
             } else if (pbEnergia.Value > 10 )
             {
+                cvZetas.Visibility = Visibility.Hidden;
                 estarCansado.Stop();
                 estarCansado.Remove();
-                cvZetas.Visibility = Visibility.Hidden;
             }
 
            
@@ -224,7 +218,7 @@ namespace ProyectoFinal
               
 
             //Apetito
-            if (pbApetito.Value < 20)
+            if (pbApetito.Value < 40)
             {
                 spAlimentos.Visibility = Visibility.Visible;
             }else if (pbApetito.Value > 50)
@@ -250,7 +244,6 @@ namespace ProyectoFinal
 
         private void EstarCansado_Completed(object sender, EventArgs e)
         {
-           // MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
             cvMariposa.Visibility = Visibility.Collapsed;
@@ -289,7 +282,6 @@ namespace ProyectoFinal
 
         private void Dormir_Completed(object sender, EventArgs e)
         {
-            //MessageBox.Show("Funciona");
             btJugar.IsHitTestVisible = true;
             btDormir.IsHitTestVisible = true;
 
