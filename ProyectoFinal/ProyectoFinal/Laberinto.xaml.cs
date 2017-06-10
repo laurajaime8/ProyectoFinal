@@ -121,7 +121,7 @@ namespace ProyectoFinal
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
                 valorR = 1;
-                persistenciaEscribir(valorT, valorR, valorP, valorC);
+                persistenciaEscribir(valorT, valorR, valorP, valorL, valorC);
 
             }
             if (seg >= 15)
@@ -129,7 +129,7 @@ namespace ProyectoFinal
                 MessageBox.Show("Has desbloqueado el logro: Tortuga",
                     "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
                 valorT = 1;
-                persistenciaEscribir(valorT, valorR, valorP, valorC);
+                persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
             }
 
             if(contadorColision > 5)
@@ -137,7 +137,7 @@ namespace ProyectoFinal
                 MessageBox.Show("Has desbloqueado el logro: Patoso number ONE",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
                 valorP = 1;
-                persistenciaEscribir(valorT, valorR, valorP, valorC);
+                persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
             }
             
 
@@ -168,7 +168,7 @@ namespace ProyectoFinal
             b6.IsHitTestVisible = true;
         }
 
-        public void persistenciaEscribir(int valorT, int valorR, int valorP, int valorC)
+        public void persistenciaEscribir(int valorT, int valorR, int valorP, int valorL, int valorC)
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
@@ -179,7 +179,8 @@ namespace ProyectoFinal
                 writer.WriteElementString("LogroTortuga", valorT + "");
                 writer.WriteElementString("LogroRapido", valorR + "");
                 writer.WriteElementString("LogroPatoso", valorP + "");
-                writer.WriteElementString("LogroPatoso", valorC + "");
+                writer.WriteElementString("LogroTodos", valorL + "");
+                writer.WriteElementString("LogroCampeon", valorC + "");
 
 
 

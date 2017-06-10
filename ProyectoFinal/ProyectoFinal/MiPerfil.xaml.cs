@@ -96,6 +96,16 @@ namespace ProyectoFinal
                         }
                     }
 
+                    if (myXMLreader.Name == "LogroTodos")
+                    {
+                        myXMLreader.Read();
+                        valor = myXMLreader.ReadContentAsInt();
+                        if (valor == 1)
+                        {
+                            mLogro.Visibility = Visibility.Visible;
+                        }
+                    }
+
                     if (myXMLreader.Name == "LogroCampeon")
                     {
                         myXMLreader.Read();
@@ -120,7 +130,10 @@ namespace ProyectoFinal
                 writer.WriteStartElement("Atributos");
                 writer.WriteElementString("LogroTortuga", valor + "");
                 writer.WriteElementString("LogroRapido", valor + "");
+                writer.WriteElementString("LogroPatoso", valor + "");
+                writer.WriteElementString("LogroTodos", valor + "");
                 writer.WriteElementString("LogroCampeon", valor + "");
+
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();

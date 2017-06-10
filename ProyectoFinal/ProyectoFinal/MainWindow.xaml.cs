@@ -703,7 +703,8 @@ namespace ProyectoFinal
                 int valorT = 0;
                 int valorR = 0;
                 int valorP = 0;
-                lab.persistenciaEscribir(valorT, valorR, valorP, valorC);
+                int valorL = 0;
+                lab.persistenciaEscribir(valorT, valorR, valorP, valorL, valorC);
                 mp.mCampeon.Visibility = Visibility.Visible;
 
             }
