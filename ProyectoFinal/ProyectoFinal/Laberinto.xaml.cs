@@ -28,7 +28,11 @@ namespace ProyectoFinal
         int hora = 0;
         Button b1, b2, b3, b4, b5, b6;
         
-        
+        int valorT;
+        int valorR;
+        int valorP;
+        int valorC;
+        int valorL;
       
         public Laberinto(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6)
         {
@@ -74,7 +78,7 @@ namespace ProyectoFinal
     
         }
 
-
+        int contadorColision = 0;
         private void pared_colision(object sender, MouseEventArgs e)
         {
             if (btnInicio.IsHitTestVisible == false)
@@ -87,6 +91,7 @@ namespace ProyectoFinal
                 hora = 0;
                 btnInicio.IsHitTestVisible = true;
                 btnFinal.IsHitTestVisible = false;
+                contadorColision = contadorColision + 1;
                 
             }
         }
@@ -103,28 +108,38 @@ namespace ProyectoFinal
 
         private void final(object sender, MouseEventArgs e)
         {
+            
             t1.Stop();
             btnInicio.IsHitTestVisible = true;
             btnFinal.IsHitTestVisible = false; 
 
             MessageBox.Show("Has tardado " + min+ " minutos con " + seg + " segundos",
                  "Tiempo tardado", MessageBoxButton.OK, MessageBoxImage.Information);
-            //MiPerfil mp = new MiPerfil(b1,b2,b3,b4,b5,b6);
+
             if (seg <= 5)
             {
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                //mp.mRapido.Visibility = Visibility.Visible;
-                
+                valorR = 1;
+                persistenciaEscribir(valorT, valorR, valorP, valorC);
+
             }
             if (seg >= 15)
             {
                 MessageBox.Show("Has desbloqueado el logro: Tortuga",
                     "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                // mp.mTortuga.Visibility = Visibility.Visible;
-                int valor = 1;
-                persistenciaEscribir(valor);
+                valorT = 1;
+                persistenciaEscribir(valorT, valorR, valorP, valorC);
             }
+
+            if(contadorColision > 5)
+            {
+                MessageBox.Show("Has desbloqueado el logro: Patoso number ONE",
+                  "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                valorP = 1;
+                persistenciaEscribir(valorT, valorR, valorP, valorC);
+            }
+            
 
             seg = 0;
             min = 0;
@@ -153,15 +168,21 @@ namespace ProyectoFinal
             b6.IsHitTestVisible = true;
         }
 
-        public void persistenciaEscribir(int valor)
+        public void persistenciaEscribir(int valorT, int valorR, int valorP, int valorC)
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
             settings.IndentChars = ("    ");
-            using (XmlWriter writer = XmlWriter.Create("LogroTortuga.xml", settings))
+            using (XmlWriter writer = XmlWriter.Create("Logros.xml", settings))
             {
                 writer.WriteStartElement("Atributos");
-                writer.WriteElementString("LogroTortuga", valor + "");
+                writer.WriteElementString("LogroTortuga", valorT + "");
+                writer.WriteElementString("LogroRapido", valorR + "");
+                writer.WriteElementString("LogroPatoso", valorP + "");
+                writer.WriteElementString("LogroPatoso", valorC + "");
+
+
+
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();

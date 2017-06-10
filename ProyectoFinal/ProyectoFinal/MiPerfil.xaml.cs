@@ -52,45 +52,18 @@ namespace ProyectoFinal
             this.b6 = b6;
 
             persistenciaEntrar();
-            /*
-            Laberinto lab = new Laberinto();
-
-            this.Show();
-            if (mTortuga.Visibility == Visibility.Visible)
-            {
-                mTortuga.Visibility = Visibility.Visible;
-            }
-            if (mRapido.Visibility == Visibility.Visible)
-            {
-
-                mRapido.Visibility = Visibility.Visible;
-            }
-            if (mAsesino.Visibility == Visibility.Visible)
-            {
-
-                mAsesino.Visibility = Visibility.Visible;
-            }
-            if (mPatoso.Visibility == Visibility.Visible)
-            {
-
-                mPatoso.Visibility = Visibility.Visible;
-
-            }
-            if (mLogro.Visibility == Visibility.Visible)
-            {
-
-                mLogro.Visibility = Visibility.Visible;
-            }
-            */
+            
         }
         public void persistenciaEntrar()
         {
             int valor;
-            XmlTextReader myXMLreader = new XmlTextReader("LogroTortuga.xml");
+            XmlTextReader myXMLreader = new XmlTextReader("Logros.xml");
+
             while (myXMLreader.Read())
             {
                 if (myXMLreader.NodeType == XmlNodeType.Element)
                 {
+
                     if (myXMLreader.Name == "LogroTortuga")
                     {
                         myXMLreader.Read();
@@ -99,7 +72,40 @@ namespace ProyectoFinal
                             mTortuga.Visibility = Visibility.Visible;
                         }
                     }
-                    
+
+
+
+                    if (myXMLreader.Name == "LogroRapido")
+                    {
+                        myXMLreader.Read();
+                        valor = myXMLreader.ReadContentAsInt();
+                        if (valor == 1)
+                        {
+                            mRapido.Visibility = Visibility.Visible;
+                        }
+                    }
+
+
+                    if (myXMLreader.Name == "LogroPatoso")
+                    {
+                        myXMLreader.Read();
+                        valor = myXMLreader.ReadContentAsInt();
+                        if (valor == 1)
+                        {
+                            mPatoso.Visibility = Visibility.Visible;
+                        }
+                    }
+
+                    if (myXMLreader.Name == "LogroCampeon")
+                    {
+                        myXMLreader.Read();
+                        valor = myXMLreader.ReadContentAsInt();
+                        if (valor == 1)
+                        {
+                            mCampeon.Visibility = Visibility.Visible;
+                        }
+                    }
+
                 }
             }
             myXMLreader.Close();
@@ -109,10 +115,12 @@ namespace ProyectoFinal
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
             settings.IndentChars = ("    ");
-            using (XmlWriter writer = XmlWriter.Create("LogroTortuga.xml", settings))
+            using (XmlWriter writer = XmlWriter.Create("Logros.xml", settings))
             {
                 writer.WriteStartElement("Atributos");
                 writer.WriteElementString("LogroTortuga", valor + "");
+                writer.WriteElementString("LogroRapido", valor + "");
+                writer.WriteElementString("LogroCampeon", valor + "");
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();

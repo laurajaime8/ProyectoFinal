@@ -665,10 +665,7 @@ namespace ProyectoFinal
                 MessageBox.Show("Enhorabuena, acabas de subir al nivel 1");
                 txtLevel.Text = "1";
                 
-               // PicImage = Image.FromFile("aqui va la ruta y nombre de tu archivo de imagen")
-                //  MessageBox.Show("Typical installation is strongly recommended.",
-                //"Install information", MessageBoxButtons.OK,
-                //                     MessageBoxIcon.Information)
+           
             }
 
         }
@@ -699,6 +696,16 @@ namespace ProyectoFinal
                 txtLevel.Text = "3";
                 MessageBox.Show("Nuevo logro desbloqueado: ¡Campeón!",
                "Logro", MessageBoxButton.OK, MessageBoxImage.Information);
+                XmlTextReader myXMLreader = new XmlTextReader("Logros.xml");
+                MiPerfil mp = new MiPerfil(myXMLreader);
+                Laberinto lab = new Laberinto();
+                int valorC = 1;
+                int valorT = 0;
+                int valorR = 0;
+                int valorP = 0;
+                lab.persistenciaEscribir(valorT, valorR, valorP, valorC);
+                mp.mCampeon.Visibility = Visibility.Visible;
+
             }
         }
 
@@ -707,6 +714,15 @@ namespace ProyectoFinal
             MessageBox.Show("Bienvenido a este juego, las reglas son muy básicas, deberás de dar de comer a Heimlich, jugar con él y ponerle a dormir. Si no cumples una de estos dos objetivos la oruga se morirá y tendrás que empezar una nueva partida. Cada vez que realices alguna de estas tres opciones ganarás puntos de experiencia y con ello subirás de nivel. ¡Cuidado! Si subes de nivel las barras decrecerán cada vez más deprisa. ¡Mucho ánimo y suerte!",
               "Información sobre el Juego", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+
+        private void btnTienda_Click(object sender, RoutedEventArgs e)
+        {
+            Tienda t= new Tienda(contadorExp);
+            t.Show();
+
+        }
+
     }
     
 }

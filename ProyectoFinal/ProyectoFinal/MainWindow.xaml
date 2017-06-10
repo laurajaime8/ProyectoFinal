@@ -2155,7 +2155,7 @@
     <Window.Background>
         <ImageBrush ImageSource="fondo1.jpg" Stretch="UniformToFill"/>
     </Window.Background>
-    <Grid>
+    <Grid x:Name="grPrincipal">
         <Canvas x:Name="cvHeimlich" Margin="367.085,179.5,485.915,93" RenderTransformOrigin="0.5,0.5" MouseUp="matarOruga">
             <Canvas.RenderTransform>
                 <TransformGroup>
@@ -3948,6 +3948,11 @@
         <Button x:Name="btnInfo" Content="" Foreground="#FF180121" Height="65" FontWeight="Bold" FontSize="16" OpacityMask="#FF20CB47" Width="65" HorizontalAlignment="Right" Margin="0,0,129,71" VerticalAlignment="Bottom" Click="Info" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="info.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnTienda" Content="" HorizontalAlignment="Right" Height="108" Margin="0,207.63,10,0" VerticalAlignment="Top" Width="114" BorderBrush="#00000000" Click="btnTienda_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="shop.ico"/>
             </Button.Background>
         </Button>
     </Grid>

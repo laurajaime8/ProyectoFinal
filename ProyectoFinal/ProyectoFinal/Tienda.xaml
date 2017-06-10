@@ -1,0 +1,48 @@
+﻿<Window x:Class="ProyectoFinal.Tienda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d"
+        Title="Tienda" Height="436.5" Width="694.5">
+    <Grid Margin="0,0,2,12" RenderTransformOrigin="0.504,0.481">
+        <Grid.Background>
+            <ImageBrush ImageSource="bichosTienda.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnFondo1" Content="" HorizontalAlignment="Left" Margin="37,102,0,195" Width="190" Click="btnFondo1_click">
+            <Button.Background>
+                <ImageBrush ImageSource="fonodT1.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textBlock" Margin="149,10,0,0" TextWrapping="Wrap" FontSize="20" Height="51" VerticalAlignment="Top"><Run FontWeight="Bold" FontFamily="Rockwell Extra Bold" Text="Haz click en el artículo para canjearlo por puntos"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="lblFondo1" Content="FONDOS" HorizontalAlignment="Left" Height="36" Margin="76,61,0,0" VerticalAlignment="Top" Width="112" FontSize="20" FontFamily="Kristen ITC">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF3FABB6" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblFondo1_Copy" Content="GORROS" HorizontalAlignment="Right" Height="36" Margin="0,61,85.5,0" VerticalAlignment="Top" Width="112" FontSize="20" FontFamily="Kristen ITC">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF3FABB6" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Button x:Name="btnFondo2" Content="" HorizontalAlignment="Left" Margin="37,0,0,61" Width="190" Height="96.5" VerticalAlignment="Bottom" Click="btnFondo2_click">
+            <Button.Background>
+                <ImageBrush ImageSource="fondo2.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblExperiencia" Content="" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" VerticalAlignment="Top" Width="46.5">
+            <Label.Background>
+                <ImageBrush ImageSource="Estrella_mario.png"/>
+            </Label.Background>
+        </Label>
+        <TextBlock x:Name="txtExp" HorizontalAlignment="Left" Height="33.5" Margin="81,22.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36.5"/>
+
+    </Grid>
+</Window>
