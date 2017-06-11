@@ -101,22 +101,22 @@ namespace ProyectoFinal
             if (txtLevel.Text == "0")
             {
                 //Decrementar la barra en:
-                pbEnergia.Value -= 4;
+                pbEnergia.Value -= 2;
                 pbApetito.Value -= 2;
                 pbDiversion.Value -= 3;
             } else if (txtLevel.Text == "1") {
-                pbEnergia.Value -= 8;
+                pbEnergia.Value -= 4;
                 pbApetito.Value -= 4;
                 pbDiversion.Value -= 6;
 
             } else if (txtLevel.Text == "2") {
 
-                pbEnergia.Value -= 16;
+                pbEnergia.Value -= 8;
                 pbApetito.Value -= 8;
                 pbDiversion.Value -= 12;
             }
             else if (txtLevel.Text == "3") {
-                pbEnergia.Value -= 24;
+                pbEnergia.Value -= 16;
                 pbApetito.Value -= 10;
                 pbDiversion.Value -= 20;
 
@@ -289,7 +289,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
 
-            pbEnergia.Value += 20;
+            pbEnergia.Value += 50;
         
             simpleSound.Play();
             
@@ -329,7 +329,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
             cvMariposa.Visibility = Visibility.Visible;
-            pbDiversion.Value += 20;
+            pbDiversion.Value += 40;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
