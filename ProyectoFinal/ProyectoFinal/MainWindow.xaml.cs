@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 using System.Xml;
 
@@ -171,6 +172,7 @@ namespace ProyectoFinal
                     GameOver.Visibility = Visibility.Visible;
                     lblLevel.Content = "";
                     txtLevel.Text = "";
+                   
                     lblExperiencia.Content = "";
                     txtExp.Text = "";
                      btnTienda.Visibility = Visibility.Hidden;
@@ -712,13 +714,31 @@ namespace ProyectoFinal
 
         private void btnTienda_Click(object sender, RoutedEventArgs e)
         {
-            Tienda t= new Tienda(contadorExp, txtExp);
-         
-           // Tienda t = new Tienda(this);
+            Tienda t= new Tienda(contadorExp, txtExp, this);
             t.Show();
 
         }
-        
+        public void cambiarFondo1() {
+
+            ImageBrush myBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(AppDomain.CurrentDomain.BaseDirectory + "//Imagenes/fondo1.jpg"));
+            myBrush.ImageSource = image.Source;
+            Grid grid = new Grid();
+            grPrincipal.Background = myBrush;
+        }
+
+        public void cambiarFondo2() {
+
+            ImageBrush myBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(AppDomain.CurrentDomain.BaseDirectory + "//Imagenes/fondo2.jpg"));
+            myBrush.ImageSource = image.Source;
+            Grid grid = new Grid();
+            grPrincipal.Background = myBrush;
+        }
     }
     
 }
