@@ -212,12 +212,6 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbEnergia0" AutoReverse="True" RepeatBehavior="1x">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaIzquierda">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-48.871"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="cejaDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="50.75"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="boca">
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.847"/>
             </DoubleAnimationUsingKeyFrames>
@@ -300,9 +294,6 @@
                 <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF6C1D99"/>
             </ColorAnimationUsingKeyFrames>
             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaDer">
-                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFF9190E"/>
-            </ColorAnimationUsingKeyFrames>
-            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="pupilaIzq">
                 <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFF9190E"/>
             </ColorAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="parpadoIzqDebajo">
@@ -2139,7 +2130,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0.551"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="sbNivel1"/>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -2148,7 +2138,6 @@
             <BeginStoryboard Storyboard="{StaticResource sbMoverPies}"/>
             <BeginStoryboard Storyboard="{StaticResource sbCambiarBolas}"/>
             <BeginStoryboard Storyboard="{StaticResource sbAntenas}"/>
-            <BeginStoryboard Storyboard="{StaticResource sbNivel1}"/>
 
         </EventTrigger>
     </Window.Triggers>

@@ -16,15 +16,7 @@
             </Button.Background>
         </Button>
         <TextBlock x:Name="textBlock" Margin="149,10,0,0" TextWrapping="Wrap" FontSize="20" Height="51" VerticalAlignment="Top"><Run FontWeight="Bold" FontFamily="Rockwell Extra Bold" Text="Haz click en el artículo para canjearlo por puntos"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
-        <Label x:Name="lblFondo1" Content="FONDOS" HorizontalAlignment="Left" Height="36" Margin="76,61,0,0" VerticalAlignment="Top" Width="112" FontSize="20" FontFamily="Kristen ITC">
-            <Label.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF3FABB6" Offset="1"/>
-                </LinearGradientBrush>
-            </Label.Background>
-        </Label>
-        <Label x:Name="lblFondo1_Copy" Content="GORROS" HorizontalAlignment="Right" Height="36" Margin="0,61,85.5,0" VerticalAlignment="Top" Width="112" FontSize="20" FontFamily="Kristen ITC">
+        <Label x:Name="lblFondo1" Content="FONDOS" Height="36" Margin="248,66,324.5,0" VerticalAlignment="Top" FontSize="20" FontFamily="Kristen ITC">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -43,6 +35,16 @@
             </Label.Background>
         </Label>
         <TextBlock x:Name="txtExp" HorizontalAlignment="Left" Height="33.5" Margin="81,22.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36.5"/>
+        <Button x:Name="btnFondo3" Content="" HorizontalAlignment="Right" Margin="0,102,117.5,195" Width="190" Click="btnFondo3_click">
+            <Button.Background>
+                <ImageBrush ImageSource="fondo3.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFondo4" Content="" HorizontalAlignment="Right" Margin="0,0,117.5,61" Width="190" Height="96.5" VerticalAlignment="Bottom" Click="btnFondo4_click">
+            <Button.Background>
+                <ImageBrush ImageSource="fondo4.jpg"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

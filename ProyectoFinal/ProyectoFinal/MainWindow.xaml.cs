@@ -88,6 +88,7 @@ namespace ProyectoFinal
             btnSalir.ToolTip = "Salir de la Aplicación";
             btJugar.ToolTip = "Jugar";
             btDormir.ToolTip = "Dormir";
+            btnTienda.ToolTip = "Entrar a la Tienda";
             btnPonerVolumen.ToolTip = "Poner Volumen";
             btnQuitarVolumen.ToolTip = "Quitar Volumen";
             btnInfo.ToolTip = "Información acerca del juego";
@@ -200,6 +201,9 @@ namespace ProyectoFinal
                 cvZetas.Visibility = Visibility.Hidden;
                 estarCansado.Stop();
                 estarCansado.Remove();
+            }else if(pbEnergia.Value == 100)
+            {
+                energia100.Begin();
             }
 
            
@@ -216,9 +220,13 @@ namespace ProyectoFinal
                 estarAburrido.Remove();
                 cvAburrido.Visibility = Visibility.Hidden;
               }
-              
+            else if (pbDiversion.Value == 100)
+            {
+                diversion100.Begin();
+            }
 
-              
+
+
 
             //Apetito
             if (pbApetito.Value < 40)
@@ -241,6 +249,10 @@ namespace ProyectoFinal
                 cvHambre.Visibility = Visibility.Hidden;
                 tenerHambre.Stop();
                 tenerHambre.Remove();
+            }
+            else if (pbApetito.Value == 100)
+            {
+                lleno100.Begin();
             }
 
         }
@@ -727,6 +739,9 @@ namespace ProyectoFinal
             myBrush.ImageSource = image.Source;
             Grid grid = new Grid();
             grPrincipal.Background = myBrush;
+            int puntos = contadorExp;
+            puntos = puntos - 30;
+            txtExp.Text = puntos.ToString();
         }
 
         public void cambiarFondo2() {
@@ -738,6 +753,38 @@ namespace ProyectoFinal
             myBrush.ImageSource = image.Source;
             Grid grid = new Grid();
             grPrincipal.Background = myBrush;
+            int puntos = contadorExp;
+            puntos = puntos - 20;
+            txtExp.Text = puntos.ToString();
+        }
+        public void cambiarFondo3()
+        {
+
+            ImageBrush myBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(AppDomain.CurrentDomain.BaseDirectory + "//Imagenes/fondo3.jpg"));
+            myBrush.ImageSource = image.Source;
+            Grid grid = new Grid();
+            grPrincipal.Background = myBrush;
+            int puntos = contadorExp;
+            puntos = puntos - 15;
+            txtExp.Text = puntos.ToString();
+        }
+
+        public void cambiarFondo4()
+        {
+
+            ImageBrush myBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(AppDomain.CurrentDomain.BaseDirectory + "//Imagenes/fondo4.jpg"));
+            myBrush.ImageSource = image.Source;
+            Grid grid = new Grid();
+            grPrincipal.Background = myBrush;
+            int puntos = contadorExp;
+            puntos = puntos - 50;
+            txtExp.Text = puntos.ToString();
         }
     }
     

@@ -23,17 +23,28 @@ namespace ProyectoFinal
         int puntos;
         MainWindow padre;
         TextBlock txt;
-         int contadorFondo2 = 0;
+        int contadorFondo2 = 0;
         int contadorFondo1 = 0;
+        int contadorFondo3 = 0;
+        int contadorFondo4 = 0;
 
 
         public Tienda(int puntos, TextBlock txt, MainWindow padre_)
         {
             padre = padre_;
             InitializeComponent();
+            toopTils();
             this.puntos = puntos;
             this.txt = txt;
             txtExp.Text = puntos.ToString();
+        }
+
+        public void toopTils()
+        { 
+            btnFondo1.ToolTip = "Comprar Fondo 1";
+            btnFondo2.ToolTip = "Comprar Fondo 2";
+            btnFondo3.ToolTip = "Comprar Fondo 3";
+            btnFondo4.ToolTip = "Comprar Fondo 4";
         }
 
         /*public Tienda(MainWindow padre_)
@@ -108,6 +119,67 @@ namespace ProyectoFinal
         private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
         {
             txt.Text = puntos.ToString();
+        }
+
+        private void btnFondo3_click(object sender, RoutedEventArgs e)
+        {
+            if (contadorFondo3 > 0)
+            {
+
+                padre.cambiarFondo3();
+            }
+            else
+            {
+                if (MessageBox.Show("¿Desea adquirir este fondo? Puntos = 15", "Comprar Fondo 3",
+            MessageBoxButton.YesNo, MessageBoxImage.Question)
+             == MessageBoxResult.Yes)
+                {
+                    if (this.puntos < 15)
+                    {
+                        MessageBox.Show("No tienes suficientes puntos para comprarlo",
+                  "Puntos insuficientes", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    else if (this.puntos >= 15)
+                    {
+                        puntos = puntos - 15;
+                        txtExp.Text = puntos.ToString();
+                        padre.cambiarFondo3();
+
+                    }
+                }
+            }
+            contadorFondo3 += 1;
+        }
+
+        private void btnFondo4_click(object sender, RoutedEventArgs e)
+        {
+            if (contadorFondo4 > 0)
+            {
+
+                padre.cambiarFondo4();
+            }
+            else
+            {
+                if (MessageBox.Show("¿Desea adquirir este fondo? Puntos = 50", "Comprar Fondo 4",
+            MessageBoxButton.YesNo, MessageBoxImage.Question)
+             == MessageBoxResult.Yes)
+                {
+                    if (this.puntos < 50)
+                    {
+                        MessageBox.Show("No tienes suficientes puntos para comprarlo",
+                  "Puntos insuficientes", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    else if (this.puntos >= 50)
+                    {
+                        puntos = puntos - 50;
+                        txtExp.Text = puntos.ToString();
+                       
+                        padre.cambiarFondo4();
+
+                    }
+                }
+            }
+            contadorFondo4 += 1;
         }
     }
 }
