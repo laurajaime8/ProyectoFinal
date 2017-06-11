@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Tienda" Height="436.5" Width="694.5">
+        Title="Tienda" Height="436.5" Width="694.5" Closing="terminar">
     <Grid Margin="0,0,2,12" RenderTransformOrigin="0.504,0.481">
         <Grid.Background>
             <ImageBrush ImageSource="bichosTienda.jpg"/>

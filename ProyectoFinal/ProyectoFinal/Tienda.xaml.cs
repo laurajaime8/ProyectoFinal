@@ -21,13 +21,24 @@ namespace ProyectoFinal
     {
 
         int puntos;
+        MainWindow padre;
+        TextBlock txt;
 
-        public Tienda(int puntos)
+        public Tienda(int puntos, TextBlock txt)
         {
             InitializeComponent();
             this.puntos = puntos;
+            this.txt = txt;
             txtExp.Text = puntos.ToString();
         }
+
+        /*public Tienda(MainWindow padre_)
+        {
+            padre = padre_;
+
+            InitializeComponent();
+            txtExp.Text = padre.contador();
+        }*/
 
         private void btnFondo2_click(object sender, RoutedEventArgs e)
         {
@@ -45,12 +56,13 @@ namespace ProyectoFinal
                     puntos = puntos - 20;
                     txtExp.Text = puntos.ToString();
                     //poner fondo en la ventana principal
-                    MainWindow mw = new MainWindow();
-                    ImageBrush mb = new ImageBrush();
+                   // MainWindow mw = new MainWindow();
+                    /*ImageBrush mb = new ImageBrush();
                     mb.ImageSource = new BitmapImage(
                         new Uri(@"sampleImages\fondo2.jpg", UriKind.Relative)
                     );
-                    mw.Background = mb;
+                    //mw.Background = mb;
+                    */
                 }
                 
             }
@@ -62,9 +74,23 @@ namespace ProyectoFinal
             MessageBoxButton.YesNo, MessageBoxImage.Question)
              == MessageBoxResult.Yes)
             {
-                puntos = puntos - 30;
-                txtExp.Text = puntos.ToString();
+                if (this.puntos < 30)
+                {
+                    MessageBox.Show("No tienes suficientes puntos para comprarlo",
+              "Puntos insuficientes", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else if (this.puntos >= 30)
+                {
+                    puntos = puntos - 30;
+                    txtExp.Text = puntos.ToString();
+                }
             }
+        }
+
+
+        private void terminar(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            txt.Text = puntos.ToString();
         }
     }
 }

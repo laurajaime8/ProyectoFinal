@@ -173,6 +173,7 @@ namespace ProyectoFinal
                     txtLevel.Text = "";
                     lblExperiencia.Content = "";
                     txtExp.Text = "";
+                     btnTienda.Visibility = Visibility.Hidden;
                     sonido.Stop();
                }
 
@@ -274,7 +275,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
 
-            pbEnergia.Value += 50;
+            pbEnergia.Value += 20;
         
             simpleSound.Play();
             
@@ -314,7 +315,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
             cvMariposa.Visibility = Visibility.Visible;
-            pbDiversion.Value += 50;
+            pbDiversion.Value += 20;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
@@ -711,11 +712,13 @@ namespace ProyectoFinal
 
         private void btnTienda_Click(object sender, RoutedEventArgs e)
         {
-            Tienda t= new Tienda(contadorExp);
+            Tienda t= new Tienda(contadorExp, txtExp);
+         
+           // Tienda t = new Tienda(this);
             t.Show();
 
         }
-
+        
     }
     
 }
