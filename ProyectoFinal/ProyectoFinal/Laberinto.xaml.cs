@@ -142,13 +142,8 @@ namespace ProyectoFinal
                 valorL = 1;
                 persistenciaEscribir(valorT, valorR, valorP, valorL, valorC);
             }
-            {
-                MessageBox.Show("Has desbloqueado el logro: Tortuga",
-                    "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                persistenciaEntrar();
-                valorT = 1;
-                persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
-            }
+
+            
 
             if (seg >= 15)
             {
