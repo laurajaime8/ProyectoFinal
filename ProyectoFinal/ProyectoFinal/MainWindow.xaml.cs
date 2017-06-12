@@ -184,7 +184,12 @@ namespace ProyectoFinal
             //Barras iguales a 10 todas
             if (pbEnergia.Value <= 10 && pbApetito.Value <= 10 && pbDiversion.Value <= 10)
             {
+                estarCansado.Stop();
+                estarAburrido.Stop();
+                tenerHambre.Stop();
+
                 medioMuerto.Begin();
+                
                 
             } else if (pbEnergia.Value > 10 || pbApetito.Value > 10 || pbDiversion.Value > 10)
             {
@@ -192,9 +197,9 @@ namespace ProyectoFinal
             }
 
             //Sueño
-            if (pbEnergia.Value <= 10 && pbApetito.Value > 10 && pbDiversion.Value > 10) {
+            if (pbEnergia.Value <= 10 && pbApetito.Value > 10 &&  pbDiversion.Value > 10 ) {
                 cvZetas.Visibility = Visibility.Visible;
-                estarCansado.Begin(this);
+                estarCansado.Begin();
                
             } else if (pbEnergia.Value > 10 )
             {
@@ -209,7 +214,7 @@ namespace ProyectoFinal
            
 
             //Diversion
-              if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10)
+              if (pbDiversion.Value <= 10 && pbApetito.Value > 10 && pbEnergia.Value > 10 )
               {
                        estarAburrido.Begin();
                        cvAburrido.Visibility = Visibility.Visible;
@@ -220,7 +225,7 @@ namespace ProyectoFinal
                 estarAburrido.Remove();
                 cvAburrido.Visibility = Visibility.Hidden;
               }
-            else if (pbDiversion.Value == 100)
+            else if (pbDiversion.Value > 90)
             {
                 diversion100.Begin();
             }
@@ -250,7 +255,7 @@ namespace ProyectoFinal
                 tenerHambre.Stop();
                 tenerHambre.Remove();
             }
-            else if (pbApetito.Value == 100)
+            else if (pbApetito.Value >= 90)
             {
                 lleno100.Begin();
             }

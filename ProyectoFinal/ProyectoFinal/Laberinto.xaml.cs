@@ -92,7 +92,15 @@ namespace ProyectoFinal
                 btnInicio.IsHitTestVisible = true;
                 btnFinal.IsHitTestVisible = false;
                 contadorColision = contadorColision + 1;
-                
+
+                if (contadorColision > 5)
+                {
+                    MessageBox.Show("Has desbloqueado el logro: Patoso number ONE",
+                      "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                    persistenciaEntrar();
+                    valorP = 1;
+                    persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
+                }
             }
         }
 
@@ -120,36 +128,46 @@ namespace ProyectoFinal
             {
                 MessageBox.Show("Has desbloqueado el logro: Super rápido",
                   "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                persistenciaEntrar();
                 valorR = 1;
                 persistenciaEscribir(valorT, valorR, valorP, valorL, valorC);
 
             }
-            if (seg >= 15)
+
+            if (valorC == 1 && valorP == 1 && valorR == 1 && valorT == 1)
+            {
+                MessageBox.Show("¡¡¡ENHORABUENA, HAS DESBLOQUEADO TODOS LOS LOGROS!!!",
+                 "Todos los losgros desbloqueados", MessageBoxButton.OK, MessageBoxImage.Information);
+                persistenciaEntrar();
+                valorL = 1;
+                persistenciaEscribir(valorT, valorR, valorP, valorL, valorC);
+            }
             {
                 MessageBox.Show("Has desbloqueado el logro: Tortuga",
                     "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                persistenciaEntrar();
                 valorT = 1;
                 persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
             }
 
-            if(contadorColision > 5)
+            if (seg >= 15)
             {
-                MessageBox.Show("Has desbloqueado el logro: Patoso number ONE",
-                  "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
-                valorP = 1;
+                MessageBox.Show("Has desbloqueado el logro: Tortuga",
+                    "Logro desbloqueado", MessageBoxButton.OK, MessageBoxImage.Information);
+                persistenciaEntrar();
+                valorT = 1;
                 persistenciaEscribir(valorT, valorR, valorP, valorC, valorL);
             }
-            
 
             seg = 0;
             min = 0;
             hora = 0;
+
+         
+
         }
 
-
-      
-
-        
+ 
         private void informacion(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Bienvenido al minijuego del laberinto! En primer lugar deberás de poner el ratón sobre la hormiga y tendrás que guiarlo por el laberinto hasta llegar al final. No podrás tocar las paredes ya que si no tendrás que empezar de nuevo. Buena suerte!",
@@ -181,13 +199,47 @@ namespace ProyectoFinal
                 writer.WriteElementString("LogroPatoso", valorP + "");
                 writer.WriteElementString("LogroTodos", valorL + "");
                 writer.WriteElementString("LogroCampeon", valorC + "");
-
-
-
                 writer.WriteEndElement();
                 writer.Flush();
                 // writer.Close();
             }
+        }
+
+        public void persistenciaEntrar()
+        {
+            XmlTextReader myXMLreader = new XmlTextReader("Logros.xml");
+            while (myXMLreader.Read())
+            {
+                if (myXMLreader.NodeType == XmlNodeType.Element)
+                {
+                    if (myXMLreader.Name == "LogroTortuga")
+                    {
+                        myXMLreader.Read();
+                        valorT = myXMLreader.ReadContentAsInt();
+                    }
+                    if (myXMLreader.Name == "LogroRapido")
+                    {
+                        myXMLreader.Read();
+                        valorR = myXMLreader.ReadContentAsInt();
+                    }
+                    if (myXMLreader.Name == "LogroPatoso")
+                    {
+                        myXMLreader.Read();
+                        valorP = myXMLreader.ReadContentAsInt();
+                    }
+                    if (myXMLreader.Name == "LogroTodos")
+                    {
+                        myXMLreader.Read();
+                        valorL = myXMLreader.ReadContentAsInt();
+                    }
+                    if (myXMLreader.Name == "LogroCampeon")
+                    {
+                        myXMLreader.Read();
+                        valorC = myXMLreader.ReadContentAsInt();
+                    }
+                }
+            }
+            myXMLreader.Close();
         }
     }
     }
