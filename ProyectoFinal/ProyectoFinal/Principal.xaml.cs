@@ -21,12 +21,6 @@ namespace ProyectoFinal
     public partial class Principal : Window
     {
         MainWindow padre;
-
-        /*public Principal()
-        {
-            InitializeComponent();
-            toopTils();
-        }*/
         Rectangle gameOver;
         public Principal(MainWindow padre_, Rectangle gameOver)
         {
@@ -41,10 +35,6 @@ namespace ProyectoFinal
                 btnResumen.Background = Brushes.LightGray;
             }
 
-        }
-
-        public Principal()
-        {
         }
 
         public void toopTils() {

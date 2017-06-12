@@ -47,15 +47,6 @@ namespace ProyectoFinal
             btnFondo4.ToolTip = "Comprar Fondo 4";
             lblFondos.ToolTip = "Haz click en los fondos para comprar alguno de ellos y canjearlos por puntos.";
         }
-
-        /*public Tienda(MainWindow padre_)
-        {
-            padre = padre_;
-
-            InitializeComponent();
-            txtExp.Text = padre.contador();
-        }*/
-
         private void btnFondo2_click(object sender, RoutedEventArgs e)
         {
 
