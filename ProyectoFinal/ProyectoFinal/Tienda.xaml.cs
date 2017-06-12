@@ -45,6 +45,7 @@ namespace ProyectoFinal
             btnFondo2.ToolTip = "Comprar Fondo 2";
             btnFondo3.ToolTip = "Comprar Fondo 3";
             btnFondo4.ToolTip = "Comprar Fondo 4";
+            lblFondos.ToolTip = "Haz click en los fondos para comprar alguno de ellos y canjearlos por puntos.";
         }
 
         /*public Tienda(MainWindow padre_)

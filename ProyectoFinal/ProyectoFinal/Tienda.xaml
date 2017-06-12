@@ -5,46 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFinal"
         mc:Ignorable="d"
-        Title="Tienda" Height="436.5" Width="694.5" Closing="terminar" ResizeMode="NoResize">
-    <Grid x:Name="GridGeneral" Margin="0,0,2,12" RenderTransformOrigin="0.504,0.481">
+        Title="Tienda" Height="436.5" Width="694.5" Closing="terminar" ResizeMode="NoResize" Icon="house-304005_960_720.png">
+    <Grid x:Name="GridGeneral" Margin="0,0,2,-1.5" RenderTransformOrigin="0.504,0.481">
         <Grid.Background>
-            <ImageBrush ImageSource="bichosTienda.jpg"/>
+            <ImageBrush ImageSource="MGlRoft.jpg"/>
         </Grid.Background>
-        <Button x:Name="btnFondo1" Content="" HorizontalAlignment="Left" Margin="37,102,0,195" Width="190" Click="btnFondo1_click">
-            <Button.Background>
-                <ImageBrush ImageSource="fonodT1.jpg"/>
-            </Button.Background>
-        </Button>
-        <TextBlock x:Name="textBlock" Margin="149,10,0,0" TextWrapping="Wrap" FontSize="20" Height="51" VerticalAlignment="Top"><Run FontWeight="Bold" FontFamily="Rockwell Extra Bold" Text="Haz click en el artículo para canjearlo por puntos"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
-        <Label x:Name="lblFondo1" Content="FONDOS" Height="36" Margin="248,66,324.5,0" VerticalAlignment="Top" FontSize="20" FontFamily="Kristen ITC">
+        <Canvas x:Name="cvBoton1" HorizontalAlignment="Left" Margin="56,128,0,167" Width="211">
+            <Rectangle Fill="#FFF4F4F5" Stroke="Black" Width="211" Height="114"/>
+            <Button x:Name="btnFondo1" Content="" Width="190" Click="btnFondo1_click" Height="96" Canvas.Left="10" Canvas.Top="10" d:LayoutOverrides="Height">
+                <Button.Background>
+                    <ImageBrush ImageSource="fonodT1.jpg"/>
+                </Button.Background>
+            </Button>
+        </Canvas>
+        <Label x:Name="lblFondos" Content="    FONDOS" Margin="211.5,43,246,305" FontSize="32" FontFamily="Kristen ITC" TextOptions.TextHintingMode="Animated">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF3FABB6" Offset="1"/>
+                    <GradientStop Color="#FF239DCB" Offset="0"/>
+                    <GradientStop Color="#FFF5F9F9" Offset="1"/>
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Button x:Name="btnFondo2" Content="" HorizontalAlignment="Left" Margin="37,0,0,61" Width="190" Height="96.5" VerticalAlignment="Bottom" Click="btnFondo2_click">
-            <Button.Background>
-                <ImageBrush ImageSource="fondo2.jpg"/>
-            </Button.Background>
-        </Button>
+        <Canvas x:Name="cvBoton2" HorizontalAlignment="Left" Height="114" Margin="56,0,0,24" VerticalAlignment="Bottom" Width="211">
+            <Rectangle Fill="#FFF4F4F5" Height="114" Stroke="Black" Width="211"/>
+            <Button x:Name="btnFondo2" Content="" Width="190" Height="96" Click="btnFondo2_click" Canvas.Left="10" Canvas.Top="9">
+                <Button.Background>
+                    <ImageBrush ImageSource="fondo2.jpg"/>
+                </Button.Background>
+            </Button>
+        </Canvas>
         <Label x:Name="lblExperiencia" Content="" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" VerticalAlignment="Top" Width="46.5">
             <Label.Background>
                 <ImageBrush ImageSource="Estrella_mario.png"/>
             </Label.Background>
         </Label>
-        <TextBlock x:Name="txtExp" HorizontalAlignment="Left" Height="33.5" Margin="81,22.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36.5"/>
-        <Button x:Name="btnFondo3" Content="" HorizontalAlignment="Right" Margin="0,102,117.5,195" Width="190" Click="btnFondo3_click">
-            <Button.Background>
-                <ImageBrush ImageSource="fondo3.jpg"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnFondo4" Content="" HorizontalAlignment="Right" Margin="0,0,117.5,61" Width="190" Height="96.5" VerticalAlignment="Bottom" Click="btnFondo4_click">
-            <Button.Background>
-                <ImageBrush ImageSource="fondo4.jpg"/>
-            </Button.Background>
-        </Button>
+        <TextBlock x:Name="txtExp" HorizontalAlignment="Left" Height="51" Margin="75,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69.5" Foreground="#FFF50A0A" FontSize="32" FontWeight="Bold"/>
+        <Canvas x:Name="cvBoton3" HorizontalAlignment="Right" Margin="0,128,79.5,167" Width="211">
+            <Rectangle Fill="#FFF4F4F5" Stroke="Black" Width="211" Height="114"/>
+            <Button x:Name="btnFondo3" Content="" Width="190" Click="btnFondo3_click" Height="96" Canvas.Left="12" Canvas.Top="10" d:LayoutOverrides="Height">
+                <Button.Background>
+                    <ImageBrush ImageSource="fondo3.jpg"/>
+                </Button.Background>
+            </Button>
+        </Canvas>
+        <Canvas x:Name="cvBoton4" HorizontalAlignment="Right" Height="114" Margin="0,0,76.5,24" VerticalAlignment="Bottom" Width="211">
+            <Rectangle Fill="#FFF4F4F5" Height="114" Stroke="Black" Width="211"/>
+            <Button x:Name="btnFondo4" Content="" Width="190" Height="96" Click="btnFondo4_click" Canvas.Left="9" Canvas.Top="9">
+                <Button.Background>
+                    <ImageBrush ImageSource="fondo4.jpg"/>
+                </Button.Background>
+            </Button>
+
+        </Canvas>
 
     </Grid>
 </Window>
