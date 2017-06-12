@@ -54,6 +54,10 @@ namespace ProyectoFinal
 
         }
 
+        public Laberinto() {
+
+        }
+
         private void reloj(object sender, EventArgs e)
         {
 
