@@ -89,8 +89,21 @@ namespace ProyectoFinal
             btJugar.ToolTip = "Jugar";
             btDormir.ToolTip = "Dormir";
             btnTienda.ToolTip = "Entrar a la Tienda";
-            btnPonerVolumen.ToolTip = "Poner Volumen";
-            btnQuitarVolumen.ToolTip = "Quitar Volumen";
+            if (btnPonerVolumen.IsHitTestVisible == false)
+            {
+                btnPonerVolumen.ToolTip = "PonerVolúmen Bloqueado";
+            }
+            else {
+                btnPonerVolumen.ToolTip = "Poner Volumen";
+            }
+
+            if (btnQuitarVolumen.IsHitTestVisible == false)
+            {
+                btnQuitarVolumen.ToolTip = "Quitar Volumen Bloqueado";
+            }
+            else {
+                btnQuitarVolumen.ToolTip = "Quitar Volumen";
+            }
             btnInfo.ToolTip = "Información acerca del juego";
         }
 
@@ -173,8 +186,7 @@ namespace ProyectoFinal
                     GameOver.Visibility = Visibility.Visible;
                     lblLevel.Content = "";
                     txtLevel.Text = "";
-                   
-                    lblExperiencia.Content = "";
+                    lblExperiencia.Visibility = Visibility.Hidden;
                     txtExp.Text = "";
                      btnTienda.Visibility = Visibility.Hidden;
                     sonido.Stop();
@@ -294,7 +306,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
 
-            pbEnergia.Value += 50;
+            pbEnergia.Value += 20;
         
             simpleSound.Play();
             
@@ -334,7 +346,7 @@ namespace ProyectoFinal
             btJugar.IsHitTestVisible = false;
             btDormir.IsHitTestVisible = false;
             cvMariposa.Visibility = Visibility.Visible;
-            pbDiversion.Value += 40;
+            pbDiversion.Value += 20;
 
             ThicknessAnimation volarCanvas = new ThicknessAnimation();
             volarCanvas.From = cvHeimlich.Margin;
@@ -503,7 +515,7 @@ namespace ProyectoFinal
 
         private void menuPrinc(object sender, RoutedEventArgs e)
         {
-            Principal frm2 = new Principal(this);
+            Principal frm2 = new Principal(this, GameOver);
             this.Hide();
             frm2.ShowDialog();
             

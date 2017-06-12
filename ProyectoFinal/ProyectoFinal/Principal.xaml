@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="pequena_bichos_pixar.jpg"/>
         </Grid.Background>
         <Canvas x:Name="cvBotones" Margin="69.536,61.073,10,35.695">
-            <Button x:Name="btnResumen" Content="Resume" Foreground="#FF180121" Height="91" FontWeight="Bold" FontSize="32" OpacityMask="#FF20CB47" Width="243" Canvas.Left="161.769" Canvas.Top="228.953" Click="resume">
+            <Button x:Name="btnResumen" Content="Continuar" Foreground="#FF180121" Height="91" FontWeight="Bold" FontSize="32" OpacityMask="#FF20CB47" Width="243" Canvas.Left="161.769" Canvas.Top="228.953" Click="resume">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFF1E06F" Offset="0"/>

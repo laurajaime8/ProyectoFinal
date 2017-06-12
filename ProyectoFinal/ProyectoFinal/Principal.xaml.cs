@@ -27,14 +27,19 @@ namespace ProyectoFinal
             InitializeComponent();
             toopTils();
         }*/
-        public Principal(MainWindow padre_)
+        Rectangle gameOver;
+        public Principal(MainWindow padre_, Rectangle gameOver)
         {
             padre = padre_;
+            this.gameOver = gameOver;
             
             InitializeComponent();
             toopTils();
-            
 
+            if (gameOver.Visibility == Visibility.Visible) {
+                btnResumen.IsHitTestVisible = false;
+                btnResumen.Background = Brushes.LightGray;
+            }
 
         }
 
